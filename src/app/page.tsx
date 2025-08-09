@@ -1,103 +1,169 @@
-import Image from "next/image";
+export default function SchedulePage() {
+  const schedule = [
+    {
+      week: 1,
+      dates: "Aug 26 - Sep 1",
+      topic: "Course Introduction & Environmental Systems",
+      activities: ["Course overview", "Environmental systems thinking", "Sustainability principles"],
+      readings: "Chapters 1-2, Botkin & Keller"
+    },
+    {
+      week: 2,
+      dates: "Sep 2 - Sep 8",
+      topic: "Scientific Methodology",
+      activities: ["Research methods", "Data collection", "Statistical analysis"],
+      readings: "Chapter 3, Theis & Tomkin"
+    },
+    {
+      week: 3,
+      dates: "Sep 9 - Sep 15",
+      topic: "Environmental Assessment",
+      activities: ["Field work preparation", "Assessment frameworks", "Assignment 1 due"],
+      readings: "Selected journal articles"
+    },
+    {
+      week: 4,
+      dates: "Sep 16 - Sep 22",
+      topic: "Climate Science Fundamentals",
+      activities: ["Atmospheric composition", "Climate drivers", "Historical climate data"],
+      readings: "Chapters 4-5, Pittock"
+    },
+    {
+      week: 5,
+      dates: "Sep 23 - Sep 29",
+      topic: "Climate Change Mechanisms",
+      activities: ["Greenhouse effect", "Feedback loops", "Climate models"],
+      readings: "IPCC reports, selected sections"
+    },
+    {
+      week: 6,
+      dates: "Sep 30 - Oct 6",
+      topic: "Climate Impacts",
+      activities: ["Ecosystem responses", "Human impacts", "Adaptation strategies"],
+      readings: "Nature Climate Change articles"
+    },
+    {
+      week: 7,
+      dates: "Oct 7 - Oct 13",
+      topic: "Midterm Review",
+      activities: ["Review sessions", "Practice problems", "Study groups"],
+      readings: "All previous materials"
+    },
+    {
+      week: 8,
+      dates: "Oct 14 - Oct 20",
+      topic: "Midterm & Renewable Energy",
+      activities: ["Midterm exam", "Energy fundamentals", "Assignment 2 due"],
+      readings: "Chapters 6-7, Theis & Tomkin"
+    },
+    {
+      week: 9,
+      dates: "Oct 21 - Oct 27",
+      topic: "Sustainable Technologies",
+      activities: ["Solar energy", "Wind power", "Energy storage"],
+      readings: "Technical reports and case studies"
+    },
+    {
+      week: 10,
+      dates: "Oct 28 - Nov 3",
+      topic: "Urban Sustainability",
+      activities: ["Green infrastructure", "Smart cities", "Community planning"],
+      readings: "Urban planning literature"
+    },
+    {
+      week: 11,
+      dates: "Nov 4 - Nov 10",
+      topic: "Circular Economy",
+      activities: ["Waste reduction", "Resource efficiency", "Business models"],
+      readings: "Circular economy principles"
+    },
+    {
+      week: 12,
+      dates: "Nov 11 - Nov 17",
+      topic: "Environmental Policy",
+      activities: ["Policy frameworks", "International agreements", "Assignment 3 due"],
+      readings: "Policy analysis literature"
+    },
+    {
+      week: 13,
+      dates: "Nov 18 - Nov 24",
+      topic: "Policy Implementation",
+      activities: ["Stakeholder engagement", "Implementation strategies", "Case studies"],
+      readings: "Implementation research"
+    },
+    {
+      week: 14,
+      dates: "Nov 25 - Dec 1",
+      topic: "Community Engagement",
+      activities: ["Public participation", "Communication strategies", "Project work"],
+      readings: "Community engagement literature"
+    },
+    {
+      week: 15,
+      dates: "Dec 2 - Dec 8",
+      topic: "Final Project Work",
+      activities: ["Project development", "Peer review", "Final presentations"],
+      readings: "Project-specific materials"
+    },
+    {
+      week: 16,
+      dates: "Dec 9 - Dec 15",
+      topic: "Course Wrap-up",
+      activities: ["Final project due", "Course evaluation", "Future directions"],
+      readings: "None"
+    }
+  ];
 
-export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="space-y-6">
+      <div className="border-b border-gray-200 pb-4">
+        <h1 className="text-3xl font-bold text-gray-900">Course Schedule</h1>
+        <p className="text-gray-600 mt-2">Weekly breakdown of topics, activities, and assignments</p>
+      </div>
+      
+      <div className="space-y-4">
+        {schedule.map((week) => (
+          <div key={week.week} className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="flex items-start justify-between mb-4">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Week {week.week}: {week.topic}
+                </h3>
+                <p className="text-gray-600 text-sm">{week.dates}</p>
+              </div>
+              {week.week === 8 && (
+                <span className="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">
+                  Midterm
+                </span>
+              )}
+              {week.week === 16 && (
+                <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">
+                  Final Due
+                </span>
+              )}
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-medium text-gray-700 mb-2">Activities</h4>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  {week.activities.map((activity, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="text-blue-500 mr-2">•</span>
+                      {activity}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div>
+                <h4 className="font-medium text-gray-700 mb-2">Readings</h4>
+                <p className="text-sm text-gray-600">{week.readings}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+} 
