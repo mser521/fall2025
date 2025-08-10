@@ -99,11 +99,7 @@ html {
   background: #555;
 }
 
-/* Focus styles for accessibility */
-*:focus {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
-}
+
 
 /* Custom utility classes that can't be done with Tailwind */
 .text-gradient {
