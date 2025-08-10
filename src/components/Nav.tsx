@@ -45,7 +45,7 @@ export default function Navigation() {
                 className={`transition-colors ${
                   normalizePath(pathname) === normalizePath(item.href)
                     ? "!font-semibold !border-sky-400"
-                    : ""
+                    : "!border-white !hover:border-sky-700"
                 }`}
               >
                 {item.label}
