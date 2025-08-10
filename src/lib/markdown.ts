@@ -40,7 +40,7 @@ export function getPostData(id: string): PostData {
   // Use remark to convert markdown into HTML string with GFM support
   const processedContent = remark()
     .use(gfm)  // Add GitHub Flavored Markdown support
-    .use(html)
+    .use(html, { sanitize: false })  // Allow HTML without sanitization
     .processSync(matterResult.content);
   const contentHtml = processedContent.toString();
 
