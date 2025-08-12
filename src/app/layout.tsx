@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import TopicNav from "@/components/TopicNav";
-import topics from "@/lib/topics";
+// import TopicNav from "@/components/TopicNav";
+// import topics from "@/lib/topics";
 import { Inter, Abril_Fatface, Poppins } from "next/font/google";
 import Navigation from "@/components/Nav";
 import "./globals.css";

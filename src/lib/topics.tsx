@@ -30,11 +30,11 @@ const topics = [
         },
         {
           date: "Tu, Aug 26",
-          topic: "Why is evidence-based communication important?"
+          topic: "Why is evidence-based communication important? Communicating science in a polarized world"
         },
         {
           date: "Th, Aug 28",
-          topic: "Communicating science in a polarized world",
+          topic: "Lab 1",
         }
       ]
     },
@@ -45,36 +45,36 @@ const topics = [
       meetings: [
         {
           date: "Tu, Sep 2",
-          topic: "Topic 1",
+          topic: "Data visualization foundations I",
           activities: ["Data Concepts: Qualitative and quantitative data, provenance, representation, bias", "Theory: Burtin, Tufte", "Quant Practice: Google Sheets; Observable", "Qual Practice: Digital Storytelling"],
         },
         {
           date: "Th, Sep 4",
-          topic: "Topic 2",
+          topic: "Lab 2",
         },
         {
           date: "Tu, Sep 9",
-          topic: "Topic 3",
+          topic: "Data visualization foundations II",
         },
         {
           date: "Th, Sep 11",
-          topic: "Topic 4",
+          topic: "Lab 3",
         },
         {
           date: "Tu, Sep 16",
-          topic: "Topic 5",
+          topic: "Data visualization foundations III",
         },
         {
           date: "Th, Sep 16",
-          topic: "Topic 6",          
+          topic: "Lab 4",          
         },
         {
           date: "Tu, Sep 23",
-          topic: "Topic 7",
+          topic: "Data visualization foundations IV",
         },
         {
           date: "Th, Sep 25",
-          topic: "Topic 8",
+          topic: "Lab 5",
         },
         {
           date: "Tu, Sep 30",

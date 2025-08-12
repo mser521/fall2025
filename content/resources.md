@@ -4,6 +4,12 @@ date: "2025-08-26"
 excerpt: "Additional resources, readings, and helpful links for MSER 521"
 ---
 
+## Awesome Websites
+
+| Link | Source | Type |
+|------|--------|------|
+| [Civics of Technology](https://www.civicsoftechnology.org/) | | 
+
 ## Inspiring Data Stories
 
 | Link | Source | Type |
