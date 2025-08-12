@@ -26,12 +26,12 @@ export default function Navigation() {
   };
 
   return (
-    <nav>
+    <nav className="sticky top-0 z-50 bg-white">
       {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> */}
         <div className="px-4 sm:px-6 lg:px-8 flex justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold">
+            <Link href="/" className="!border-white !text-black font-bold !text-xl">
               MSER 521
             </Link>
           </div>
@@ -42,10 +42,10 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`transition-colors ${
+                className={`transition-colors hover:!text-sky-700 hover:!border-sky-700 ${
                   normalizePath(pathname) === normalizePath(item.href)
-                    ? "!font-semibold !border-sky-400"
-                    : "!border-white !hover:border-sky-700"
+                    ? "!font-semibold !border-sky-700"
+                    : "!border-white !hover:border-sky-700 !text-black"
                 }`}
               >
                 {item.label}

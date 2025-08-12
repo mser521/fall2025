@@ -4,7 +4,7 @@ date: "2025-08-26"
 excerpt: "Complete course syllabus and learning objectives"
 ---
 
-# MSER 521: Visualizing & Communicating with Data
+# MSER 521: Visualizing & Communicating Data
 
 <table>
   <tr><td><strong>Course</strong></td><td>MSER 521: Visualizing and Communicating Data</td></tr>
@@ -35,15 +35,28 @@ By the end of the course, students will be able to:
 - Audience, purpose, goals
 - Politics
 - Legibility
-
-### Week 3-4: What is Evidence?
 - Epistemic considerations: Whose evidence? Presences and absences.
-- Data Concepts: Qualitative and quantitative data, provenance, representation, bias
 
-### Week 5-8: Visualizating Qualitative & Quantitative Data
-- Renewable energy technologies
-- Sustainable urban development
-- Circular economy principles
+### Week 3-8: Visualizating Qualitative & Quantitative Data
+- Data Concepts: Qualitative and quantitative data, provenance, representation, bias
+- Theory: Burtin, Tufte
+- Quant Practice: Google Sheets; Observable
+- Qual Practice: Digital Storytelling
+
+**Homework**
+
+- HW1: Analyze a Science Communication piece.
+- HW2: Quantitative Data Visualization Homework
+- HW3: Qualitative Data Visualization Homework
+
+**Labs**
+
+- Lab 1: Create a database from scratch.
+- Lab 2: Google Sheets Exercise
+- Lab 3: Observable Exercise
+
+
+
 
 ### Week 9-10: Designing for Impact
 - Design Principles

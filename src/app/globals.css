@@ -9,19 +9,23 @@
 }
 
 h1 {
-  @apply text-4xl font-light mb-8 mt-12 tracking-tighter;
+  @apply text-4xl font-light mb-8 mt-12;
+  font-family: var(--font-poppins), serif;
 }
 
 h2 {
-  @apply text-3xl font-bold mb-4 mt-8;
+  @apply text-3xl  mb-4 mt-8;
+  font-family: var(--font-poppins), serif;
 }
 
-h3 {
-  @apply text-xl font-extrabold mb-2 mt-6;
+h3, .logo {
+  @apply text-xl font-bold mb-2 mt-6;
+  font-family: var(--font-poppins), serif;
 }
 
 h4 {
   @apply text-xl font-bold mb-4 mt-4;
+  font-family: var(--font-poppins), serif;
 }
 
 table {
@@ -38,7 +42,7 @@ th {
 }
 
 a {
-  @apply border-b-2 border-sky-400 hover:border-b-2 hover:border-sky-700;
+  @apply border-b-2 border-sky-700 text-sky-700 hover:border-b-2 hover:border-white;
 }
 
 ol {
@@ -50,7 +54,11 @@ ul {
 }
 
 p {
-  @apply mb-4;
+  @apply mb-4 text-gray-700;
+}
+
+li {
+  @apply text-gray-700;
 }
 
 /* stylelint-disable-next-line */
