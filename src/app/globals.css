@@ -6,60 +6,105 @@
   --foreground: #171717;
   --primary: #3b82f6;
   --secondary: #22c55e;
-  --accent: #8b5cf6;
+  --accent: transparent;
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --card-foreground: #171717;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #b8e6fe;
+    --accent: #b8e6fe;
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --border: #374151;
+    --muted: #9ca3af;
+    --card: #1f2937;
+    --card-foreground: #f9fafb;
+  }
 }
 
 h1 {
   @apply text-4xl font-light mb-8 mt-12;
   font-family: var(--font-poppins), serif;
+  color: var(--foreground);
 }
 
 h2 {
-  @apply text-3xl  mb-4 mt-8;
+  @apply text-3xl mb-4 mt-8;
   font-family: var(--font-poppins), serif;
+  color: var(--foreground);
 }
 
 h3, .logo {
   @apply text-xl font-bold mb-2 mt-6;
   font-family: var(--font-poppins), serif;
+  color: var(--foreground);
 }
 
 h4 {
   @apply text-xl font-bold mb-4 mt-4;
   font-family: var(--font-poppins), serif;
+  color: var(--foreground);
 }
 
 table {
-  @apply w-full border-collapse border-t-2 border-b-2 border-black;
+  @apply w-full border-collapse border-t-2 border-b-2;
+  border-color: var(--border);
 }
 
 th,
 td {
-  @apply border-b border-gray-300 p-2 min-w-40;
+  @apply border-b p-2 min-w-40;
+  border-color: var(--border);
+  color: var(--foreground);
 }
 
 th {
-  @apply text-left border-b border-black;
+  @apply text-left border-b;
+  border-color: var(--border);
+  color: var(--foreground);
 }
 
 a {
-  @apply border-b-2 border-sky-700 text-sky-700 hover:border-b-2 hover:border-white;
+  @apply border-b-2 hover:border-b-2;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+a:hover {
+  border-color: var(--accent);
 }
 
 ol {
   @apply list-decimal pl-12 mb-4;
+  color: var(--foreground);
 }
 
 ul {
   @apply list-disc pl-12 mb-4;
+  color: var(--foreground);
 }
 
 p {
-  @apply mb-4 text-gray-700;
+  @apply mb-4;
+  color: var(--foreground);
 }
 
 li {
-  @apply text-gray-700;
+  color: var(--foreground);
+}
+
+.syllabus-page {
+  li {
+    @apply mb-2;
+  }
+  table li {
+    @apply mb-0;
+  } 
 }
 
 /* stylelint-disable-next-line */
@@ -68,14 +113,6 @@ li {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 /* Global base styles */
@@ -97,16 +134,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: var(--muted);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--foreground);
 }
 
 /* Custom utility classes that can't be done with Tailwind */

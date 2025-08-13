@@ -12,7 +12,15 @@ excerpt: "Complete course syllabus and learning objectives"
   <tr><td><strong>Credits</strong></td><td>3 Credit Hours</td></tr>
   <tr><td><strong>Time & Location</strong></td><td>Tu/Th, 3:15-4:55PM in Zeis Hall, Rm. 203</td></tr>
   <tr><td><strong>Office Hours</strong></td><td>Mon, Wed & Fri, 2:30 - 3:30 PM (or by appointment) In Rhoades-Robinson, Rm. 220</td></tr>
-  <tr><td><strong>Texts</strong></td><td>There is no required textbook. Required reading materials will be available as electronic resources through the UNCA library and/or will be posted or linked on the course Moodle page.</td></tr>
+  <tr><td><strong>Texts</strong></td><td>
+    In addition to various online articles, we will be reading selected chapters from the following books:
+    <ul>
+        <li>
+            Tufte, E. R. (2001). The visual display of quantitative information (2nd ed.). Graphics Press (order online)
+        </li>
+        <li><a href="https://data-feminism.mitpress.mit.edu/" target="_blank">Data Feminism</a> (Available online, open access)</li>
+        <li>XXX (Available Online via the Ramsey Library)</li>
+  </td></tr>
 </table>
 
 ## Course Description

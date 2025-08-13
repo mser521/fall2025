@@ -43,13 +43,26 @@ const topics = [
     },
     {
       id: 2,
-      title: "Visualizating Qualitative & Quantitative Data",
+      title: "Visualizating & Communicating Quantitative Data",
       description: "All the data stuff...",
       meetings: [
         {
           date: "Tu, Sep 2",
           topic: "What is the purpose of data visualization?",
           activities: ["Data Concepts: Qualitative and quantitative data, provenance, representation, bias", "Theory: Burtin, Tufte", "Quant Practice: Google Sheets; Observable", "Qual Practice: Digital Storytelling"],
+          readings: [
+            {
+              citation: (<>Norman, Donald, Things that make us smart.</>)
+            },
+            {
+              citation: (<>Chapter 1: Graphical Excellence, In The Visual Display of Quantitative Information. Tufte.</>),            },
+            {
+              citation: (<>Chapter 2: Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</>),
+            },
+            {
+              citation: (<>Chapter 3: Sources of Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</>),
+            }
+          ]
         },
         {
           date: "Th, Sep 4",
@@ -66,6 +79,16 @@ const topics = [
         {
           date: "Tu, Sep 16",
           topic: "Perception",
+          readings: [
+            {
+              citation: (<><em>Perception in Visualization</em>. Christopher G. Healey. Department of Computer Science, North Carolina State University.</>),
+              url: "https://www.csc2.ncsu.edu/faculty/healey/PP/"
+            },
+            {
+              citation: (<>Durand, F. (2002, July). <em>Perceptual and artistic principles for effective computer depiction</em> [Course materials]. SIGGRAPH 2002, San Antonio, Texas. Massachusetts Institute of Technology.</>),
+              url: "https://people.csail.mit.edu/fredo/SIG02_ArtScience/"
+            }
+          ]
         },
         {
           date: "Th, Sep 16",

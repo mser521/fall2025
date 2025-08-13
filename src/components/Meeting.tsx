@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 interface Reading {
   citation: React.ReactElement;
-  url: string;
+  url?: string;
 }
 
 interface MeetingData {
@@ -53,10 +53,10 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
     if (hasActivities) {
       return (
         <div className="mb-6">
-            {hasActivities ? <strong className="text-gray-700">Slides / Activities</strong> : ``}
+            {hasActivities ? <strong className="text-gray-700 dark:text-gray-300">Slides / Activities</strong> : ``}
             <ul className="space-y-1">
                 {'activities' in meeting && meeting.activities?.map((activity: string | React.ReactElement, index: number) => (
-                <li key={index} className="mb-2">
+                <li key={index} className="mb-2 text-gray-700 dark:text-gray-300">
                     {activity}
                 </li>
                 ))}
@@ -71,16 +71,18 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
     if (hasReadings) {
       return (
         <div className="mb-6">
-            {hasReadings ? <strong className="text-gray-700">Required Readings</strong> : ``}
+            {hasReadings ? <strong className="text-gray-700 dark:text-gray-300">Required Readings</strong> : ``}
             <ol>
                 {
                 'readings' in meeting && meeting.readings?.map((reading: Reading, index: number) => {
                     return (
-                    <li key={index} className="mb-2">
+                    <li key={index} className="mb-2 text-gray-700 dark:text-gray-300">
                         {reading.citation} {" "}
-                        <a href={reading.url} target="_blank" rel="noopener noreferrer">
-                            Link
-                        </a>
+                        {reading.url && (
+                          <a href={reading.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                              Link
+                          </a>
+                        )}
                     </li>
                     )
                 })
@@ -95,7 +97,12 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
   function renderDiscussionQuestions() {
     if (hasDiscussionQuestions) {
       return (
-        <a href={meeting.discussionQuestions} target="_blank" rel="noopener noreferrer">Discussion Questions</a>
+        <div className="mt-4">
+            {hasDiscussionQuestions ? <strong className="text-gray-700 dark:text-gray-300">Discussion Questions</strong> : ``}
+            <div className="text-gray-700 dark:text-gray-300">
+                {meeting.discussionQuestions}
+            </div>
+        </div>
       )
     }
   } 
@@ -103,7 +110,7 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
   function renderDetailsButton() {
     if (hasMoreDetails) {
       return (
-            <button onClick={toggleDetails} className="text-black hover:text-sky-700 hover:bg-gray-100 flex justify-center items-center rounded-full w-[35px] h-[35px]">
+            <button onClick={toggleDetails} className="text-black dark:text-white hover:text-sky-700 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white flex justify-center items-center rounded-full w-[35px] h-[35px]">
                 {showDetails ? 
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 15l7-7 7 7" />
@@ -119,8 +126,8 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
   } 
 
   return (
-    <div className={clsx("flex justify-between gap-4 border-b border-black pt-4 pb-2", {
-      'bg-gray-100': isHoliday
+    <div className={clsx("flex justify-between gap-4 border-b border-black dark:border-gray-700 pt-4 pb-2", {
+      'bg-gray-100 dark:bg-gray-800': isHoliday
     })}>
         <div className={clsx("flex gap-4", {
             'flex-col': showDetails,
@@ -132,7 +139,7 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
             <div className="w-full">
                 <p><span className={clsx("transition-all duration-300 ease-in-out", {
                     'font-bold': showDetails,
-                    'text-black': showDetails,
+                    'text-black dark:text-white': showDetails,
                     'uppercase': showDetails
                 })}>{meeting.topic}</span></p>
                 <div className={clsx("overflow-hidden transition-all duration-300 ease-in-out", {

@@ -11,11 +11,11 @@ export default function SchedulePage() {
         <div className="flex-1 space-y-8">
 
           {topics.map((topic) => (
-            <div key={topic.id} className="py-4 ">
-              <h2 className="text-xl font-semibold text-gray-800 mb-2">
+            <div key={topic.id} className="py-4">
+              <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
                 Topic {topic.id}: {topic.title}
               </h2>
-              <p className="pb-6 !mb-1 border-b border-black">{topic.description}</p>
+              <p className="pb-6 !mb-1 border-b border-black dark:border-gray-700 text-gray-700 dark:text-gray-300">{topic.description}</p>
               
               {topic.meetings.map((meeting, index) => (
                 <Meeting meeting={meeting} key={`${topic.id}-${index}`} />

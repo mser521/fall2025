@@ -6,7 +6,7 @@ export default function SyllabusPage() {
   const {title, excerpt} = postData;
   
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 syllabus-page">
       <PageHeader title={title} excerpt={excerpt} />
       
       <div 
