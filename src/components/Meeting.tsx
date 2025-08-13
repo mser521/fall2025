@@ -11,15 +11,21 @@ interface Reading {
 interface MeetingData {
   date: string;
   topic: string;
-  activities?: string[];
+  activities?: (string | React.ReactElement)[];
   readings?: Reading[];
   holiday?: boolean;
+  discussionQuestions?: string;
 }
 
 export default function Meeting({ meeting }: { meeting: MeetingData }) {
-  // Create a unique key for this meeting based on its content
   const meetingKey = `meeting-${meeting.date}-${meeting.topic.replace(/\s+/g, '-').toLowerCase()}`;
-  
+  const hasActivities = 'activities' in meeting && meeting.activities && meeting.activities.length > 0;
+  const hasReadings = 'readings' in meeting && meeting.readings && meeting.readings.length > 0;
+  const hasMoreDetails = hasActivities || hasReadings;
+  const hasDiscussionQuestions = 'discussionQuestions' in meeting && meeting.discussionQuestions;
+  const isHoliday = 'holiday' in meeting && meeting.holiday;
+
+  // state variables:
   const [showDetails, setShowDetails] = useState(false);
 
   const getStoredState = useCallback(() => {
@@ -40,63 +46,63 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
   function toggleDetails() {
     const newState = !showDetails;
     setShowDetails(newState);
-    // Save to localStorage
     localStorage.setItem(meetingKey, JSON.stringify(newState));
   }
 
-  const hasActivities = 'activities' in meeting && meeting.activities && meeting.activities.length > 0;
-  const hasReadings = 'readings' in meeting && meeting.readings && meeting.readings.length > 0;
-  const hasMoreDetails = hasActivities || hasReadings;
-  const isHoliday = 'holiday' in meeting && meeting.holiday;
+  function renderActivities() {
+    if (hasActivities) {
+      return (
+        <div className="mb-6">
+            {hasActivities ? <strong className="text-gray-700">Slides / Activities</strong> : ``}
+            <ul className="space-y-1">
+                {'activities' in meeting && meeting.activities?.map((activity: string | React.ReactElement, index: number) => (
+                <li key={index} className="mb-2">
+                    {activity}
+                </li>
+                ))}
+            </ul>
+        </div>
+      )
+    }
+    return ``;
+  } 
 
-  return (
-    <div className={clsx("flex gap-4 border-t border-black pt-4", {
-      'bg-gray-50': isHoliday
-    })}>
-        <span className={clsx("w-[100px] flex-shrink-0 transition-all duration-300 ease-in-out", {
-            'font-bold': showDetails
-        })}>{meeting.date}</span>
-        <div className="w-full">
-            <p><span className={clsx("transition-all duration-300 ease-in-out", {
-                'font-bold': showDetails
-            })}>{meeting.topic}</span></p>
-            <div className={clsx("overflow-hidden transition-all duration-300 ease-in-out", {
-                'text-gray-100': isHoliday,
-                'max-h-0 opacity-0': !showDetails,
-                'max-h-[500px] opacity-100': showDetails
-            })}>
-                <div>
-                {hasActivities ? <strong>Activities</strong> : ``}
-                <ul className="space-y-1">
-                    {'activities' in meeting && meeting.activities?.map((activity: string, index: number) => (
-                    <li key={index}>
-                        {activity}
+  function renderReadings() {
+    if (hasReadings) {
+      return (
+        <div className="mb-6">
+            {hasReadings ? <strong className="text-gray-700">Required Readings</strong> : ``}
+            <ol>
+                {
+                'readings' in meeting && meeting.readings?.map((reading: Reading, index: number) => {
+                    return (
+                    <li key={index} className="mb-2">
+                        {reading.citation} {" "}
+                        <a href={reading.url} target="_blank" rel="noopener noreferrer">
+                            Link
+                        </a>
                     </li>
-                    ))}
-                </ul>
-                </div>
-                
-                <div>
-                {hasReadings ? <strong>Readings</strong> : ``}
-                <ul className="space-y-1 !pl-8 !list-none">
-                    {
-                    'readings' in meeting && meeting.readings?.map((reading: Reading, index: number) => {
-                        return (
-                        <li className="-indent-8 mb-4" key={index}>
-                            {reading.citation} {" "}
-                            <a href={reading.url} target="_blank" rel="noopener noreferrer">
-                                Link
-                            </a>
-                        </li>
-                        )
-                    })
-                    }
-                </ul>
-                </div>
-            </div>
-        </div>  
-        <div>
-            {hasMoreDetails ?
+                    )
+                })
+                }
+            </ol>
+        </div>
+      )
+    }
+    return ``;
+  }
+
+  function renderDiscussionQuestions() {
+    if (hasDiscussionQuestions) {
+      return (
+        <a href={meeting.discussionQuestions} target="_blank" rel="noopener noreferrer">Discussion Questions</a>
+      )
+    }
+  } 
+
+  function renderDetailsButton() {
+    if (hasMoreDetails) {
+      return (
             <button onClick={toggleDetails} className="text-black hover:text-sky-700 hover:bg-gray-100 flex justify-center items-center rounded-full w-[35px] h-[35px]">
                 {showDetails ? 
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -107,7 +113,42 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
                     </svg>
                 }
             </button>
-            : ``}
+        )
+    }
+    return ``
+  } 
+
+  return (
+    <div className={clsx("flex justify-between gap-4 border-b border-black pt-4 pb-2", {
+      'bg-gray-100': isHoliday
+    })}>
+        <div className={clsx("flex gap-4", {
+            'flex-col': showDetails,
+            'md:flex-row': showDetails
+        })}>
+            <span className={clsx("w-[100px] flex-shrink-0 transition-all duration-300 ease-in-out", {
+                'font-bold': true
+            })}>{meeting.date}</span>
+            <div className="w-full">
+                <p><span className={clsx("transition-all duration-300 ease-in-out", {
+                    'font-bold': showDetails,
+                    'text-black': showDetails,
+                    'uppercase': showDetails
+                })}>{meeting.topic}</span></p>
+                <div className={clsx("overflow-hidden transition-all duration-300 ease-in-out", {
+                    'text-gray-100': isHoliday,
+                    'max-h-0 opacity-0': !showDetails,
+                    'max-h-[1000px] opacity-100': showDetails
+                })}>
+                    
+                    {renderActivities()}
+                    {renderReadings()}
+                    {renderDiscussionQuestions()}
+                </div>
+            </div> 
+        </div> 
+        <div>
+            {renderDetailsButton()}
         </div>
     </div>
   )

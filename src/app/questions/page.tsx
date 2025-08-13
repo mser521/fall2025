@@ -2,11 +2,11 @@ import { getAllPostIds, getPostData } from '@/lib/markdown';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
 
-export default function AssignmentsPage() {
+export default function QuestionsPage() {
   // Get all assignment files from content/assignments directory
-  const assignmentIds = getAllPostIds('assignments');
-  const assignments = assignmentIds.map(({ params }) => {
-    const postData = getPostData(params.id, 'assignments');
+  const ids = getAllPostIds('questions');
+  const questions = ids.map(({ params }) => {
+    const postData = getPostData(params.id, 'questions');
     return {
       id: params.id,
       title: postData.title,
@@ -19,8 +19,8 @@ export default function AssignmentsPage() {
   return (
     <div className="space-y-6">
       <PageHeader 
-        title="Course Assignments" 
-        excerpt="All course assignments and their requirements"
+        title="Discussion Questions" 
+        excerpt="In-class discussion questions"
       />
       
       <table>
@@ -32,17 +32,17 @@ export default function AssignmentsPage() {
           </tr> 
         </thead>
         <tbody>
-        {assignments.map((assignment) => (
-          <tr key={assignment.id} className="p-6">
+        {questions.map((question) => (
+          <tr key={question.id} className="p-6">
             <td>
               <Link 
-                href={`/assignments/${assignment.id}`}
+                href={`/questions/${question.id}`}
               >
-                {assignment.title}
+                {question.title}
               </Link>
             </td>
-            <td>{assignment.type}</td>
-            <td>Due: {assignment.date}</td>
+            <td>{question.type}</td>
+            <td>Due: {question.date}</td>
             
           </tr>
         ))}

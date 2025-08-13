@@ -4,11 +4,12 @@ date: "2025-08-26"
 excerpt: "Additional resources, readings, and helpful links for MSER 521"
 ---
 
-## Awesome Websites
+## Books and Learning Resources
 
 | Link | Source | Type |
 |------|--------|------|
-| [Civics of Technology](https://www.civicsoftechnology.org/) | | 
+| [Civics of Technology](https://www.civicsoftechnology.org/) | A group of social studies and educational technology educators. | Educational Resource |
+| [Data Feminism](https://data-feminism.mitpress.mit.edu/) | By Catherine D'Ignazio and Lauren F. Klein. MIT Press. 2020. | Book |
 
 ## Inspiring Data Stories
 

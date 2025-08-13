@@ -23,11 +23,13 @@ This course applies principles from Human-Computer Interaction (HCI) and informa
 
 By the end of the course, students will be able to:
 
-- Apply principles of effective visual design and perception to data communication.
-- Analyze and critique data sources and underlying assumptions.
-- Use common tools (e.g., Excel, Tableau, Python, R, JavaScript) to visualize and analyze data.
-- Craft data stories tailored to different audiences, including policymakers and the public.
-- Analyze on ethical and social issues related to data representation.
+- Analyze, interpret, and communicate with data effectively to different stakeholders / audiences
+- Analyze and critique data sources and underlying assumptions
+- Apply principles of effective visual design and perception to data communication
+- Apply UX/UI principles to evaluate, test, and refine based on user feedback
+- Develop technical fluency with data analysis and visualization tools
+- Understand both the possibilities and limits of using data to represent complex problems
+
 
 ## Course Structure
 
