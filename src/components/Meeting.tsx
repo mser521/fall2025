@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import clsx from 'clsx';
 
 interface Reading {
-  citation: React.ReactElement;
+  citation: string | React.ReactElement;
   url?: string;
 }
 
@@ -13,6 +13,7 @@ interface MeetingData {
   topic: string;
   activities?: (string | React.ReactElement)[];
   readings?: Reading[];
+  optionalReadings?: Reading[];
   holiday?: boolean;
   discussionQuestions?: string;
 }
@@ -21,6 +22,7 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
   const meetingKey = `meeting-${meeting.date}-${meeting.topic.replace(/\s+/g, '-').toLowerCase()}`;
   const hasActivities = 'activities' in meeting && meeting.activities && meeting.activities.length > 0;
   const hasReadings = 'readings' in meeting && meeting.readings && meeting.readings.length > 0;
+  const hasOptionalReadings = 'optionalReadings' in meeting && meeting.optionalReadings && meeting.optionalReadings.length > 0;
   const hasMoreDetails = hasActivities || hasReadings;
   const hasDiscussionQuestions = 'discussionQuestions' in meeting && meeting.discussionQuestions;
   const isHoliday = 'holiday' in meeting && meeting.holiday;
@@ -54,9 +56,9 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
       return (
         <div className="mb-6">
             {hasActivities ? <strong className="text-gray-700 dark:text-gray-300">Slides / Activities</strong> : ``}
-            <ul className="space-y-1">
+            <ul>
                 {'activities' in meeting && meeting.activities?.map((activity: string | React.ReactElement, index: number) => (
-                <li key={index} className="mb-2 text-gray-700 dark:text-gray-300">
+                <li key={index} className="text-gray-700 dark:text-gray-300">
                     {activity}
                 </li>
                 ))}
@@ -67,31 +69,28 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
     return ``;
   } 
 
-  function renderReadings() {
-    if (hasReadings) {
-      return (
-        <div className="mb-6">
-            {hasReadings ? <strong className="text-gray-700 dark:text-gray-300">Required Readings</strong> : ``}
-            <ol>
-                {
-                'readings' in meeting && meeting.readings?.map((reading: Reading, index: number) => {
-                    return (
-                    <li key={index} className="mb-2 text-gray-700 dark:text-gray-300">
-                        {reading.citation} {" "}
-                        {reading.url && (
-                          <a href={reading.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
-                              Link
-                          </a>
-                        )}
-                    </li>
-                    )
-                })
-                }
-            </ol>
-        </div>
-      )
-    }
-    return ``;
+  function renderReadings({title, readings}: {title: string, readings:Reading[]}) {
+    return (
+      <div className="mb-6">
+          {<strong className="text-gray-700 dark:text-gray-300">{title}</strong>}
+          <ol>
+              {
+              readings.map((reading: Reading, index: number) => {
+                  return (
+                  <li key={index} className="mb-2 text-gray-700 dark:text-gray-300">
+                      {reading.citation} {" "}
+                      {reading.url && (
+                        <a href={reading.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                            Link
+                        </a>
+                      )}
+                  </li>
+                  )
+              })
+              }
+          </ol>
+      </div>
+    )
   }
 
   function renderDiscussionQuestions() {
@@ -149,7 +148,8 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
                 })}>
                     
                     {renderActivities()}
-                    {renderReadings()}
+                    {hasReadings ? renderReadings({title: 'Required Readings', readings: meeting.readings || []}) : ``}
+                    {hasOptionalReadings ? renderReadings({title: 'Optional Readings', readings: meeting.optionalReadings || []}) : ``}
                     {renderDiscussionQuestions()}
                 </div>
             </div> 

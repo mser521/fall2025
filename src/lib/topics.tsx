@@ -1,20 +1,24 @@
 const topics = [
     {
       id: 1,
-      title: "Concepts in Science Communication",
+      title: "Science Communication",
       description: "Understanding the importance and audience of evidence-based communication",
       meetings: [
         {
           date: "Tu, Aug 19",
-          topic: "Course overview and introduction to evidence-based communication",
-          activities: ["Course overview", "Introduction to evidence-based communication"],
+          topic: "Course overview and introduction",
+          activities: [
+            <a key="slides" href="https://docs.google.com/presentation/d/1hutd4lpwzqO-RZKIL1GDzUOc_O5UYFVdwxOpOBuBkJI/edit?slide=id.g3783a768271_0_49#slide=id.g3783a768271_0_49" target="_blank" rel="noopener noreferrer">Slides</a>,
+            <a key="syllabus" href="./syllabus/">Syllabus</a>,
+            <a key="syllabus" href="./activities/ai-policy/">AI Policy Activity</a>,
+          ],
         },
         {
           date: "Th, Aug 21",
-          topic: "Audience, purpose, goals",
+          topic: "Science Communication and Public Trust",
           activities: [
-            <a key="slides"   href="https://docs.google.com/presentation/d/1-sJCYIeiRY0Ipx0xwzy0MESvKaExJEU8MdmzxG1wyt8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Slides</a>,
-            <a key="dq01" href="./questions/dq01/">Discussion Questions</a>
+            <a key="slides" href="https://docs.google.com/presentation/d/1-sJCYIeiRY0Ipx0xwzy0MESvKaExJEU8MdmzxG1wyt8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Slides</a>,
+            <a key="dq01" href="./activities/dq01/">Discussion Questions</a>
           ],
           readings: [
             {
@@ -25,29 +29,95 @@ const topics = [
               citation: (<>Thomas, G., & Durant, J. (1987). <em>Why should we promote the public understanding of science?</em> Scientific literacy papers, 1, 1-14.</>), 
               url: "https://ocw.mit.edu/courses/sts-014-principles-and-practice-of-science-communication-spring-2006/9a2dfa5e9d69b2c0bd06b38606827f1c_durant_promote.pdf"
             },
-            // { 
-            //   citation: (<>Galef, J. (2016, June). <em>Why you think you&apos;re right—even if you&apos;re wrong</em> [Video]. TED Conferences. </>), 
-            //   url: "https://www.ted.com/talks/julia_galef_why_you_think_you_re_right_even_if_you_re_wrong"
-            // }
           ]
         },
         {
           date: "Tu, Aug 26",
-          topic: "Why is evidence-based communication important? Communicating science in a polarized world"
+          topic: "Politics of Science Communication",
+          activities: [
+            <a key="communication03" href="./activities/communication03/">Who Said It? - Elite Cues in Environmental News</a>
+          ],
+          readings: [
+            { 
+              citation: (<>A. Lupia, Communicating science in politicized environments, Proc. Natl. Acad. Sci. U.S.A. 110 (supplement_3) 14048-14054, https://doi.org/10.1073/pnas.1212726110 (2013).</>), 
+              url: "https://doi.org/10.1073/pnas.1212726110"
+            },
+            { 
+              citation: "A. Tyson, C. Funk, B. Kennedy, What the Data Says About Americans’ Views of Climate Change (Pew Research Center, 2023).",
+              url: "https://www.pewresearch.org/short-reads/2023/08/09/what-the-data-says-about-americans-views-of-climate-change/"
+            },
+          ],
+          optionalReadings: [
+            { 
+              citation: "L. Van Boven, P. J. Ehret, D. K. Sherman, Psychological barriers to bipartisan public support for climate policy. Perspect. Psychol. Sci. 13, 492–507 (2018)." 
+            },
+            { 
+              citation: "M. Vlasceanu et al., Addressing climate change with behavioral science: A global intervention tournament in 63 countries. Sci. Adv. 10, eadj5778 (2024)." 
+            },
+            { 
+              citation: "P. J. Egan, M. Mullin, Climate change: US public opinion. Annu. Rev. Polit. Sci. 20, 209–227 (2017)" 
+            },
+            { 
+              citation: "T. Bolsen, J. N. Druckman, Do partisanship and politicization undermine the impact of a scientific consensus message about climate change? Group Process Intergr. Relat. 21, 389–402 (2018)." 
+            },
+            { 
+              citation: "E. Merkley, D. A. Stecula, Party cues in the news: Democratic elites, Republican backlash, and the dynamics of climate skepticism. Br. J. Polit. Sci. 51, 1439–1456 (2021)" 
+            },
+            
+          ]
         },
-        {
-          date: "Th, Aug 28",
-          topic: "Lab 1: Analyze a public communication campaign",
-        }
       ]
     },
-    {
-      id: 2,
-      title: "Visualizating & Communicating Quantitative Data",
+    {id: 2,
+      title: "Data",
       description: "All the data stuff...",
       meetings: [
         {
+          date: "Th, Aug 28",
+          topic: "Data Foundations I: What is data?",
+          readings: [
+            {
+              citation: (<>Gitelman, Lisa. &quot;Raw Data&quot; is an Oxymoron (Introduction)</>),
+              url: "https://dsl.lsu.edu/nehtextualdata/wp-content/uploads/2017/11/RawData.pdf"
+            },
+            {
+              citation: (<>Baynes, K., & Mitchell, A. (2020, November 4). <em>The Common Metadata Repository: The foundation of NASA&apos;s Earth observation data</em>. Earthdata.</>),
+              url: "https://www.earthdata.nasa.gov/news/feature-articles/common-metadata-repository-foundation-nasas-earth-observation-data"
+            },
+          ],
+          activities: [
+            "Slides",
+            (<a key="data01" href="./activities/data01/">Data Activity</a>)
+          ],
+          assigned: "Homework 1: Analyze a public communication campaign"
+        },
+        {
           date: "Tu, Sep 2",
+          topic: "Data Foundations II: Categorization, and Classification",
+          readings: [
+            {
+              citation: (<>Kitchin, R. (2014). <em>The Data Revolution: Big Data, Open Data, Data Infrastructures and Their Consequences</em>. Sage. Chapter 1. Conceptualising Data. TODO: Contact Ramsey Library.</>),
+              url: "https://methods.sagepub.com/book/mono/the-data-revolution/chpt/conceptualising-data"
+            }
+          ],
+          activities: [
+            "Slides",
+            (<a key="data02" href="./activities/data02/">Data & Public Trust</a>)
+          ],
+        },
+        {
+          date: "Th, Sep 4",
+          topic: "Data Foundations III: Bias & Trust",
+        },
+      ]
+    },
+    {
+      id: 3,
+      title: "Data Visualization",
+      description: "All the data stuff...",
+      meetings: [
+        {
+          date: "Tu, Sep 9",
           topic: "What is the purpose of data visualization?",
           activities: ["Data Concepts: Qualitative and quantitative data, provenance, representation, bias", "Theory: Burtin, Tufte", "Quant Practice: Google Sheets; Observable", "Qual Practice: Digital Storytelling"],
           readings: [
@@ -65,16 +135,8 @@ const topics = [
           ]
         },
         {
-          date: "Th, Sep 4",
-          topic: "Lab 2: Create a database from scratch",
-        },
-        {
-          date: "Tu, Sep 9",
-          topic: "Discussion of good and bad visualizations",
-        },
-        {
           date: "Th, Sep 11",
-          topic: "Lab 3: Google Sheets",
+          topic: "Discussion of good and bad visualizations",
         },
         {
           date: "Tu, Sep 16",
@@ -91,7 +153,7 @@ const topics = [
           ]
         },
         {
-          date: "Th, Sep 16",
+          date: "Th, Sep 18",
           topic: "Lab 4: Observable",          
         },
         {
@@ -105,8 +167,8 @@ const topics = [
       ]
     },
     {
-      id: 3,
-      title: " Challenges Unique to Environmental Data",
+      id: 4,
+      title: "Visualizing Qualitative Data",
       description: "Uncertainty, scale, complexity, time, and geospatial",
       meetings: [ 
         {
@@ -138,13 +200,19 @@ const topics = [
       ]
     },
     {
-      id: 4,
-      title: "Designing for Understanding",
+      id: 5,
+      title: "Design",
       description: "Visualizing data to support decision-making",
       meetings: [
         {
           date: "Tu, Oct 21",
-          topic: "Design Part 1: Visual Design",
+          topic: "Design Part 1: Design",
+          readings: [
+            {
+              citation: (<>Norman, D. A. (1994). <em>Things that make us smart</em>. Basic Books. <em>Chapter 3: The Power of Representation</em></>),
+              url: "https://hci.ucsd.edu/220/representation.pdf"
+            }
+          ]
         },
         {
           date: "Th, Oct 23",
@@ -152,7 +220,7 @@ const topics = [
         },
         {
           date: "Tu, Oct 28",
-          topic: "Design Part 2: Usability & Design Patterns",
+          topic: "Design Part 2: Rules of visual hierarchy",
         },
         {
           date: "Th, Oct 30",
@@ -177,8 +245,8 @@ const topics = [
       ]
     },
     {
-      id: 5,
-      title: "Community Engagement",
+      id: 6,
+      title: "Public Participation & Community Engagement",
       description: "Public participation and communication strategies",
       meetings: [
         {

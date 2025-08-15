@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 export default function QuestionsPage() {
   // Get all assignment files from content/assignments directory
-  const ids = getAllPostIds('questions');
-  const questions = ids.map(({ params }) => {
-    const postData = getPostData(params.id, 'questions');
+  const ids = getAllPostIds('activities');
+  const activities = ids.map(({ params }) => {
+    const postData = getPostData(params.id, 'activities');
     return {
       id: params.id,
       title: postData.title,
@@ -19,8 +19,8 @@ export default function QuestionsPage() {
   return (
     <div className="space-y-6">
       <PageHeader 
-        title="Discussion Questions" 
-        excerpt="In-class discussion questions"
+        title="In-Class Activities" 
+        excerpt="In-class activities and discussion questions"
       />
       
       <table>
@@ -32,17 +32,17 @@ export default function QuestionsPage() {
           </tr> 
         </thead>
         <tbody>
-        {questions.map((question) => (
-          <tr key={question.id} className="p-6">
+        {activities.map((activity) => (
+          <tr key={activity.id} className="p-6">
             <td>
               <Link 
-                href={`/questions/${question.id}`}
+                href={`/activities/${activity.id}`}
               >
-                {question.title}
+                {activity.title}
               </Link>
             </td>
-            <td>{question.type}</td>
-            <td>Due: {question.date}</td>
+            <td>{activity.type}</td>
+            <td>Due: {activity.date}</td>
             
           </tr>
         ))}

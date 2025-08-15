@@ -77,6 +77,7 @@ a {
 
 a:hover {
   border-color: var(--accent);
+  text-decoration: none;
 }
 
 ol {
@@ -98,7 +99,11 @@ li {
   color: var(--foreground);
 }
 
-.syllabus-page {
+blockquote {
+  @apply border-l-4 bg-gray-50 dark:bg-gray-800 border-black dark:border-gray-600 p-4 pb-2 mb-4;
+}
+
+.syllabus-page, .assignment-page {
   li {
     @apply mb-2;
   }
@@ -154,13 +159,13 @@ html {
   background-clip: text;
 }
 
-.hover-lift {
+/* .hover-lift {
   transition: transform 0.2s ease-in-out;
 }
 
 .hover-lift:hover {
   transform: translateY(-2px);
-}
+} */
 
 /* Print styles */
 @media print {

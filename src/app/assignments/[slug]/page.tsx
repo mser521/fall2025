@@ -17,6 +17,7 @@ export default async function AssignmentPage({ params }: AssignmentPageProps) {
       <PageHeader 
         title={postData.title} 
         excerpt={postData.excerpt}
+        type={postData.type}
       />
       
       <div className="prose prose-lg max-w-none">

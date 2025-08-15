@@ -9,11 +9,18 @@ const postsDirectory = path.join(process.cwd(), 'content');
 
 export interface PostData {
   id: string;
+  num?: string;
   title: string;
   date: string;
+  due_date?: string;
   content: string;
   excerpt?: string;
   type?: string;
+  assigned?: string;
+  readings?: string[];
+  optionalReadings?: string[];
+  activities?: string[];
+  draft?: number;
 }
 
 export function getAllPostIds(subdirectory?: string) {
