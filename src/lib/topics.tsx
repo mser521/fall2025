@@ -1,3 +1,5 @@
+import { url } from "inspector";
+
 const topics = [
     {
       id: 1,
@@ -8,17 +10,35 @@ const topics = [
           date: "Tu, Aug 19",
           topic: "Course overview and introduction",
           activities: [
-            <a key="slides" href="https://docs.google.com/presentation/d/1hutd4lpwzqO-RZKIL1GDzUOc_O5UYFVdwxOpOBuBkJI/edit?slide=id.g3783a768271_0_49#slide=id.g3783a768271_0_49" target="_blank" rel="noopener noreferrer">Slides</a>,
-            <a key="syllabus" href="./syllabus/">Syllabus</a>,
-            <a key="syllabus" href="./activities/ai-policy/">AI Policy Activity</a>,
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/1hutd4lpwzqO-RZKIL1GDzUOc_O5UYFVdwxOpOBuBkJI/edit?slide=id.g3783a768271_0_49#slide=id.g3783a768271_0_49",
+              draft: 1
+            },
+            {
+              title: "Syllabus",
+              url: "./syllabus/",
+            },
+            {
+              title: "AI Policy Activity",
+              url: "./activities/ai-policy/",
+              draft: 1
+            },
           ],
         },
         {
           date: "Th, Aug 21",
-          topic: "Science Communication and Public Trust",
-          activities: [
-            <a key="slides" href="https://docs.google.com/presentation/d/1-sJCYIeiRY0Ipx0xwzy0MESvKaExJEU8MdmzxG1wyt8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Slides</a>,
-            <a key="dq01" href="./activities/dq01/">Discussion Questions</a>
+          topic: "Introduction to science communication",
+          activities: [{
+            title: "Slides",
+            url: "https://docs.google.com/presentation/d/1-sJCYIeiRY0Ipx0xwzy0MESvKaExJEU8MdmzxG1wyt8/edit?usp=sharing",
+            draft: 1
+          },
+          {
+            title: "Discussion Questions",
+            url: "./activities/communication01/",
+            draft: 1
+          }
           ],
           readings: [
             {
@@ -33,9 +53,13 @@ const topics = [
         },
         {
           date: "Tu, Aug 26",
-          topic: "Politics of Science Communication",
+          topic: "Communicating science in politicized environments",
           activities: [
-            <a key="communication03" href="./activities/communication03/">Who Said It? - Elite Cues in Environmental News</a>
+            { 
+              title: "Who Said It? - Elite Cues in Environmental News",
+              url: "./activities/communication02/",
+              draft: 1
+            }
           ],
           readings: [
             { 
@@ -43,27 +67,27 @@ const topics = [
               url: "https://doi.org/10.1073/pnas.1212726110"
             },
             { 
-              citation: "A. Tyson, C. Funk, B. Kennedy, What the Data Says About Americans’ Views of Climate Change (Pew Research Center, 2023).",
+              citation: "A. Tyson, C. Funk, B. Kennedy, What the Data Says About Americans' Views of Climate Change (Pew Research Center, 2023).",
               url: "https://www.pewresearch.org/short-reads/2023/08/09/what-the-data-says-about-americans-views-of-climate-change/"
             },
           ],
           optionalReadings: [
             { 
-              citation: "L. Van Boven, P. J. Ehret, D. K. Sherman, Psychological barriers to bipartisan public support for climate policy. Perspect. Psychol. Sci. 13, 492–507 (2018)." 
+              citation: "T. Bolsen, J. N. Druckman, Do partisanship and politicization undermine the impact of a scientific consensus message about climate change? Group Process Intergr. Relat. 21, 389–402 (2018).",
+              url: "https://faculty.wcas.northwestern.edu/jnd260/pub/Bolsen%20and%20Druckman%20Do%20Partisanship%20and%20Politicization%20Undermine.pdf"
             },
             { 
-              citation: "M. Vlasceanu et al., Addressing climate change with behavioral science: A global intervention tournament in 63 countries. Sci. Adv. 10, eadj5778 (2024)." 
+              citation: "E. Merkley, D. A. Stecula, Party cues in the news: Democratic elites, Republican backlash, and the dynamics of climate skepticism. Br. J. Polit. Sci. 51, 1439–1456 (2021)",
+              url: "https://www.researchgate.net/publication/338823789_Party_Cues_in_the_News_Democratic_Elites_Republican_Backlash_and_the_Dynamics_of_Climate_Skepticism"
             },
             { 
-              citation: "P. J. Egan, M. Mullin, Climate change: US public opinion. Annu. Rev. Polit. Sci. 20, 209–227 (2017)" 
+              citation: "L. Van Boven, P. J. Ehret, D. K. Sherman, Psychological barriers to bipartisan public support for climate policy. Perspect. Psychol. Sci. 13, 492–507 (2018).",
+              url: "https://journals.sagepub.com/doi/10.1177/1745691617748966"
             },
             { 
-              citation: "T. Bolsen, J. N. Druckman, Do partisanship and politicization undermine the impact of a scientific consensus message about climate change? Group Process Intergr. Relat. 21, 389–402 (2018)." 
+              citation: "M. Vlasceanu et al., Addressing climate change with behavioral science: A global intervention tournament in 63 countries. Sci. Adv. 10, eadj5778 (2024).",
+              url: "https://pubmed.ncbi.nlm.nih.gov/38324680/"
             },
-            { 
-              citation: "E. Merkley, D. A. Stecula, Party cues in the news: Democratic elites, Republican backlash, and the dynamics of climate skepticism. Br. J. Polit. Sci. 51, 1439–1456 (2021)" 
-            },
-            
           ]
         },
       ]
@@ -86,8 +110,16 @@ const topics = [
             },
           ],
           activities: [
-            "Slides",
-            (<a key="data01" href="./activities/data01/">Data Activity</a>)
+            {
+              title: "Slides",
+              url: "#",
+              draft: 1
+            },
+            {
+              title: "Data Activity",
+              url: "./activities/data01/",
+              draft: 1
+            }
           ],
           assigned: "Homework 1: Analyze a public communication campaign"
         },
@@ -101,8 +133,16 @@ const topics = [
             }
           ],
           activities: [
-            "Slides",
-            (<a key="data02" href="./activities/data02/">Data & Public Trust</a>)
+            { 
+              title: "Slides",
+              url: "#",
+              draft: 1
+            },
+            {
+              title: "Data & Public Trust",
+              url: "./activities/data02/",
+              draft: 1
+            }
           ],
         },
         {
@@ -114,12 +154,11 @@ const topics = [
     {
       id: 3,
       title: "Data Visualization",
-      description: "All the data stuff...",
+      description: "Data Concepts: Qualitative and quantitative data, provenance, representation, bias, Theory: Burtin, Tufte, Quant Practice: Google Sheets; Observable, Qual Practice: Digital Storytelling",
       meetings: [
         {
           date: "Tu, Sep 9",
           topic: "What is the purpose of data visualization?",
-          activities: ["Data Concepts: Qualitative and quantitative data, provenance, representation, bias", "Theory: Burtin, Tufte", "Quant Practice: Google Sheets; Observable", "Qual Practice: Digital Storytelling"],
           readings: [
             {
               citation: (<>Norman, Donald, Things that make us smart.</>)

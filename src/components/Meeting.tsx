@@ -2,16 +2,23 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import clsx from 'clsx';
+import Link from 'next/link';
 
 interface Reading {
   citation: string | React.ReactElement;
   url?: string;
 }
 
+interface Activity {
+  title: string;
+  url?: string;
+  draft?: number;
+}
+
 interface MeetingData {
   date: string;
   topic: string;
-  activities?: (string | React.ReactElement)[];
+  activities?: Activity[];
   readings?: Reading[];
   optionalReadings?: Reading[];
   holiday?: boolean;
@@ -51,15 +58,29 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
     localStorage.setItem(meetingKey, JSON.stringify(newState));
   }
 
+  function renderActivity(activity: Activity) {
+    if (activity.draft && activity.draft === 1) {
+      return activity.title;
+    }
+    
+    const isExternalLink = activity.url?.startsWith('https');
+    const url = activity.url || '#';
+    
+    if (isExternalLink) {
+      return (<Link href={url} target="_blank">{activity.title}</Link>);
+    }
+    return (<Link href={url}>{activity.title}</Link>);
+  }
+
   function renderActivities() {
     if (hasActivities) {
       return (
         <div className="mb-6">
             {hasActivities ? <strong className="text-gray-700 dark:text-gray-300">Slides / Activities</strong> : ``}
             <ul>
-                {'activities' in meeting && meeting.activities?.map((activity: string | React.ReactElement, index: number) => (
+                {'activities' in meeting && meeting.activities?.map((activity: Activity, index: number) => (
                 <li key={index} className="text-gray-700 dark:text-gray-300">
-                    {activity}
+                    {renderActivity(activity)}
                 </li>
                 ))}
             </ul>

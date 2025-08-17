@@ -32,14 +32,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${abril.variable} ${poppins.variable}`}>
         <Navigation />
-        {/* <div className="flex"> */}
-          {/* <div className="mt-72">
-            <TopicNav topics={topics} />
-          </div> */}
           <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             {children}
           </main>
-        {/* </div> */}
       </body>
     </html>
   );
