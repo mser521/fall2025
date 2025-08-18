@@ -88,7 +88,13 @@ const topics = [
               citation: "M. Vlasceanu et al., Addressing climate change with behavioral science: A global intervention tournament in 63 countries. Sci. Adv. 10, eadj5778 (2024).",
               url: "https://pubmed.ncbi.nlm.nih.gov/38324680/"
             },
-          ]
+          ],
+          assigned: {
+            titleShort: "Homework 1",
+            title: "Analyze a public communication campaign",
+            url: "./assignments/hw01/",
+            draft: 1
+          }
         },
       ]
     },
@@ -121,7 +127,6 @@ const topics = [
               draft: 1
             }
           ],
-          assigned: "Homework 1: Analyze a public communication campaign"
         },
         {
           date: "Tu, Sep 2",
@@ -144,6 +149,12 @@ const topics = [
               draft: 1
             }
           ],
+          due: {
+            titleShort: "Homework 1",
+            title: "Analyze a public communication campaign",
+            url: "./assignments/hw01/",
+            draft: 1
+          }
         },
         {
           date: "Th, Sep 4",

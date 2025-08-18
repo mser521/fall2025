@@ -21,6 +21,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "MSER 521 Course Website",
   description: "Course materials and resources for MSER 521",
+  icons: {
+    icon: '/favicon.ico', // or '/your-favicon.png'
+    // apple: '/apple-touch-icon.png', // for iOS devices
+  },
 };
 
 export default function RootLayout({

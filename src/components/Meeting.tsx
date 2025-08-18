@@ -15,7 +15,14 @@ interface Activity {
   draft?: number;
 }
 
-interface MeetingData {
+interface Assignment {
+  titleShort: string;
+  title: string;
+  url?: string;
+  draft?: number;
+}
+
+export interface MeetingData {
   date: string;
   topic: string;
   activities?: Activity[];
@@ -23,9 +30,19 @@ interface MeetingData {
   optionalReadings?: Reading[];
   holiday?: boolean;
   discussionQuestions?: string;
+  assigned?: Assignment | string;
+  due?: Assignment | string;
 }
 
-export default function Meeting({ meeting }: { meeting: MeetingData }) {
+export default function Meeting({ 
+  meeting, 
+  showDetails, 
+  setShowDetails 
+}: { 
+  meeting: MeetingData;
+  showDetails: boolean;
+  setShowDetails: (show: boolean) => void;
+}) {
   const meetingKey = `meeting-${meeting.date}-${meeting.topic.replace(/\s+/g, '-').toLowerCase()}`;
   const hasActivities = 'activities' in meeting && meeting.activities && meeting.activities.length > 0;
   const hasReadings = 'readings' in meeting && meeting.readings && meeting.readings.length > 0;
@@ -33,24 +50,6 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
   const hasMoreDetails = hasActivities || hasReadings;
   const hasDiscussionQuestions = 'discussionQuestions' in meeting && meeting.discussionQuestions;
   const isHoliday = 'holiday' in meeting && meeting.holiday;
-
-  // state variables:
-  const [showDetails, setShowDetails] = useState(false);
-
-  const getStoredState = useCallback(() => {
-    if (typeof window !== 'undefined') {
-      const savedState = localStorage.getItem(meetingKey);
-      if (savedState !== null) {
-        return JSON.parse(savedState);
-      }
-    }
-    return false;
-  }, [meetingKey]);
-
-  // Load state from localStorage on component mount
-  useEffect(() => {
-    setShowDetails(getStoredState());
-  }, [getStoredState]);
 
   function toggleDetails() {
     const newState = !showDetails;
@@ -127,6 +126,16 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
     }
   } 
 
+  function renderAssignment(assignment: Assignment | string) {
+    if (typeof assignment === 'string') {
+      return assignment;
+    }
+    if (assignment.draft && assignment.draft === 1) {
+      return (<>{assignment.titleShort}: {assignment.title}</>);
+    }
+    return (<><Link href={assignment.url || '#'}>{assignment.titleShort}</Link>: {assignment.title}</>);
+  }
+
   function renderDetailsButton() {
     if (hasMoreDetails) {
       return (
@@ -172,6 +181,22 @@ export default function Meeting({ meeting }: { meeting: MeetingData }) {
                     {hasReadings ? renderReadings({title: 'Required Readings', readings: meeting.readings || []}) : ``}
                     {hasOptionalReadings ? renderReadings({title: 'Optional Readings', readings: meeting.optionalReadings || []}) : ``}
                     {renderDiscussionQuestions()}
+                    {
+                      meeting.assigned ? ( 
+                        <>
+                          <strong className="text-gray-700 dark:text-gray-300">Assigned: </strong>
+                          {renderAssignment(meeting.assigned)}
+                        </>
+                        ) : ''
+                    }
+                    {
+                      meeting.due ? ( 
+                        <>
+                          <strong className="text-gray-700 dark:text-gray-300">Due: </strong>
+                          {renderAssignment(meeting.due)}
+                        </>
+                        ) : ''
+                    }
                 </div>
             </div> 
         </div> 
