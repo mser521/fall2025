@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  trailingSlash: true,
+  trailingSlash: false,
   basePath: '/fall2025',
   assetPrefix: '/fall2025/',
   images: {

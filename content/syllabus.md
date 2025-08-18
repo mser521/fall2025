@@ -39,7 +39,7 @@ By the end of the course, students will be able to:
 - Understand both the possibilities and limits of using data to represent complex problems
 
 ## Topics
-- Please see the [course schedule](../)
+- Please see the [course schedule](./)
 
 ## Assessment
 
