@@ -104,15 +104,15 @@ const topics = [
       meetings: [
         {
           date: "Th, Aug 28",
-          topic: "Data Foundations I: What is data?",
+          topic: "Data Fundamentals",
           readings: [
             {
               citation: (<>Gitelman, Lisa. &quot;Raw Data&quot; is an Oxymoron (Introduction)</>),
               url: "https://dsl.lsu.edu/nehtextualdata/wp-content/uploads/2017/11/RawData.pdf"
             },
             {
-              citation: (<>Baynes, K., & Mitchell, A. (2020, November 4). <em>The Common Metadata Repository: The foundation of NASA&apos;s Earth observation data</em>. Earthdata.</>),
-              url: "https://www.earthdata.nasa.gov/news/feature-articles/common-metadata-repository-foundation-nasas-earth-observation-data"
+              citation: (<>Abailable through the Ramsey Library: Chapter 1. Conceptualising Data. Kitchin, R. (2014). <em>The data revolution: Big data, open data, data infrastructures and their consequences</em>. Sage.</>),
+              url: "https://drive.google.com/file/d/1WkUeYB0mpsoURsy3B8RIYXzG5kqNl1Z2/view?usp=sharing"
             },
           ],
           activities: [
@@ -130,13 +130,7 @@ const topics = [
         },
         {
           date: "Tu, Sep 2",
-          topic: "Data Foundations II: Categorization, and Classification",
-          readings: [
-            {
-              citation: (<>Kitchin, R. (2014). <em>The Data Revolution: Big Data, Open Data, Data Infrastructures and Their Consequences</em>. Sage. Chapter 1. Conceptualising Data. TODO: Contact Ramsey Library.</>),
-              url: "https://methods.sagepub.com/book/mono/the-data-revolution/chpt/conceptualising-data"
-            }
-          ],
+          topic: "Lab 1: Constructing data",
           activities: [
             { 
               title: "Slides",
@@ -144,8 +138,8 @@ const topics = [
               draft: 1
             },
             {
-              title: "Data & Public Trust",
-              url: "./activities/data02/",
+              title: "Lab 1: Introduction to Data",
+              url: "./activities/data01/",
               draft: 1
             }
           ],
@@ -158,7 +152,14 @@ const topics = [
         },
         {
           date: "Th, Sep 4",
-          topic: "Data Foundations III: Bias & Trust",
+          topic: "Data bias: Sources and consequences ",
+          activities: [
+            {
+              title: "Slides",
+              url: "#",
+              draft: 1
+            }
+          ]
         },
       ]
     },
@@ -186,7 +187,7 @@ const topics = [
         },
         {
           date: "Th, Sep 11",
-          topic: "Discussion of good and bad visualizations",
+          topic: "Good and bad data visualizations",
         },
         {
           date: "Tu, Sep 16",
@@ -200,34 +201,46 @@ const topics = [
               citation: (<>Durand, F. (2002, July). <em>Perceptual and artistic principles for effective computer depiction</em> [Course materials]. SIGGRAPH 2002, San Antonio, Texas. Massachusetts Institute of Technology.</>),
               url: "https://people.csail.mit.edu/fredo/SIG02_ArtScience/"
             }
-          ]
+          ],
+          assigned: {
+            titleShort: "Homework 2",
+            title: "Critique an information visualization in the news",
+            url: "./assignments/hw02/",
+            draft: 1
+          }
         },
         {
           date: "Th, Sep 18",
-          topic: "Lab 4: Observable",          
-        },
-        {
-          date: "Tu, Sep 23",
-          topic: "Spatial Visualizations",
-        },
-        {
-          date: "Th, Sep 25",
-          topic: "Lab 5: Web GIS",
+          topic: "Other visualization techniques (visualizing uncertainty; geospatial visualizations)",          
         },
       ]
     },
     {
       id: 4,
-      title: "Visualizing Qualitative Data",
-      description: "Uncertainty, scale, complexity, time, and geospatial",
+      title: "Visualization Tools & Technologies",
+      description: "In this unit, we will learn how to use HTML, CSS, and JavaScript to create interactive visualizations.",
       meetings: [ 
         {
+          date: "Tu, Sep 23",
+          topic: "Introduction to HTML and CSS",
+          due: {
+            titleShort: "Homework 2",
+            title: "Critique an information visualization in the news",
+            url: "./assignments/hw02/",
+            draft: 1
+          }
+        },
+        {
+          date: "Th, Sep 25",
+          topic: "Lab 2: HTML and CSS",
+        },
+        {
           date: "Tu, Sep 30",
-          topic: "Participatory Methods",
+          topic: "Introduction to Observable (and JavaScript)",
         },
         {
           date: "Th, Oct 2",
-          topic: "Lab 6: PhotoVoice",
+          topic: "Lab 3: Building charts with observable",
         },
         {
           date: "Tu, Oct 7",
@@ -236,15 +249,15 @@ const topics = [
         },
         {
           date: "Th, Oct 9",
-          topic: "Uncertainty",
+          topic: "Interaction with Observable",
         },
         {
           date: "Tu, Oct 14",
-          topic: "Data about time and space"
+          topic: "Lab 4: Interactive charts and maps with Observable"
         },
         {
           date: "Th, Oct 16",
-          topic: "TBD",
+          topic: "Homework 3 Presentations: Visualization Redesigns",
         },
         
       ]
@@ -256,7 +269,7 @@ const topics = [
       meetings: [
         {
           date: "Tu, Oct 21",
-          topic: "Design Part 1: Design",
+          topic: "Fundamentals of design",
           readings: [
             {
               citation: (<>Norman, D. A. (1994). <em>Things that make us smart</em>. Basic Books. <em>Chapter 3: The Power of Representation</em></>),
@@ -266,39 +279,39 @@ const topics = [
         },
         {
           date: "Th, Oct 23",
-          topic: "Lab",
+          topic: "Creating effective layouts",
         },
         {
           date: "Tu, Oct 28",
-          topic: "Design Part 2: Rules of visual hierarchy",
+          topic: "Lab 5: Introduction to Figma",
         },
         {
           date: "Th, Oct 30",
-          topic: "Lab",
+          topic: "Introduction to storyboarding",
         },
         {
           date: "Tu, Nov 4",
-          topic: "Design Part 3: Accessibility",
+          topic: "Lab 6: Wireframing and storyboarding with Figma",
         },
         {
           date: "Th, Nov 6",
-          topic: "Lab"
+          topic: "Incorporating qualitative and crowd-sourced data"
         },
         {
           date: "Tu, Nov 11",
-          topic: "Design Part 4: Heuristic Evaluation"
+          topic: "Lab 7: PhotoVoice"
         },
-        {
-          date: "Th, Nov 13",
-          topic: "Lab: Wireframing with Figma"
-        }
       ]
     },
     {
       id: 6,
-      title: "Public Participation & Community Engagement",
-      description: "Public participation and communication strategies",
+      title: "Special Topics",
+      description: "Case studies and special topics",
       meetings: [
+        {
+          date: "Th, Nov 13",
+          topic: "TBD"
+        },
         {
           date: "Tu, Nov 18",
           holiday: true,
@@ -319,7 +332,7 @@ const topics = [
         },
         {
           date: "Tu, Dec 2",
-          topic: "Last day of class",
+          topic: "TBD",
         },
 
       ]

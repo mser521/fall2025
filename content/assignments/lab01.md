@@ -1,5 +1,5 @@
 ---
-title: "Design a Database"
+title: "Introduction to Data"
 num: 1
 date: "2025-08-28"
 type: "lab"
