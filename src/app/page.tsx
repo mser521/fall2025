@@ -1,16 +1,15 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import PageHeader from '@/components/PageHeader';
+import PageHeader from '@/components/PageHeaderExpandable';
 import Meeting from '@/components/Meeting';
 import topics from '@/lib/topics';
 
 export default function SchedulePage() {
-  const [allExpanded, setAllExpanded] = useState(false);
   const [meetingStates, setMeetingStates] = useState<Record<string, boolean>>({});
 
   // Load saved states from localStorage on mount
-  useEffect(() => {
+  function loadSavedStates() {
     const savedStates: Record<string, boolean> = {};
     topics.forEach(topic => {
       topic.meetings.forEach((meeting, index) => {
@@ -24,22 +23,10 @@ export default function SchedulePage() {
       });
     });
     setMeetingStates(savedStates);
-  }, []);
+  }
 
-  const toggleAll = () => {
-    const newExpanded = !allExpanded;
-    setAllExpanded(newExpanded);
-    
-    const newStates: Record<string, boolean> = {};
-    topics.forEach(topic => {
-      topic.meetings.forEach((meeting, index) => {
-        const meetingKey = `meeting-${meeting.date}-${meeting.topic.replace(/\s+/g, '-').toLowerCase()}`;
-        newStates[meetingKey] = newExpanded;
-        localStorage.setItem(meetingKey, JSON.stringify(newExpanded));
-      });
-    });
-    setMeetingStates(newStates);
-  };
+  useEffect(loadSavedStates, []);
+
 
   const setMeetingState = (meetingKey: string, show: boolean) => {
     setMeetingStates(prev => ({
@@ -50,17 +37,8 @@ export default function SchedulePage() {
 
   return (
     <div className="space-y-6">
-      <PageHeader title="Course Schedule" excerpt="Topic-based schedule with specific meeting dates" />
+      <PageHeader title="Course Schedule" excerpt="Topic-based schedule with specific meeting dates" setMeetingStates={setMeetingStates} meetingStates={meetingStates} />
       
-      <div className="flex justify-end mb-4">
-        <button
-          onClick={toggleAll}
-          className="px-4 py-2 border-2 border-black dark:border-gray-700 text-gray-700 dark:text-gray-300 transition-colors"
-        >
-          {allExpanded ? 'Collapse All' : 'Expand All'}
-        </button>
-      </div>
-
       {topics.map((topic) => (
         <div key={topic.id} className="mb-16">
           <h2>Topic {topic.id}: {topic.title}</h2>

@@ -28,25 +28,25 @@
 }
 
 h1 {
-  @apply text-4xl font-light mb-8 mt-12;
+  @apply text-3xl md:text-4xl font-light mb-8 mt-12;
   font-family: var(--font-poppins), serif;
   color: var(--foreground);
 }
 
 h2 {
-  @apply text-3xl mb-4 mt-8;
+  @apply text-xl md:text-2xl mb-4 mt-8 font-bold;
   font-family: var(--font-poppins), serif;
   color: var(--foreground);
 }
 
 h3, .logo {
-  @apply text-xl font-bold mb-2 mt-6;
+  @apply text-lg md:text-xl font-bold mb-2 mt-6;
   font-family: var(--font-poppins), serif;
   color: var(--foreground);
 }
 
 h4 {
-  @apply text-xl font-bold mb-4 mt-4;
+  @apply text-lg md:text-xl font-bold mb-4 mt-4;
   font-family: var(--font-poppins), serif;
   color: var(--foreground);
 }

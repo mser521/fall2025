@@ -4,9 +4,10 @@ interface PageHeaderProps {
   title: string;
   excerpt?: string;
   type?: string;
+  includeExpandButton?: boolean
 }
 
-export default function PageHeader({ title, excerpt, type }: PageHeaderProps) {
+export default function PageHeader({ title, excerpt, type, includeExpandButton=false }: PageHeaderProps) {
   const className = '!border-transparent hover:border-b-2';
   return (
     <div className="border-b border-gray-200 dark:border-gray-700 pb-4">
