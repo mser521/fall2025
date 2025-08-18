@@ -52,7 +52,7 @@ h4 {
 }
 
 table {
-  @apply w-full border-collapse border-t-2 border-b-2;
+  @apply w-full border-collapse mb-4;
   border-color: var(--border);
 }
 

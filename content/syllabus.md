@@ -1,10 +1,8 @@
 ---
-title: "Course Syllabus"
+title: "Syllabus: Visualizing & Communicating Data"
 date: "2025-08-26"
-excerpt: "Complete course syllabus and learning objectives"
 ---
 
-## MSER 521: Visualizing & Communicating Data
 
 <table>
   <tr><td><strong>Course</strong></td><td>MSER 521: Visualizing and Communicating Data</td></tr>
@@ -12,15 +10,17 @@ excerpt: "Complete course syllabus and learning objectives"
   <tr><td><strong>Credits</strong></td><td>3 Credit Hours</td></tr>
   <tr><td><strong>Time & Location</strong></td><td>Tu/Th, 3:15-4:55PM in Zeis Hall, Rm. 203</td></tr>
   <tr><td><strong>Office Hours</strong></td><td>Mon, Wed & Fri, 2:30 - 3:30 PM (or by appointment) In Rhoades-Robinson, Rm. 220</td></tr>
-  <tr><td><strong>Texts</strong></td><td>
-    In addition to various online articles, we will be reading selected chapters from the following books:
-    <ul>
-        <li>
-            Tufte, E. R. (2001). The visual display of quantitative information (2nd ed.). Graphics Press (order online)
-        </li>
-        <li><a href="https://data-feminism.mitpress.mit.edu/" target="_blank">Data Feminism</a> (Available online, open access)</li>
-        <li>XXX (Available Online via the Ramsey Library)</li>
-  </td></tr>
+  <tr>
+    <td><strong>Texts</strong></td>
+    <td>
+      Most of the readings are available online with the exception of the Tufte book, which you will need to purchase:
+      <ul>
+          <li>
+              Tufte, E. R. (2001). The visual display of quantitative information (2nd ed.). Graphics Press (order online)
+          </li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
 ## Course Description
@@ -38,64 +38,48 @@ By the end of the course, students will be able to:
 - Develop technical fluency with data analysis and visualization tools
 - Understand both the possibilities and limits of using data to represent complex problems
 
-
-## Course Structure
-
-### Week 1-2: Concepts in Science Communication
-- Audience, purpose, goals
-- Politics
-- Legibility
-- Epistemic considerations: Whose evidence? Presences and absences.
-
-### Week 3-8: Visualizating Qualitative & Quantitative Data
-- Data Concepts: Qualitative and quantitative data, provenance, representation, bias
-- Theory: Burtin, Tufte
-- Quant Practice: Google Sheets; Observable
-- Qual Practice: Digital Storytelling
-
-**Homework**
-
-- HW1: Analyze a Science Communication piece.
-- HW2: Quantitative Data Visualization Homework
-- HW3: Qualitative Data Visualization Homework
-
-**Labs**
-
-- Lab 1: Create a database from scratch.
-- Lab 2: Google Sheets Exercise
-- Lab 3: Observable Exercise
-
-
-
-
-### Week 9-10: Designing for Impact
-- Design Principles
-- Usability and Accessibility
-- Testing & Evaluation
-
-### Week 11-14: Case Studies
-- Design Principles
-- Usability and Accessibility
-- Testing & Evaluation
+## Topics
+- Please see the [course schedule](../)
 
 ## Assessment
 
-- **Participation**: 20%
-- **Midterm Exam**: 30%
-- **Final Project**: 40%
-- **Weekly Assignments**: 10%
+1. **Participation & Attendance**: 15%
+1. **Labs**: 20%
+1. **Homework**: 25%
+1. **Midterm Exam**: 15%
+1. **Final Project**: 25%
 
-## Required Materials
+### 1. Participation (15%)
+We will use classroom discussion as a form of collaborative sense-making to understand, critique, and interrogate the required course readings. Your timely and engaged attendance at every class is thus very important – both for you and for your classmates. Every student will need to participate in a thoughtful and productive manner in order for these discussions to be effective. Building on and reacting to other participants’ comments is encouraged, and should be done in a respectful tone even if you disagree. In order to participate fully, please do not let your laptop, phone, or other devices distract you or other participants.
 
-- Course readings (available online)
-- Scientific calculator
-- Access to statistical software (R or Python)
+You are allowed two absences during the semester, no questions asked. You should reserve these absences for emergency or illness. After two absences, your grade will be impacted.
 
-## Office Hours
+### 2. Labs (20%)
+We will have roughly 8 labs that are designed to help you work with the tools, technologies, and techniques that can be used to analyze and create data displays and narratives.
 
-- **Professor**: Tuesdays 2:00-4:00 PM
-- **Teaching Assistant**: Thursdays 1:00-3:00 PM
-- **Location**: Science Building, Room 205
+Labs will be graded according to the following scale (from 0-3 points):
+
+| Points | Grade | Description |
+|--|--|--|
+| **0pts** | Not attempted | Assignment not submitted. |
+| **1pt**	 | Check Minus	 | Assignment attempted but less than half of it was completed correctly. |
+| **2pts** | Check	| Most of the assignment was completed; works as expected. |
+| **3pts** | Check Plus	| Assignment completed. Works as expected. |
+
+Labs are designed to be completed during class. That said, you may have a week to turn them in. **I do not accept late labs**.
+
+### 3. Homework (25%)
+We will have roughly 4 homework assignments that will ask you to apply the theories and principles learned in class to analyze a series of "real world" contexts and scenarios. 
+
+### 4. Midterm Exam (15%)
+There will be an in-class midterm exam that will ask you to apply the perspectives and principles from the readings. Doing the readings and engaging in class discussions is the best way to prepare for the midterm.
+
+### 5. Final Project (25%)
+This class will also have a final project, to be completed in groups. The project will involve creating a data-intensive information campaign around a topic of your choice. 
+
+## Late Policy
+* No late labs or project deliverables will be accepted.
+* Homework submitted up to 1 week after it is due will be assigned a 20% penalty. Any work received after that will not be accepted. 
 
 ## University Policies & Resources
 

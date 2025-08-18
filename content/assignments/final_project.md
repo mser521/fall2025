@@ -3,7 +3,7 @@ title: "Analyze a Science Communication Campaign"
 date: "2025-08-26"
 type: "final project"
 due_date: "2025-12-05"
-draft: 0
+draft: 1
 ---
 
 ## Final Project: Environmental Communication Campaign
