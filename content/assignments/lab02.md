@@ -1,10 +1,10 @@
 ---
-title: "TBD"
+title: "HTML and CSS"
 num: "2"
-date: "2025-09-11"
+date: "2025-09-25"
 type: "lab"
-due_date: "2025-09-20"
+due_date: "2025-10-02"
 draft: 1
 ---
 
-Imagine a science communication initiative around an emerging topic like AI or gene editing. Design a participatory campaign aligned with the article’s recommendations, and explain how it overcomes the limitations of a dissemination-focused strategy.
+TBD

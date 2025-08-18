@@ -81,6 +81,12 @@ This class will also have a final project, to be completed in groups. The projec
 * No late labs or project deliverables will be accepted.
 * Homework submitted up to 1 week after it is due will be assigned a 20% penalty. Any work received after that will not be accepted. 
 
+
+## Other Course Policies
+
+### AI Policy
+To be generated as a class...
+
 ## University Policies & Resources
 
 ### Office of Accessibility & Academic Accommodations

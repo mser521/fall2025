@@ -1,6 +1,7 @@
 import { getAllPostIds, getPostData, PostData } from '@/lib/markdown';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
+import DaysLeft from '@/components/DaysLeft';
 
 interface AssignmentData {
   id: string;
@@ -8,18 +9,21 @@ interface AssignmentData {
   title: string;
   excerpt?: string;
   date?: string;
+  due_date?: string;
   type?: string;
   assigned?: string;
   draft?: number;
 }
 
 function formatDate(dateString: string): string {
-  const date = new Date(dateString);
+  // Handle the YYYY-MM-DD format from markdown frontmatter
+  const date = new Date(dateString + 'T00:00:00');
   const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'short' });
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
   const day = date.getDate().toString().padStart(2, '0');
   return `${dayOfWeek}, ${month}/${day}`;
 }
+
 
 export default function AssignmentsPage() {
   // Get all assignment files from content/assignments directory
@@ -31,19 +35,20 @@ export default function AssignmentsPage() {
       num: postData.num,
       title: postData.title,
       excerpt: postData.excerpt,
-      date: postData.due_date,
+      date: postData.date,
+      due_date: postData.due_date,
       type: postData.type,
       assigned: postData.assigned,
       draft: postData.draft,
     };
   }).sort((a, b) => {
     // If both have dates, sort by date
-    if (a.date && b.date) {
-      return new Date(a.date).getTime() - new Date(b.date).getTime();
+    if (a.due_date && b.due_date) {
+      return new Date(a.due_date).getTime() - new Date(b.due_date).getTime();
     }
     // If only one has a date, put the one without date at the end
-    if (a.date && !b.date) return -1;
-    if (!a.date && b.date) return 1;
+    if (a.due_date && !b.due_date) return -1;
+    if (!a.due_date && b.due_date) return 1;
     // If neither has a date, sort by assignment number
     const aNum = parseInt(a.num as string) || 0;
     const bNum = parseInt(b.num as string) || 0;
@@ -69,8 +74,8 @@ export default function AssignmentsPage() {
   return (
     <div className="space-y-6">
       <PageHeader 
-        title="Course Assignments" 
-        excerpt="All course assignments and their requirements"
+        title="Assignments" 
+        excerpt="All lab, homework, and project assignments are due at 11:59pm ET on the due date. Assignments should be submitted to the course Moodle unless otherwise specified."
       />
       
       <table>
@@ -78,7 +83,8 @@ export default function AssignmentsPage() {
           <tr>
             <th>Assignment</th>
             <th>Title</th>
-            <th>Due Date</th>
+            <th>Due</th>
+            <th>Days Left</th>
           </tr> 
         </thead>
         <tbody>
@@ -88,7 +94,8 @@ export default function AssignmentsPage() {
               {getAssignmentLink(assignment)}
             </td>
             <td>{assignment.title}</td>
-            <td>{assignment.date ? formatDate(assignment.date) : 'TBD'}</td>
+            <td>{assignment.due_date ? formatDate(assignment.due_date) : ''}</td>
+            <td><DaysLeft dueDate={assignment.due_date || ''} /></td>
             
           </tr>
         ))}

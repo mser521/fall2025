@@ -30,7 +30,7 @@ due_date: "2025-09-11"
 1. Using AI during group work by generating answer to question from a group activity during class 
 
 ## Part 3: What is Appropriate?
-What are other examples of ways students might consider using AI for this course?  Do you think they are “informed and ethical for this course”?
+What are other examples of ways students might consider using AI for this course? Do you think they are “informed and ethical for this course”?
 
 ## Part 4: Course AI Norms
 (Decided as a class)

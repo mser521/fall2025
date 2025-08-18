@@ -4,7 +4,7 @@ const topics = [
     {
       id: 1,
       title: "Science Communication",
-      description: "Understanding the importance and audience of evidence-based communication",
+      description: "Examining the importance of evidence-based communication, including the role of science communication in a democratic society.",
       meetings: [
         {
           date: "Tu, Aug 19",
@@ -100,7 +100,7 @@ const topics = [
     },
     {id: 2,
       title: "Data",
-      description: "All the data stuff...",
+      description: "An overview of data types, schemas, metadata, provenance, and potential sources and consequences of data bias.",
       meetings: [
         {
           date: "Th, Aug 28",
@@ -166,7 +166,7 @@ const topics = [
     {
       id: 3,
       title: "Data Visualization",
-      description: "Data Concepts: Qualitative and quantitative data, provenance, representation, bias, Theory: Burtin, Tufte, Quant Practice: Google Sheets; Observable, Qual Practice: Digital Storytelling",
+      description: "An overview of data visualization principles and techniques.",
       meetings: [
         {
           date: "Tu, Sep 9",
@@ -218,7 +218,7 @@ const topics = [
     {
       id: 4,
       title: "Visualization Tools & Technologies",
-      description: "In this unit, we will learn how to use HTML, CSS, and JavaScript to create interactive visualizations.",
+      description: "An overview of tools and technologies for creating interactive visualizations.",
       meetings: [ 
         {
           date: "Tu, Sep 23",
@@ -265,7 +265,7 @@ const topics = [
     {
       id: 5,
       title: "Design",
-      description: "Visualizing data to support decision-making",
+      description: "An overview of design principles and techniques for creating effective visualizations.",
       meetings: [
         {
           date: "Tu, Oct 21",
@@ -306,7 +306,7 @@ const topics = [
     {
       id: 6,
       title: "Special Topics",
-      description: "Case studies and special topics",
+      description: "Case studies and special topics. TBD.",
       meetings: [
         {
           date: "Th, Nov 13",

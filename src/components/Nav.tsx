@@ -13,8 +13,8 @@ export default function Navigation() {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/syllabus", label: "Syllabus" },
     { href: "/", label: "Schedule" },
+    { href: "/syllabus", label: "Syllabus" },
     { href: "/assignments", label: "Assignments" },
     // { href: "/resources", label: "Resources" },
   ];

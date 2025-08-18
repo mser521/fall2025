@@ -167,9 +167,9 @@ export default function Meeting({
             })}>{meeting.date}</span>
             <div className="w-full">
                 <p><span className={clsx("transition-all duration-300 ease-in-out", {
-                    'font-bold': showDetails,
+                    // 'font-bold': showDetails,
                     'text-black dark:text-white': showDetails,
-                    'uppercase': showDetails
+                    // 'uppercase': showDetails
                 })}>{meeting.topic}</span></p>
                 <div className={clsx("overflow-hidden transition-all duration-300 ease-in-out", {
                     'text-gray-100': isHoliday,

@@ -1,9 +1,9 @@
 ---
 title: "Introduction to Data"
 num: 1
-date: "2025-08-28"
+date: "2025-09-02"
 type: "lab"
-due_date: "2025-09-13"
+due_date: "2025-09-09"
 draft: 1
 ---
 
