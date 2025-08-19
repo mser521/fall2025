@@ -38,7 +38,7 @@ export default function SchedulePage() {
   return (
     <div className="space-y-6">
       <PageHeader title="Course Schedule" 
-        excerpt="This schedule will definitely change over the course of the semester. Please continue to check back for updates." setMeetingStates={setMeetingStates} meetingStates={meetingStates} />
+        excerpt="This schedule will definitely change over the course of the semester. Please continue to check back for updates." setMeetingStates={setMeetingStates} />
       
       {topics.map((topic) => (
         <div key={topic.id} className="mb-16">

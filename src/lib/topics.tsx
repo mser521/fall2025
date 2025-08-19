@@ -1,5 +1,3 @@
-import { url } from "inspector";
-
 const topics = [
     {
       id: 1,
@@ -9,6 +7,7 @@ const topics = [
         {
           date: "Tu, Aug 19",
           topic: "Course overview and introduction",
+          description: "Welcome to the course!",
           activities: [
             {
               title: "Slides",
@@ -29,6 +28,7 @@ const topics = [
         {
           date: "Th, Aug 21",
           topic: "Introduction to science communication",
+          description: "These readings introduce two different moments in the history of science communication: early arguments for why the public should understand science, and current debates about how science communication research and practice should move forward",
           activities: [{
             title: "Slides",
             url: "https://docs.google.com/presentation/d/1-sJCYIeiRY0Ipx0xwzy0MESvKaExJEU8MdmzxG1wyt8/edit?usp=sharing",
@@ -54,6 +54,7 @@ const topics = [
         {
           date: "Tu, Aug 26",
           topic: "Communicating science in politicized environments",
+          description: "In politicized environments, science communication is complicated by conflicting values, interests, and social identities. Communicators must balance accuracy with transparency while remaining attentive to the broader political context.",
           activities: [
             { 
               title: "Who Said It? - Elite Cues in Environmental News",
@@ -96,6 +97,24 @@ const topics = [
             draft: 1
           }
         },
+        {
+          date: "Th, Aug 28",
+          topic: "Communication is a dialog",
+          description: "Communication is a dialog, not a monologue. Given this, it is important to consider how decisionmakers can ensure that science is responsive to diverse perspectives and lived experiences, especially from communities most affected by its outcomes.",
+          activities: [
+            {
+              title: "Slides",
+              url: "#",
+              draft: 1
+            }
+          ],
+          readings: [
+            {
+              citation: (<>Fan, F. ti, & Chen, S. L. (2019). Citizen, Science, and Citizen Science. East Asian Science, Technology and Society: An International Journal, 13(2), 181-193.</>),
+              url: "https://www.tandfonline.com/doi/full/10.1215/18752160-7542643"
+            },
+          ]
+        },
       ]
     },
     {id: 2,
@@ -103,7 +122,7 @@ const topics = [
       description: "An overview of data types, schemas, metadata, provenance, and potential sources and consequences of data bias.",
       meetings: [
         {
-          date: "Th, Aug 28",
+          date: "Tu, Sep 2",
           topic: "Data Fundamentals",
           readings: [
             {
@@ -129,7 +148,7 @@ const topics = [
           ],
         },
         {
-          date: "Tu, Sep 2",
+          date: "Th, Sep 4",
           topic: "Lab 1: Constructing data",
           activities: [
             { 
@@ -151,7 +170,7 @@ const topics = [
           }
         },
         {
-          date: "Th, Sep 4",
+          date: "Tu, Sep 9",
           topic: "Data bias: Sources and consequences ",
           activities: [
             {
@@ -169,7 +188,7 @@ const topics = [
       description: "An overview of data visualization principles and techniques.",
       meetings: [
         {
-          date: "Tu, Sep 9",
+          date: "Th, Sep 11",
           topic: "What is the purpose of data visualization?",
           readings: [
             {
@@ -186,11 +205,12 @@ const topics = [
           ]
         },
         {
-          date: "Th, Sep 11",
+          date: "Tu, Sep 16",
           topic: "Good and bad data visualizations",
+          
         },
         {
-          date: "Tu, Sep 16",
+          date: "Th, Sep 18",
           topic: "Perception",
           readings: [
             {
@@ -209,10 +229,6 @@ const topics = [
             draft: 1
           }
         },
-        {
-          date: "Th, Sep 18",
-          topic: "Other visualization techniques (visualizing uncertainty; geospatial visualizations)",          
-        },
       ]
     },
     {
@@ -222,6 +238,10 @@ const topics = [
       meetings: [ 
         {
           date: "Tu, Sep 23",
+          topic: "Other visualization techniques (visualizing uncertainty; geospatial visualizations)",          
+        },
+        {
+          date: "Th, Sep 25",
           topic: "Introduction to HTML and CSS",
           due: {
             titleShort: "Homework 2",
@@ -231,16 +251,12 @@ const topics = [
           }
         },
         {
-          date: "Th, Sep 25",
+          date: "Tu, Sep 30",
           topic: "Lab 2: HTML and CSS",
         },
         {
-          date: "Tu, Sep 30",
-          topic: "Introduction to Observable (and JavaScript)",
-        },
-        {
           date: "Th, Oct 2",
-          topic: "Lab 3: Building charts with observable",
+          topic: "Introduction to Observable (and JavaScript)",
         },
         {
           date: "Tu, Oct 7",
@@ -249,15 +265,15 @@ const topics = [
         },
         {
           date: "Th, Oct 9",
-          topic: "Interaction with Observable",
+          topic: "Lab 3: Building charts with observable",
         },
         {
           date: "Tu, Oct 14",
-          topic: "Lab 4: Interactive charts and maps with Observable"
+          topic: "Interaction with Observable"
         },
         {
           date: "Th, Oct 16",
-          topic: "Homework 3 Presentations: Visualization Redesigns",
+          topic: "Lab 4: Interactive charts and maps with Observable",
         },
         
       ]
@@ -310,7 +326,7 @@ const topics = [
       meetings: [
         {
           date: "Th, Nov 13",
-          topic: "TBD"
+          topic: "TBD",
         },
         {
           date: "Tu, Nov 18",

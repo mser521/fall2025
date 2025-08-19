@@ -1,6 +1,5 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
 
@@ -25,6 +24,7 @@ interface Assignment {
 export interface MeetingData {
   date: string;
   topic: string;
+  description?: string;
   activities?: Activity[];
   readings?: Reading[];
   optionalReadings?: Reading[];
@@ -166,8 +166,11 @@ export default function Meeting({
                 'font-bold': true
             })}>{meeting.date}</span>
             <div className="w-full">
-                <p><span className={clsx("transition-all duration-300 ease-in-out", {
-                    // 'font-bold': showDetails,
+                <p className={clsx({
+                    '!mb-3': !showDetails,
+                    '!mb-0': showDetails
+                  })}><span className={clsx("transition-all duration-300 ease-in-out", {
+                    'font-bold': showDetails,
                     'text-black dark:text-white': showDetails,
                     // 'uppercase': showDetails
                 })}>{meeting.topic}</span></p>
@@ -176,7 +179,9 @@ export default function Meeting({
                     'max-h-0 opacity-0': !showDetails,
                     'max-h-[1000px] opacity-100': showDetails
                 })}>
-                    
+                    { meeting.description && (
+                        <p>{meeting.description}</p>
+                    )}
                     {renderActivities()}
                     {hasReadings ? renderReadings({title: 'Required Readings', readings: meeting.readings || []}) : ``}
                     {hasOptionalReadings ? renderReadings({title: 'Optional Readings', readings: meeting.optionalReadings || []}) : ``}

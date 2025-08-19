@@ -28,6 +28,7 @@ function formatDate(dateString: string): string {
 export default function AssignmentsPage() {
   // Get all assignment files from content/assignments directory
   const assignmentIds = getAllPostIds('assignments');
+  
   const assignments: AssignmentData[] = assignmentIds.map(({ params }) => {
     const postData = getPostData(params.id, 'assignments');
     return {
@@ -55,12 +56,16 @@ export default function AssignmentsPage() {
     return aNum - bNum;
   });
 
+  const isDraft = (assignment: AssignmentData): boolean => {
+    return (assignment.draft !== undefined && assignment.draft === 1);
+  }
+
   function titleCase(str: string): string {
     return str.replace(/\b\w/g, (char) => char.toUpperCase());
   }
 
   function getAssignmentLink(assignment: AssignmentData): React.ReactNode {
-    if (assignment.draft) {
+    if (isDraft(assignment)) {
       return <>{assignment.type ? titleCase(assignment.type) : ''} {assignment.num ? assignment.num : ''}</>;
     }
     return (

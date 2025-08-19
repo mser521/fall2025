@@ -7,10 +7,9 @@ interface PageHeaderProps {
   excerpt?: string;
   type?: string;
   setMeetingStates: React.Dispatch<React.SetStateAction<Record<string, boolean>>>;
-  meetingStates: Record<string, boolean>;
 }
 
-export default function PageHeader({ title, excerpt, type, setMeetingStates, meetingStates }: PageHeaderProps) {
+export default function PageHeader({ title, excerpt, type, setMeetingStates }: PageHeaderProps) {
   const [allExpanded, setAllExpanded] = useState(false);
   const className = '!border-transparent hover:border-b-2';
 
@@ -18,7 +17,7 @@ export default function PageHeader({ title, excerpt, type, setMeetingStates, mee
   function loadSavedStates() {
     const savedStates: Record<string, boolean> = {};
     topics.forEach(topic => {
-      topic.meetings.forEach((meeting, index) => {
+      topic.meetings.forEach((meeting) => {
         const meetingKey = `meeting-${meeting.date}-${meeting.topic.replace(/\s+/g, '-').toLowerCase()}`;
         if (typeof window !== 'undefined') {
           const savedState = localStorage.getItem(meetingKey);
@@ -48,12 +47,7 @@ export default function PageHeader({ title, excerpt, type, setMeetingStates, mee
     setMeetingStates(newStates);
   };
 
-  const setMeetingState = (meetingKey: string, show: boolean) => {
-    setMeetingStates(prev => ({
-      ...prev,
-      [meetingKey]: show
-    }));
-  };
+  
   return (
     <div className="border-b border-gray-200 dark:border-gray-700 pb-4">
       <div className="flex flex-row justify-between items-center">

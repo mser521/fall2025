@@ -11,6 +11,7 @@ export interface PostData {
   id: string;
   num?: string;
   title: string;
+  description?: string;
   date: string;
   due_date?: string;
   content: string;

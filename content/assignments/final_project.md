@@ -1,5 +1,5 @@
 ---
-title: "Analyze a Science Communication Campaign"
+title: "Design a Data-Intensive Science Communication Campaign"
 date: "2025-08-26"
 type: "final project"
 due_date: "2025-12-05"
