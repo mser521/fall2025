@@ -11,8 +11,8 @@ const topics = [
           activities: [
             {
               title: "Slides",
-              url: "https://docs.google.com/presentation/d/1hutd4lpwzqO-RZKIL1GDzUOc_O5UYFVdwxOpOBuBkJI/edit?slide=id.g3783a768271_0_49#slide=id.g3783a768271_0_49",
-              draft: 1
+              url: "https://docs.google.com/presentation/d/1hutd4lpwzqO-RZKIL1GDzUOc_O5UYFVdwxOpOBuBkJI/edit?usp=sharing",
+              draft: 0
             },
             {
               title: "Syllabus",
@@ -57,7 +57,12 @@ const topics = [
           description: "In politicized environments, science communication is complicated by conflicting values, interests, and social identities. Communicators must balance accuracy with transparency while remaining attentive to the broader political context.",
           activities: [
             { 
-              title: "Who Said It? - Elite Cues in Environmental News",
+              title: "Slides",
+              url: "#",
+              draft: 1
+            },
+            { 
+              title: "Politicized Science Communication Activity",
               url: "./activities/communication02/",
               draft: 1
             }
@@ -123,14 +128,14 @@ const topics = [
       meetings: [
         {
           date: "Tu, Sep 2",
-          topic: "Data Fundamentals",
+          topic: "Data fundamentals",
           readings: [
             {
               citation: (<>Gitelman, Lisa. &quot;Raw Data&quot; is an Oxymoron (Introduction)</>),
               url: "https://dsl.lsu.edu/nehtextualdata/wp-content/uploads/2017/11/RawData.pdf"
             },
             {
-              citation: (<>Abailable through the Ramsey Library: Chapter 1. Conceptualising Data. Kitchin, R. (2014). <em>The data revolution: Big data, open data, data infrastructures and their consequences</em>. Sage.</>),
+              citation: (<>Available through the Ramsey Library: Chapter 1. Conceptualising Data. Kitchin, R. (2014). <em>The data revolution: Big data, open data, data infrastructures and their consequences</em>. Sage.</>),
               url: "https://drive.google.com/file/d/1WkUeYB0mpsoURsy3B8RIYXzG5kqNl1Z2/view?usp=sharing"
             },
           ],
