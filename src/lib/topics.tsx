@@ -32,24 +32,34 @@ const topics = [
           activities: [{
             title: "Slides",
             url: "https://docs.google.com/presentation/d/1-sJCYIeiRY0Ipx0xwzy0MESvKaExJEU8MdmzxG1wyt8/edit?usp=sharing",
-            draft: 1
+            draft: 0
           },
           {
             title: "Discussion Questions",
-            url: "./activities/communication01/",
-            draft: 1
+            url: "/activities/communication01/",
+            draft: 0
           }
           ],
           readings: [
             {
-              citation: (<>Druckman, J. N., Ellenbogen, K. M., Scheufele, D. A., & Yanovitzky, I. (2025). <em>An agenda for science communication research and practice</em>. Proceedings of the National Academy of Sciences, 122(27), e2400932122.</>), 
-              url: "https://www.pnas.org/doi/epdf/10.1073/pnas.2400932122"
-            },
-            {
               citation: (<>Thomas, G., & Durant, J. (1987). <em>Why should we promote the public understanding of science?</em> Scientific literacy papers, 1, 1-14.</>), 
               url: "https://ocw.mit.edu/courses/sts-014-principles-and-practice-of-science-communication-spring-2006/9a2dfa5e9d69b2c0bd06b38606827f1c_durant_promote.pdf"
             },
-          ]
+            {
+              citation: (<>Druckman, J. N., Ellenbogen, K. M., Scheufele, D. A., & Yanovitzky, I. (2025). <em>An agenda for science communication research and practice</em>. Proceedings of the National Academy of Sciences, 122(27), e2400932122.</>), 
+              url: "https://www.pnas.org/doi/epdf/10.1073/pnas.2400932122"
+            },
+          ],
+          optionalReadings: [
+            {
+              citation: (<>Stilgoe, J., Lock, S. J., & Wilsdon, J. (2014). <em>Why should we promote public engagement with science?.</em> Public understanding of science (Bristol, England), 23(1), 4-15.</>), 
+              url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5753839/"
+            },
+            {
+              citation: (<>Simis MJ, Madden H, Cacciatore MA, Yeo SK. <em>The lure of rationality: Why does the deficit model persist in science communication?</em> Public Underst Sci. 2016 May;25(4):400-14.</>), 
+              url: "https://journals.sagepub.com/doi/10.1177/0963662516629749"
+            }
+          ],
         },
         {
           date: "Tu, Aug 26",
@@ -78,6 +88,10 @@ const topics = [
             },
           ],
           optionalReadings: [
+            {
+              citation: (<><em>ClimateTalk: Science and Solutions</em> | Susan Joy Hassol | TEDxUMontana. 2015.</>), 
+              url: "https://www.youtube.com/watch?v=V-tEmE85QDE"
+            },
             { 
               citation: "T. Bolsen, J. N. Druckman, Do partisanship and politicization undermine the impact of a scientific consensus message about climate change? Group Process Intergr. Relat. 21, 389–402 (2018).",
               url: "https://faculty.wcas.northwestern.edu/jnd260/pub/Bolsen%20and%20Druckman%20Do%20Partisanship%20and%20Politicization%20Undermine.pdf"
@@ -118,11 +132,22 @@ const topics = [
               citation: (<>Fan, F. ti, & Chen, S. L. (2019). Citizen, Science, and Citizen Science. East Asian Science, Technology and Society: An International Journal, 13(2), 181-193.</>),
               url: "https://www.tandfonline.com/doi/full/10.1215/18752160-7542643"
             },
+          ],
+          optionalReadings: [
+            {
+              citation: (<>Reincke, C. M., Bredenoord, A. L., & van Mil, M. H. (2020). <em>From deficit to dialogue in science communication: The dialogue communication model requires additional roles from scientists.</em> EMBO reports, 21(9), e51278.</>), 
+              url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7506985/"
+            },
+            {
+              citation: (<>Nadkarni, N. M., Weber, C. Q., Goldman, S. V., Schatz, D. L., Allen, S., & Menlove, R. (2019). <em>Beyond the deficit model: The ambassador approach to public engagement</em>. BioScience, 69(4), 305-313.</>),
+              url: "https://d1wqtxts1xzle7.cloudfront.net/89134373/biz018-libre.pdf?1659220295=&response-content-disposition=inline%3B+filename%3DBeyond_the_Deficit_Model_The_Ambassador.pdf&Expires=1755690837&Signature=F0xRhp9IVo0oE2TDN3NYjNIILdNgJocJVXdqQ~e6Cyf5P~PRBjd5U4Dx4OeXI-uqU92wiayAzLSITsE0E5IxoKB5bofThukN92j5vyhf1UPqrejTsFJ5rPYHtLo0iUoPeK8XG-WPaibTcaEKLiagcKZu8VOAoayRulThWjjdAfyc79wUzT-CyPA2Qu9pEX8rvDiyAiyT55lvGISQC3zWrfIcZntj8rZf4M8iYkc1KLrhnPtb35s3bj9AMj4kSoHvgVV5dsprpn4rz-4E-9sv41bo8KfR1~eoxjAb2t96br1g4K4u3ZaEBPlDzEQXGr6CL50lXs9twXlw970Wjwigiw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+            }
           ]
         },
       ]
     },
-    {id: 2,
+    {
+      id: 2,
       title: "Data",
       description: "An overview of data types, schemas, metadata, provenance, and potential sources and consequences of data bias.",
       meetings: [
