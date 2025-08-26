@@ -75,6 +75,11 @@ const topics = [
               title: "Politicized Science Communication Activity",
               url: "/activities/communication02/",
               draft: 0
+            },
+            { 
+              title: "HTML Activity",
+              url: "/activities/html01/",
+              draft: 0
             }
           ],
           readings: [
