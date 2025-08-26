@@ -181,6 +181,12 @@ const topics = [
               draft: 1
             }
           ],
+          due: {
+            titleShort: "Homework 1",
+            title: "Analyze a public communication campaign",
+            url: "./assignments/hw01/",
+            draft: 1
+          }
         },
         {
           date: "Th, Sep 4",
@@ -197,12 +203,6 @@ const topics = [
               draft: 1
             }
           ],
-          due: {
-            titleShort: "Homework 1",
-            title: "Analyze a public communication campaign",
-            url: "./assignments/hw01/",
-            draft: 1
-          }
         },
         {
           date: "Tu, Sep 9",
