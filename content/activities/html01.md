@@ -5,6 +5,8 @@ type: "activity"
 
 ---
 
+## Today's Slides
+* <a href="https://docs.google.com/presentation/d/1hZ1fDB2bEBQvWieqKQD-mp-8qnrUKpo7mHKk-yuYFMg/edit?usp=sharing" target="_blank">Slides: Intro to HTML</a>
 
 ## 1. Configure your computer
 Download and install Visual Studio Code (VS Code): https://code.visualstudio.com/ 
