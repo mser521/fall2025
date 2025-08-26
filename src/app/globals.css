@@ -188,6 +188,10 @@ html {
   padding-right: 0 !important;
 }
 
+code {
+  @apply bg-gray-100 dark:bg-gray-800 p-1 rounded-md;
+}
+
 /* Syntax highlighting styles */
 .hljs {
   display: block;

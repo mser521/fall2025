@@ -8,6 +8,15 @@ interface AssignmentPageProps {
   }>;
 }
 
+function formatDate(dateString: string): string {
+  // Handle the YYYY-MM-DD format from markdown frontmatter
+  const date = new Date(dateString + 'T00:00:00');
+  const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'short' });
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const day = date.getDate().toString().padStart(2, '0');
+  return `${dayOfWeek}, ${month}/${day}`;
+}
+
 export default async function AssignmentPage({ params }: AssignmentPageProps) {
   const { slug } = await params;
   const postData = await getPostData(slug, 'assignments');
@@ -19,7 +28,7 @@ export default async function AssignmentPage({ params }: AssignmentPageProps) {
         excerpt={postData.excerpt}
         type={postData.type}
       />
-      
+      { postData.due_date && <p className="mt-2 text-lg font-bold">Due {formatDate(postData.due_date)} at 11:59pm</p> }
       <div className="prose prose-lg max-w-none">
         <div dangerouslySetInnerHTML={{ __html: postData.content }} />
       </div>

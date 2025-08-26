@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import gfm from 'remark-gfm';
+import highlight from 'remark-highlight.js';
 
 const postsDirectory = path.join(process.cwd(), 'content');
 
@@ -58,9 +59,11 @@ export async function getPostData(id: string, subdirectory?: string): Promise<Po
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  // Use remark to convert markdown into HTML string with GFM support
+  // Use remark to convert markdown into HTML string with GFM support and syntax highlighting
   const processedContent = await remark()
     .use(gfm)  // Add GitHub Flavored Markdown support
+    // @ts-expect-error - remark-highlight.js has type conflicts but works correctly at runtime
+    .use(highlight)  // Add syntax highlighting
     .use(html, { sanitize: false })  // Allow HTML without sanitization
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
