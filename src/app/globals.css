@@ -52,7 +52,7 @@ h4 {
 }
 
 table {
-  @apply w-full border-collapse mb-4;
+  @apply w-full border-collapse mb-20;
   border-color: var(--border);
 }
 
@@ -100,7 +100,7 @@ li {
 }
 
 blockquote {
-  @apply border-l-4 bg-gray-50 dark:bg-gray-800 border-black dark:border-gray-600 p-4 pb-2 mb-4;
+  @apply border-l-8 bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-600 p-4 pb-2 mb-4;
 }
 
 .syllabus-page, .assignment-page {
@@ -177,4 +177,119 @@ html {
     font-size: 12pt;
     line-height: 1.4;
   }
+}
+
+/* Resources layout overrides */
+[data-resources-layout] {
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Syntax highlighting styles */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #f6f8fa;
+  border-radius: 6px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 1em 0;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #d73a49;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #005cc5;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #032f62;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #6f42c1;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #6f42c1;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #22863a;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #032f62;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #e36209;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #e36209;
+}
+
+.hljs-meta {
+  color: #6a737d;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #ffeef0;
+}
+
+.hljs-addition {
+  background: #f0fff4;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.codepen-frame {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
 }

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // import topics from "@/lib/topics";
 import { Inter, Abril_Fatface, Poppins } from "next/font/google";
 import Navigation from "@/components/Nav";
+import LayoutWrapper from "@/components/LayoutWrapper";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,9 +37,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${abril.variable} ${poppins.variable}`}>
         <Navigation />
-          <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <LayoutWrapper>
+          <main className="max-w-4xl mx-auto">
             {children}
           </main>
+        </LayoutWrapper>
       </body>
     </html>
   );

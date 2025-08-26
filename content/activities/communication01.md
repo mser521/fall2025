@@ -14,7 +14,7 @@ Thomas, G., & Durant, J. (1987). *Why should we promote the public understanding
 2. Among the nine benefit-based arguments for promoting public understanding of science, which do you find most convincing or compelling? Conversely, which arguments seem weakest, problematic, or potentially contradictory? Why? 
 
     1. Benefits to science
-    1. Benefits to nstional economies
+    1. Benefits to national economies
     1. Benefits to national power and influence
     1. Benefits to individuals
     1. Benefits to democratic government

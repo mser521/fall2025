@@ -2,11 +2,11 @@ import { getAllPostIds, getPostData } from '@/lib/markdown';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
 
-export default function QuestionsPage() {
+export default async function QuestionsPage() {
   // Get all assignment files from content/assignments directory
   const ids = getAllPostIds('activities');
-  const activities = ids.map(({ params }) => {
-    const postData = getPostData(params.id, 'activities');
+  const activities = await Promise.all(ids.map(async ({ params }) => {
+    const postData = await getPostData(params.id, 'activities');
     return {
       id: params.id,
       title: postData.title,
@@ -14,7 +14,7 @@ export default function QuestionsPage() {
       date: postData.date,
       type: postData.type,
     };
-  });
+  }));
 
   return (
     <div className="space-y-6">

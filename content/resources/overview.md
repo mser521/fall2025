@@ -1,7 +1,8 @@
 ---
 title: "Course Resources"
-date: "2025-08-26"
-excerpt: "Additional resources, readings, and helpful links for MSER 521"
+group_order: 1
+group: "Overview"
+order: 1
 ---
 
 ## Books and Learning Resources

@@ -1,8 +1,8 @@
 import { getPostData } from '@/lib/markdown';
 import PageHeader from '@/components/PageHeader';
 
-export default function SyllabusPage() {
-  const postData = getPostData('syllabus');
+export default async function SyllabusPage() {
+  const postData = await getPostData('syllabus');
   const {title, excerpt} = postData;
   
   return (

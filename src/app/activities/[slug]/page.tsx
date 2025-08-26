@@ -11,7 +11,7 @@ interface ActivityPageProps {
 export default async function ActivityPage({ params }: ActivityPageProps) {
   try {
     const { slug } = await params;
-    const postData = getPostData(slug, 'activities');
+    const postData = await getPostData(slug, 'activities');
     
     return (
       <div className="space-y-6 assignment-page">

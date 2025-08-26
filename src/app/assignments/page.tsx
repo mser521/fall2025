@@ -25,12 +25,12 @@ function formatDate(dateString: string): string {
 }
 
 
-export default function AssignmentsPage() {
+export default async function AssignmentsPage() {
   // Get all assignment files from content/assignments directory
   const assignmentIds = getAllPostIds('assignments');
   
-  const assignments: AssignmentData[] = assignmentIds.map(({ params }) => {
-    const postData = getPostData(params.id, 'assignments');
+  const assignments: AssignmentData[] = await Promise.all(assignmentIds.map(async ({ params }) => {
+    const postData = await getPostData(params.id, 'assignments');
     return {
       id: params.id,
       num: postData.num,
@@ -42,7 +42,10 @@ export default function AssignmentsPage() {
       assigned: postData.assigned,
       draft: postData.draft,
     };
-  }).sort((a, b) => {
+  }));
+  
+  // Sort assignments
+  assignments.sort((a, b) => {
     // If both have dates, sort by date
     if (a.due_date && b.due_date) {
       return new Date(a.due_date).getTime() - new Date(b.due_date).getTime();

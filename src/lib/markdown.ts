@@ -11,6 +11,9 @@ export interface PostData {
   id: string;
   num?: string;
   title: string;
+  group?: string;
+  group_order?: number;
+  order?: number;
   description?: string;
   date: string;
   due_date?: string;
@@ -45,7 +48,7 @@ export function getAllPostIds(subdirectory?: string) {
     });
 }
 
-export function getPostData(id: string, subdirectory?: string): PostData {
+export async function getPostData(id: string, subdirectory?: string): Promise<PostData> {
   const directory = subdirectory 
     ? path.join(postsDirectory, subdirectory)
     : postsDirectory;
@@ -56,10 +59,10 @@ export function getPostData(id: string, subdirectory?: string): PostData {
   const matterResult = matter(fileContents);
 
   // Use remark to convert markdown into HTML string with GFM support
-  const processedContent = remark()
+  const processedContent = await remark()
     .use(gfm)  // Add GitHub Flavored Markdown support
     .use(html, { sanitize: false })  // Allow HTML without sanitization
-    .processSync(matterResult.content);
+    .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
   // Combine the data with the id and contentHtml

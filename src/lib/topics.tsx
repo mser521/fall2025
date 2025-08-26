@@ -68,13 +68,13 @@ const topics = [
           activities: [
             { 
               title: "Slides",
-              url: "#",
-              draft: 1
+              url: "https://docs.google.com/presentation/d/1DimSgHSduEtvL6AiFOoXcVX2IYNNK6UEIcAZ86VX5WA/edit?usp=sharing",
+              draft: 0
             },
             { 
               title: "Politicized Science Communication Activity",
-              url: "./activities/communication02/",
-              draft: 1
+              url: "/activities/communication02/",
+              draft: 0
             }
           ],
           readings: [
@@ -112,8 +112,8 @@ const topics = [
           assigned: {
             titleShort: "Homework 1",
             title: "Analyze a public communication campaign",
-            url: "./assignments/hw01/",
-            draft: 1
+            url: "/assignments/hw01/",
+            draft: 0
           }
         },
         {

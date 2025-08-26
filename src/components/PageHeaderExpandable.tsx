@@ -6,10 +6,11 @@ interface PageHeaderProps {
   title: string;
   excerpt?: string;
   type?: string;
+  group?: string;
   setMeetingStates: React.Dispatch<React.SetStateAction<Record<string, boolean>>>;
 }
 
-export default function PageHeader({ title, excerpt, type, setMeetingStates }: PageHeaderProps) {
+export default function PageHeader({ title, excerpt, type, group, setMeetingStates }: PageHeaderProps) {
   const [allExpanded, setAllExpanded] = useState(false);
   const className = '!border-transparent hover:border-b-2';
 
@@ -54,7 +55,7 @@ export default function PageHeader({ title, excerpt, type, setMeetingStates }: P
         <h1 className="font-bold text-gray-900 dark:text-gray-100">
           {type && type === 'activity' ? (<><Link href="/" className={className}>Schedule</Link> &gt; </>) : ''}
           {type && ['homework', 'lab'].includes(type) ? (<><Link href="/assignments" className={className}>Assignments</Link> &gt; </>) : ''}
-          {title}
+          {group ? `${group} ` : ''} {title}
         </h1>
         <button
           onClick={toggleAll}

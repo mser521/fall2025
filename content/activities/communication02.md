@@ -3,39 +3,39 @@ title: "Who Said It? – Elite Cues in Environmental News"
 date: "2025-08-26"
 type: "activity"
 due_date: "2025-09-11"
-draft: 1
+draft: 0
 ---
 
-## Learning Goals
+## Reading 1 Discussion
+A. Lupia, Communicating science in politicized environments, Proc. Natl. Acad. Sci. U.S.A. 110 (supplement_3) 14048-14054 (2013) <a href="https://doi.org/10.1073/pnas.1212726110" target="_blank">Link</a>
 
-1. Recognize how political identity of a messenger shapes perception of environmental issues.
-1. Distinguish between in-group and out-group elite cues.
-1. Reflect on how this influences public trust in data, science, and policy.
+The Lupia article highlights two main communication challenges: **(1) attention** to scientific content and **(2) selective trust** based on source credibility.
 
-## Terms
+1. What are some concrete things you might do to address the attention challenge?
+1. Given that trust can vary—particularly in polarized environments—what methods (e.g., framing, communicators, platforms) could help bridge credibility gaps and foster engagement across diverse political perspectives?
 
-* **Elite cue**: A signal about how to think about an issue coming from a political or ideological leader.
-* **In-group cue**: From a leader aligned with the audience’s identity.
-* **Out-group cue**: From a leader on the opposite side of the political or ideological spectrum.
+## Reading 2 Discussion
+A. Tyson, C. Funk, B. Kennedy, What the Data Says About Americans' Views of Climate Change (Pew Research Center, 2023). <a href="https://www.pewresearch.org/short-reads/2023/08/09/what-the-data-says-about-americans-views-of-climate-change/" target="_blank">Link</a>
 
-Research shows people often respond more to who says it than what is said.
+1. How do Americans rank climate change among their national priorities, and what might explain its placement?
+1. How does recognizing climate change in one's local community relate to overall concern and policy importance?
+1. What did you think of the charts / graphs? Did they do a good job communicating the survey data?
 
-## In small groups
+## Activity: In small groups
 
 Consider the following headlines:
-
-> * President Joe Biden Calls for 100% Clean Electricity by 2035
-> * NOAA Report Shows 2023 Was the Hottest Year on Record
-> * Governor Ron DeSantis Signs Law Limiting Offshore Wind Development in Florida
-> * Study Finds Wetland Restoration Improves Flood Protection and Biodiversity
-> * Senator Elizabeth Warren Proposes $50 Billion Plan for Renewable Energy Research
-> * U.S. Geological Survey Releases Data on Declining Groundwater Levels in Midwest
-> * House GOP Leaders Introduce Bill to Ease Regulations on Oil and Gas Drilling
-> * Vice President Kamala Harris Urges Nationwide Ban on Gas-Powered Vehicles by 2035
-> * New Satellite Data Reveals Rapid Ice Loss in Antarctic Glaciers
-> * Senator Ted Cruz Backs Pipeline Expansion to Boost U.S. Energy Independence
-> * Representative Alexandria Ocasio-Cortez Pushes for $15 Billion Urban Tree Canopy Initiative
-> * Representative Kevin McCarthy Criticizes Federal Carbon Tax Proposal as “Job Killer”
+> * "President Joe Biden Calls for 100% Clean Electricity by 2035"
+> * "NOAA Report Shows 2023 Was the Hottest Year on Record"
+> * "Governor Ron DeSantis Signs Law Limiting Offshore Wind Development in Florida"
+> * "Study Finds Wetland Restoration Improves Flood Protection and Biodiversity"
+> * "Senator Elizabeth Warren Proposes $50 Billion Plan for Renewable Energy Research"
+> * "U.S. Geological Survey Releases Data on Declining Groundwater Levels in Midwest"
+> * "House GOP Leaders Introduce Bill to Ease Regulations on Oil and Gas Drilling"
+> * "Vice President Kamala Harris Urges Nationwide Ban on Gas-Powered Vehicles by 2035"
+> * "New Satellite Data Reveals Rapid Ice Loss in Antarctic Glaciers"
+> * "Senator Ted Cruz Backs Pipeline Expansion to Boost U.S. Energy Independence"
+> * "Representative Alexandria Ocasio-Cortez Pushes for $15 Billion Urban Tree Canopy Initiative"
+> * "Representative Kevin McCarthy Criticizes Federal Carbon Tax Proposal as <em>Job Killer</em>"
 
 In groups of 2-3: 
 1. Identify who the likely in-group and out-group audiences are for each headline.
@@ -44,6 +44,5 @@ In groups of 2-3:
 ## Whole-Class Discussion
 
 1. Did you notice patterns in which cues triggered stronger reactions?
-1. Could the same statement be an in-group cue for one audience and out-group for another?
 1. How might elite cues influence trust in environmental data?
 1. How can communicators reduce the polarizing effect of out-group cues?

@@ -10,7 +10,7 @@ interface AssignmentPageProps {
 
 export default async function AssignmentPage({ params }: AssignmentPageProps) {
   const { slug } = await params;
-  const postData = getPostData(slug, 'assignments');
+  const postData = await getPostData(slug, 'assignments');
   
   return (
     <div className="space-y-6">
