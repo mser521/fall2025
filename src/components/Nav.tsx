@@ -16,7 +16,7 @@ export default function Navigation() {
     { href: "/", label: "Schedule" },
     { href: "/syllabus", label: "Syllabus" },
     { href: "/assignments", label: "Assignments" },
-    { href: "/resources/html-01", label: "Resources" },
+    { href: "/resources/html", label: "Resources" },
   ];
 
   // Only run on client side to prevent hydration mismatch

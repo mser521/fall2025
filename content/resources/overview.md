@@ -3,6 +3,7 @@ title: "Course Resources"
 group_order: 1
 group: "Overview"
 order: 1
+draft: 1
 ---
 
 ## Books and Learning Resources

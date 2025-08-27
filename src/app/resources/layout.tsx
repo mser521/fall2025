@@ -10,7 +10,7 @@ export default function ResourcesLayout({
   
   // Create navigation items from the actual markdown files and sort by group_order then order
   const resourcePages = resourcePosts
-    .filter(post => post.id !== 'overview') // Exclude overview.md from navigation
+    .filter(post => post.draft !== 1) // Exclude overview.md from navigation
     .map(post => ({
       slug: post.id,
       title: post.title || post.id.charAt(0).toUpperCase() + post.id.slice(1).replace(/-/g, ' '),
@@ -30,7 +30,7 @@ export default function ResourcesLayout({
   return (
     <div className="flex flex-col lg:flex-row gap-8 mx-auto">
       <ResourcesNav resourcePages={resourcePages} />
-      <div className="max-w-4xl">
+      <div className="max-w-4xl w-full">
         {children}
       </div>
     </div>

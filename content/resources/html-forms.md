@@ -3,6 +3,7 @@ title: "Form Tags"
 group: "HTML"
 group_order: 2
 order: 8
+draft: 0
 ---
 
 Forms are use to gather information from a user, and typically post user information to a server that is expecting it. We will cover this in more detail when we get to our HTTP / REST unit.

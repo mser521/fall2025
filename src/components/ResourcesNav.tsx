@@ -27,7 +27,7 @@ export default function ResourcesNav({ resourcePages }: ResourcesNavProps) {
   }, {} as Record<string, typeof resourcePages>);
   
   return (
-    <nav className="w-full lg:w-64 mt-12 flex-shrink-0 border-r border-black min-h-screen">
+    <nav className="w-full lg:w-64 mt-12 flex-shrink-0 border-r md:border-black md:min-h-screen">
       <div className="lg:top-8 p-4">
         {Object.entries(groupedPages).map(([groupName, pages]) => (
           <div key={groupName} className="mb-6">
