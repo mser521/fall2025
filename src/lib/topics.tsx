@@ -123,13 +123,13 @@ const topics = [
         },
         {
           date: "Th, Aug 28",
-          topic: "Communication is a dialog",
-          description: "Communication is a dialog, not a monologue. Given this, it is important to consider how decisionmakers can ensure that science is responsive to diverse perspectives and lived experiences, especially from communities most affected by its outcomes.",
+          topic: "Communication is a dialog: public participation in science",
+          description: "Communication is a dialog, not a monologue. This means we must consider how everyday people engage with science, not just receive information from it. One way this happens is through citizen science or participatory science, where members of the public take part in scientific processes in various ways. These efforts can serve different purposes—such as addressing gaps in scientific knowledge or influencing research priorities—and they can also be sites of negotiation, debate, and even contestation over what counts as valid knowledge.",
           activities: [
             {
               title: "Slides",
-              url: "#",
-              draft: 1
+              url: "https://docs.google.com/presentation/d/1cw3sV3Ub7JGgkBYE6XvSJWK_uiFBe9JQtlJd0jvBkI8/edit?usp=sharing",
+              draft: 0
             }
           ],
           readings: [
@@ -139,6 +139,10 @@ const topics = [
             },
           ],
           optionalReadings: [
+            {
+              citation: (<>Van Wart, S.J., Lanouette, K., Parikh, T.S. (2020). <em>Scripts and counterscripts in community-based data science: Participatory digital mapping and the pursuit of a third space</em>. Journal of the Learning Sciences.</>),
+              url: "https://www.researchgate.net/profile/Kathryn-Lanouette/publication/337550012_Scripts_and_Counterscripts_in_Community-Based_Data_Science_Participatory_Digital_Mapping_and_the_Pursuit_of_a_Third_Space/links/5de1bc73299bf10bc3314696/Scripts-and-Counterscripts-in-Community-Based-Data-Science-Participatory-Digital-Mapping-and-the-Pursuit-of-a-Third-Space.pdf"
+            },
             {
               citation: (<>Reincke, C. M., Bredenoord, A. L., & van Mil, M. H. (2020). <em>From deficit to dialogue in science communication: The dialogue communication model requires additional roles from scientists.</em> EMBO reports, 21(9), e51278.</>), 
               url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7506985/"
