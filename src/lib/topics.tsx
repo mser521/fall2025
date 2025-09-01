@@ -181,8 +181,8 @@ const topics = [
             },
             {
               title: "Data Activity",
-              url: "./activities/data01/",
-              draft: 1
+              url: "/activities/data01/",
+              draft: 0
             }
           ],
           due: {
