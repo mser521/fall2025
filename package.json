@@ -12,6 +12,7 @@
     "deploy": "npm run build && touch out/.nojekyll"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@tailwindcss/typography": "^0.5.16",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
