@@ -1,60 +1,32 @@
 ---
-title: "What Counts as Data? (Provenance + Metadata)"
+title: "'Raw Data' is an Oxymoron Discussion"
 date: "2025-08-26"
 type: "activity"
 due_date: "2025-09-11"
-draft: 1
+draft: 0
 ---
 
-## Discussion Questions
-1. The authors argue that the phrase "raw data" is self-contradictory. What assumptions do we bring when we describe data as “raw”? How does reframing data as “cooked” or constructed challenge these assumptions?
+## "Raw Data" is an Oxymoron Discussion
+Gitelman, L. & Jackson, V. (2013). *Introduction: Raw data is an oxymoron.* In L. Gitelman (Ed.), Raw data is an oxymoron (pp. 1–14). MIT Press. <a href="https://dsl.lsu.edu/nehtextualdata/wp-content/uploads/2017/11/RawData.pdf" target="_blank">Link</a>
 
-2. According to Gitelman and Jackson, data must be “imagined as data to exist.” Choose a familiar dataset (e.g., census data, weather records) — how was it “imagined” into being? What decisions shaped its existence?
+1. Please take a moment to read this quote from the introduction (pp. 2-3):
 
-3. The authors note that terms like “collected,” “mined,” or “processed” all imply the act of interpretation. Can you trace an example from your own experience in which interpretation influenced how data were handled or understood?
+    > At first glance data are apparently before the fact: they are the starting point for what we know, who we are, and how we communicate. This shared sense of starting with data often leads to an unnoticed assumption that data are transparent, that information is self-evident, the fundamental stuff of truth itself. If we're not careful, in other words, our zeal for more and more data can become a faith in their neutrality and autonomy, their objectivity. Think of the ways people talk and write about data. Data are familiarly “collected,” “entered,” “compiled,” “stored,” “processed,” “mined,”
+    and “interpreted.” 
+    > 
+    > Less obvious are the ways in which the final term in this sequence — interpretation — haunts its predecessors. At a certain level the collection and management of data may be said to presuppose interpretation.“ Data [do] not just exist, ” Lev Manovich explains, they have to be “generated.” Data need to be imagined as data to exist and function as such, and the imagination of data entails an interpretive base. 
 
-4. Gitelman and Jackson frame data as abstract, aggregative, and graphically mobilized. Discuss what each of those terms might mean, and how they manifest in different fields (e.g., science, humanities, journalism).
+    What is the central message of this quote and why is it important?
 
-5. The introduction suggests that each discipline has its own way of “imagining data.” How might historians, economists, scientists, and artists differ in how they conceptualize and use data?
+1. Gitelman and Jackson assert that photography is subjective — and data are too! What do they mean by this? Do you agree?
 
-6. The essay warns of a growing faith in data’s neutrality and objectivity. Why might this faith be appealing? What dangers or blind spots might it create in public discourse or scientific practice?
+1. If interpretation is always present in data work, how should that affect the way we design data systems and data visualizations? What steps can researchers or organizations take to make the interpretive choices in their data practices more transparent?
 
+1. Read this quote (pp. 8-9):
 
-## Potential Activity: How is Data Imagined into Being?
+    >  It follows that the imagination of data is in some measure always an act of classification, of lumping and splitting, nesting and ranking, though the underlying principles at work can be hard to recover. Once in place, classification schemes are notoriously difficult to discern and analyze, since “Good, usable systems disappear almost by definition. The easier they are to use, the harder they are to see.” (Bowker & Star, 2000)...When phenomena are variously reduced to data, they are divided and classified, processes that work to obscure — or as if to obscure — ambiguity, conflict, and contradiction. 
 
-> **Goal**: Explore how datasets are constructed, interpreted, and maintained, revealing that data are never “raw” but always shaped by human choices.
+    Then, try two exercises:
+    * See if you can name a few different common classification systems.
+    * Then, pick one or two and consider: does this classification seem "natural"? ...And if you dig a little deeper, there are some important underlying values and principles in play?
 
-### 1. Pick a Dataset
-| **Dataset**                     | **Link**                                                                             | **Provenance Info**                                                                                              |
-| ------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| **U.S. Census Data**            | <a href="https://data.census.gov" target="_blank" rel="noopener noreferrer">data.census.gov</a>                                           | <a href="https://www.census.gov/programs-surveys/decennial-census/technical-documentation.html" target="_blank" rel="noopener noreferrer">Technical Documentation</a> |
-| **Global Weather Data**         | <a href="https://www.ncdc.noaa.gov/cdo-web/" target="_blank" rel="noopener noreferrer">NOAA Climate Data Online</a>                       | <a href="https://www.ncei.noaa.gov/access/search/data-search/global-summary-of-the-day" target="_blank" rel="noopener noreferrer">NOAA Data Documentation</a>         |
-| **COVID-19 Case Data (US)**     | <a href="https://covid.cdc.gov/covid-data-tracker/#datatracker-home" target="_blank" rel="noopener noreferrer">CDC COVID Data Tracker</a> | <a href="https://covid.cdc.gov/covid-data-tracker/#datatracker-home" target="_blank" rel="noopener noreferrer">Data Sources & Methodology</a>             |
-| **Social Media Data (Twitter)** | <a href="https://developer.twitter.com/en/docs/twitter-api" target="_blank" rel="noopener noreferrer">Twitter API</a>                     | <a href="https://developer.twitter.com/en/docs/twitter-api" target="_blank" rel="noopener noreferrer">Twitter API Documentation</a>                                   |
-| **Criminal Justice Statistics** | <a href="https://bjs.ojp.gov/data" target="_blank" rel="noopener noreferrer">Bureau of Justice Statistics</a>                             | <a href="https://bjs.ojp.gov/programs" target="_blank" rel="noopener noreferrer">Data Collection & Methodology</a>                                                    |
-| **Student Assessment Data**     | <a href="https://www.nationsreportcard.gov/ndecore/landing" target="_blank" rel="noopener noreferrer">NAEP Data Explorer</a>              | <a href="https://nces.ed.gov/nationsreportcard/tdw/" target="_blank" rel="noopener noreferrer">NAEP Technical Documentation</a>                                       |
-
-
-## Other Data Sources
-* https://dumps.wikimedia.org/other/analytics/
-
-### 2. Answer the Questions
-According to Gitelman & Jackson, “data must be imagined as data to exist.” Apply this to your dataset:
-
-1. **Origins and Imagination:** Who decided this dataset should exist? What was the original purpose? What assumptions were made about what counts as “data” here?
-
-1. **Decisions and Design:** What was included or excluded from the dataset? How were categories defined (e.g., race, gender, location)? What measurement standards or units were chosen?
-
-1. **Context and Interpretation:** Who uses this data and for what purposes? How does the context of collection shape its meaning? Are there limitations or biases built in?
-
-1. **Maintenance and Longevity:**  How is this dataset kept up-to-date or preserved over time? What work is required to make it usable (cleaning, storage, metadata)?
-
-1. **Ethical and Social Dimensions:** Whose voices or perspectives are missing? What social or political consequences might follow from how this data is imagined and structured?
-
-### 3. Visualization
-Draw a quick diagram or concept map showing the human choices and processes involved in creating and maintaining your dataset.
-
-### 4. Share Out
-Prepare a 3-minute summary for the class:
-* One surprising decision you discovered.
-* One implication for how we interpret this data.

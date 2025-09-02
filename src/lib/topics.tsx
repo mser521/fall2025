@@ -165,7 +165,7 @@ const topics = [
           topic: "Data fundamentals",
           readings: [
             {
-              citation: (<>Gitelman, Lisa. &quot;Raw Data&quot; is an Oxymoron (Introduction)</>),
+              citation: (<>Gitelman, L. & Jackson, V. (2013). <em>Introduction: Raw data is an oxymoron.</em> In L. Gitelman (Ed.), Raw data is an oxymoron (pp. 1-14). MIT Press.</>),
               url: "https://dsl.lsu.edu/nehtextualdata/wp-content/uploads/2017/11/RawData.pdf"
             },
             {
@@ -176,20 +176,20 @@ const topics = [
           activities: [
             {
               title: "Slides",
-              url: "#",
-              draft: 1
+              url: "https://docs.google.com/presentation/d/1rkNTkJ2Z82lXXa7JcqrStTkcmx1WMzfvOs8gEtb07LU/edit?usp=sharing",
+              draft: 0
             },
             {
-              title: "Data Activity",
+              title: "'Raw Data' is an Oxymoron Discussion",
               url: "/activities/data01/",
-              draft: 1
+              draft: 0
             }
           ],
           due: {
             titleShort: "Homework 1",
             title: "Analyze a public communication campaign",
             url: "./assignments/hw01/",
-            draft: 1
+            draft: 0
           }
         },
         {
@@ -217,7 +217,12 @@ const topics = [
               url: "#",
               draft: 1
             }
-          ]
+          ],
+          readings: [
+            {
+              citation: (<>Readings from Data Feminism TBD.</>),
+            },
+          ],
         },
       ]
     },
@@ -230,18 +235,18 @@ const topics = [
           date: "Th, Sep 11",
           topic: "What is the purpose of data visualization?",
           readings: [
-            {
-              citation: (<>Norman, Donald, Things that make us smart.</>)
-            },
+            
             {
               citation: (<>Chapter 1: Graphical Excellence, In The Visual Display of Quantitative Information. Tufte.</>),            },
             {
               citation: (<>Chapter 2: Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</>),
-            },
-            {
-              citation: (<>Chapter 3: Sources of Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</>),
             }
-          ]
+          ],
+          optionalReadings: [
+            {
+              citation: (<>Norman, Donald, Things that make us smart.</>)
+            },
+          ],
         },
         {
           date: "Tu, Sep 16",
