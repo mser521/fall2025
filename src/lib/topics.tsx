@@ -183,6 +183,11 @@ const topics = [
               title: "'Raw Data' is an Oxymoron Discussion",
               url: "/activities/data01/",
               draft: 0
+            },
+            { 
+              title: "HTML Activity",
+              url: "/activities/html01/",
+              draft: 0
             }
           ],
           due: {
