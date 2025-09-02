@@ -3,10 +3,10 @@ title: "What Counts as Data? (Provenance + Metadata)"
 date: "2025-08-26"
 type: "activity"
 due_date: "2025-09-11"
-draft: 0
+draft: 1
 ---
 
-## Potential Discussion Questions
+## Discussion Questions
 1. The authors argue that the phrase "raw data" is self-contradictory. What assumptions do we bring when we describe data as “raw”? How does reframing data as “cooked” or constructed challenge these assumptions?
 
 2. According to Gitelman and Jackson, data must be “imagined as data to exist.” Choose a familiar dataset (e.g., census data, weather records) — how was it “imagined” into being? What decisions shaped its existence?

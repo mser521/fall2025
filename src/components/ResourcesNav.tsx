@@ -70,7 +70,7 @@ export default function ResourcesNav({ resourcePages }: ResourcesNavProps) {
           className="w-full p-3 bg-gray-100 hover:bg-gray-200 rounded-lg mb-4 flex justify-between items-center transition-colors"
           onClick={() => setNavOpen(!navOpen)}
         >
-          <span className="font-medium">Resources Navigation</span>
+          <span className="font-medium">Resource Pages</span>
           <ChevronDownIcon className={`w-5 h-5 transition-transform duration-200 ${navOpen ? 'rotate-180' : ''}`} />
         </button>
         {navOpen && (

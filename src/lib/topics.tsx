@@ -182,7 +182,7 @@ const topics = [
             {
               title: "Data Activity",
               url: "/activities/data01/",
-              draft: 0
+              draft: 1
             }
           ],
           due: {
@@ -194,7 +194,7 @@ const topics = [
         },
         {
           date: "Th, Sep 4",
-          topic: "Lab 1: Constructing data",
+          topic: "Lab 1: Concepts in Data Organization",
           activities: [
             { 
               title: "Slides",
@@ -203,7 +203,7 @@ const topics = [
             },
             {
               title: "Lab 1: Introduction to Data",
-              url: "./activities/data01/",
+              url: "/assignments/lab01/",
               draft: 1
             }
           ],
