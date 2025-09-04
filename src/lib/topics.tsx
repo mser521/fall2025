@@ -210,17 +210,38 @@ const topics = [
         },
         {
           date: "Tu, Sep 9",
-          topic: "Data bias: Sources and consequences ",
+          topic: "Bias, Categorization, and Classification",
+          description: "This meeting will focus on the sources and consequences of data bias, with a particular emphasis on the role of social constructs in data collection and analysis.",
           activities: [
             {
               title: "Slides",
               url: "#",
               draft: 1
+            },
+            {
+              title: "Discussion Questions",
+              url: "/activities/data02/",
+              draft: 0
             }
           ],
           readings: [
             {
-              citation: (<>Readings from Data Feminism TBD.</>),
+              citation: (<>[49:30] Video: “The Trouble with Bias” (2017, Dec) - Kate Crawford</>),
+              url: "https://www.youtube.com/watch?v=fMym_BKWQzk"
+            },
+            {
+              citation: (<>[33:22] Video: Noble, S. U. (2019, July). Imagining a future free from the algorithms of oppression [Conference keynote]. Association for Computational Linguistics (ACL 2019), Florence, Italy.</>),
+              url: "https://www.youtube.com/watch?v=tNi_U1Bb1S0&t=772s"
+            },
+            {
+              citation: (<>[24:16] Video: Thorn, Abigail (2021, July). Social Constructs (YouTube Video). Philosophy Tube.</>),
+              url: "https://www.youtube.com/watch?v=koud7hgGyQ8" 
+            }
+          ],
+          optionalReadings: [
+            {
+              citation: (<>D&apos;Ignazio, C., & Klein, L. (2020). 6. The numbers don&apos;t speak for themselves. Data feminism.</>),
+              url: "https://direct.mit.edu/books/book/4660/chapter/213291/The-Numbers-Don-t-Speak-for-Themselves"
             },
           ],
         },
@@ -241,12 +262,7 @@ const topics = [
             {
               citation: (<>Chapter 2: Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</>),
             }
-          ],
-          optionalReadings: [
-            {
-              citation: (<>Norman, Donald, Things that make us smart.</>)
-            },
-          ],
+          ]
         },
         {
           date: "Tu, Sep 16",
