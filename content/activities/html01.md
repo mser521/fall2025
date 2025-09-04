@@ -2,7 +2,6 @@
 title: "Activity: Write your first HTML Page"
 date: "2025-08-26"
 type: "activity"
-
 ---
 
 ## Today's Slides

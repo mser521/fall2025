@@ -27,7 +27,7 @@ export default function DaysLeft({ dueDate }: DaysLeftProps) {
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
       
       if (diffDays < 0) {
-        setDaysLeft(`${Math.abs(diffDays)} day${Math.abs(diffDays) !== 1 ? 's' : ''} overdue`);
+        setDaysLeft(`Passed`);
       } else if (diffDays === 0) {
         setDaysLeft('Due today');
       } else if (diffDays === 1) {

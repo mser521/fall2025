@@ -179,11 +179,6 @@ const topics = [
               url: "https://docs.google.com/presentation/d/1rkNTkJ2Z82lXXa7JcqrStTkcmx1WMzfvOs8gEtb07LU/edit?usp=sharing",
               draft: 0
             },
-            {
-              title: "'Raw Data' is an Oxymoron Discussion",
-              url: "/activities/data01/",
-              draft: 0
-            },
             { 
               title: "HTML Activity",
               url: "/activities/html01/",
@@ -201,15 +196,15 @@ const topics = [
           date: "Th, Sep 4",
           topic: "Lab 1: Concepts in Data Organization",
           activities: [
-            { 
-              title: "Slides",
-              url: "#",
-              draft: 1
+            {
+              title: "'Raw Data' is an Oxymoron Discussion",
+              url: "/activities/data01/",
+              draft: 0
             },
             {
               title: "Lab 1: Introduction to Data",
               url: "/assignments/lab01/",
-              draft: 1
+              draft: 0
             }
           ],
         },
