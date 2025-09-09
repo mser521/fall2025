@@ -215,8 +215,8 @@ const topics = [
           activities: [
             {
               title: "Slides",
-              url: "#",
-              draft: 1
+              url: "https://docs.google.com/presentation/d/17gPwFHLRP5IDCjmJnxkDP6-ZGg0sHqKE0LWlM252pTo/edit?usp=sharing",
+              draft: 0
             },
             {
               title: "Discussion Questions",
@@ -255,6 +255,13 @@ const topics = [
         {
           date: "Th, Sep 11",
           topic: "What is the purpose of data visualization?",
+          activities: [
+            {
+              title: "Slides",
+              url: "#",
+              draft: 1
+            },
+          ],
           readings: [
             
             {

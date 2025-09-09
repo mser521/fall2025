@@ -6,33 +6,39 @@ due_date: "2025-09-11"
 draft: 0
 ---
 
-## Kate Crawford Video 
+## 1. Safiya Noble Video
+Video: Imagining a future free from the algorithms of oppression [Conference keynote]. Association for Computational Linguistics (ACL 2019), Florence, Italy. https://www.youtube.com/watch?v=tNi_U1Bb1S0&t=772s
+
+1. How are patterns of oppression replicated or magnified by modern technologies? Give some examples.
+1. How are the biases reproduced by search engines (and other platforms) similar and different from previous kinds of information intermediaries (libraries, family & friends, consulting with experts)?
+1. For constituencies that don’t have the money, technological expertise, numbers, or influence to substantially influence search results: what recourse should they have? Shouldn’t people get a say in how their likenesses are being represented?
+1. What obligations do organizations have to ensure that the data and narratives they produce about people do not reinforce allocative or representational harms?
+
+
+## 2. Kate Crawford Video 
 Video: “The Trouble with Bias” (2017) - Kate Crawford. https://www.youtube.com/watch?v=fMym_BKWQzk 
 
 1. What distinguishes allocative harms (e.g., unequal access to loans, jobs) from representational harms (e.g., cultural stereotyping or erasure)? Can you think of a real-world example (either familiar or hypothetical) for each? 
     * How does one impact the other?
     * Which type of harm is understudied? Why is it understudied?
 
-2. You are working at a company that is scaling up their software platform to new cities. You're collaborating with a data scientist who has been careful to take a representative sample of people who are using their software, in order to create a data-informed plan to scale up. Have they done enough to mitigate bias? Why or why not?
+2. Crawford uses the example of historical redlining and modern delivery disparities to illustrate how past biases are encoded into current systems. Consider the following context (below). How might historical inequities impact the fairness of these systems:
+    * Predictive policing
+    * Credit scores
+    * Facial recognition
+    * Automated hiring tools
+    * Education placement  (should Susie be in the gifted program?)
 
-3. Crawford uses the example of historical redlining and modern delivery disparities to illustrate how past biases are encoded into current systems. Can you identify other contexts where historical inequities continue to impact contemporary algorithmic systems?
-
-4. She reminds us that every design choice carries social consequences. Who typically gets to make decisions about algorithms and datasets, and who feels their consequences most? How can we democratize these decisions?
-
-## Safiya Noble Video
-Video: Imagining a future free from the algorithms of oppression [Conference keynote]. Association for Computational Linguistics (ACL 2019), Florence, Italy. https://www.youtube.com/watch?v=tNi_U1Bb1S0&t=772s"
-
-1. How are patterns of oppression replicated or magnified by modern technologies?
-1. Can you identify examples where marginalized communities continue to be disproportionately targeted or misrepresented by algorithmic systems?
-1. What obligations do organizations have to ensure that the data and narratives they produce about people do not reinforce allocative or representational harms?
+3. Crawford reminds us that every design choice carries social consequences. Who typically gets to make decisions about algorithms and datasets, and who feels their consequences most? How can we democratize these decisions?
 
 
-## Abigail Thorn Video
+
+## 3. Abigail Thorn Video
 Video: Thorn, Abigail (2021, July). Social Constructs (YouTube Video). Philosophy Tube. https://www.youtube.com/watch?v=koud7hgGyQ8
 
-1. What is a social construct? 
-
-1. Thorne argues that classification systems (like gender categories) are socially constructed and historically situated. Why does it matter what categories we choose, and what are the consequences of using outdated or arbitrary classifications in our databases and data-informed decisionmaking?
+1. Thorne pulls out a quote from Ásta (Icelandic philosopher), that considers whether a property of a person is “socially significant.”
+    * What is the difference between a "natural property" and a "social construct"?
+    * What example does Thorne gives to demonstrate this idea? Can you think of additional examples?
 
 1. Around minute 7:30, Thorne says: 
 
@@ -40,6 +46,6 @@ Video: Thorn, Abigail (2021, July). Social Constructs (YouTube Video). Philosoph
 
     Question: are all databases “full VR”? Is there such thing as an objective property?
 
-1. Why do categorization and classification systems shape behavior? 
+1. Do we measure things because they’re important, or do things become important because we measure them? What example does Thorne give re: “Earth 2” + “Earth 0”?
 
 1. Why are these systems so difficult to change?
