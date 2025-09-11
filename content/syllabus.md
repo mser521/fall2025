@@ -143,6 +143,3 @@ When a faculty member submits an alert that expresses a concern, the student rec
 
 ### Academic Honesty
 The university’s policy on academic honesty states that “As a community of scholars dedicated to learning and the pursuit of knowledge UNC Asheville relies on the honesty and academic integrity of all the members of its community. Any act of plagiarism or cheating is academic dishonesty. A person who knowingly assists another in cheating is likewise guilty of cheating. According to the instructor’s view of the gravity of the offense, a student may be punished by a failing grade or a grade of zero for the assignment or test, or a failing grade in the course. If it seems warranted, the instructor may also recommend to the Provost dismissal or other serious university sanction.” I expect that you will exercise integrity in all quizzes, exams, and written assignments. Please email me or pop in during student hours if you have additional questions or need clarification on any point. You can find additional information regarding the policy and potential grievance procedures here: https://studenthandbook.unca.edu/student-conduct/academic-misconduct-and-grievances-procedures/
-
-### Generative Artificial Intelligence (AI) Policy
-TODO

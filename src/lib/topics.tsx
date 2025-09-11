@@ -16,11 +16,11 @@ const topics = [
             },
             {
               title: "Syllabus",
-              url: "./syllabus/",
+              url: "/syllabus/",
             },
             {
               title: "AI Policy Activity",
-              url: "./activities/ai-policy/",
+              url: "/activities/ai-policy/",
               draft: 1
             },
           ],
@@ -84,7 +84,7 @@ const topics = [
           ],
           readings: [
             { 
-              citation: (<>A. Lupia, Communicating science in politicized environments, Proc. Natl. Acad. Sci. U.S.A. 110 (supplement_3) 14048-14054, https://doi.org/10.1073/pnas.1212726110 (2013).</>), 
+              citation: (<>A. Lupia, Communicating science in politicized environments, Proc. Natl. Acad. Sci. U.S.A. 110 (supplement_3) 14048-14054 (2013).</>), 
               url: "https://doi.org/10.1073/pnas.1212726110"
             },
             { 
@@ -181,14 +181,14 @@ const topics = [
             },
             { 
               title: "HTML Activity",
-              url: "/activities/html01/",
+              url: "/activities/html01",
               draft: 0
             }
           ],
           due: {
             titleShort: "Homework 1",
             title: "Analyze a public communication campaign",
-            url: "./assignments/hw01/",
+            url: "/assignments/hw01",
             draft: 0
           }
         },
@@ -198,12 +198,12 @@ const topics = [
           activities: [
             {
               title: "'Raw Data' is an Oxymoron Discussion",
-              url: "/activities/data01/",
+              url: "/activities/data01",
               draft: 0
             },
             {
               title: "Lab 1: Introduction to Data",
-              url: "/assignments/lab01/",
+              url: "/assignments/lab01",
               draft: 0
             }
           ],
@@ -255,6 +255,39 @@ const topics = [
         {
           date: "Th, Sep 11",
           topic: "What is the purpose of data visualization?",
+          description: "Intro to the purpose of data visualization, and the principles of graphical excellence and graphical integrity.",
+          activities: [
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/18YEmR55Ignbw9GqSqLHnjHlpIwjpMAWKLUfkjSM0H7U/edit?usp=sharing",
+              draft: 0
+            },
+            {
+              title: "Hand-Drawn Charts Activity",
+              url: "/activities/vis01",
+              draft: 0
+            }
+          ],
+          readings: [
+            {
+              citation: (<>Chapter 1: Graphical Excellence, In The Visual Display of Quantitative Information. Tufte.</>),            
+            },
+            {
+              citation: (<>Chapter 2: Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</>),
+            }
+          ],
+
+          due: {
+            titleShort: "Lab 1",
+            title: "Concepts in Data Organization",
+            url: "/assignments/lab01",
+            draft: 0
+          }
+        },
+        {
+          date: "Tu, Sep 16",
+          topic: "Good and bad data visualizations",
+          description: "What to do / not to do when creating data visualizations.",
           activities: [
             {
               title: "Slides",
@@ -262,23 +295,29 @@ const topics = [
               draft: 1
             },
           ],
-          readings: [
-            
+          readings: [            
             {
-              citation: (<>Chapter 1: Graphical Excellence, In The Visual Display of Quantitative Information. Tufte.</>),            },
+              citation: (<>Chapter 3: Sources of Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</>),            
+            },
             {
-              citation: (<>Chapter 2: Graphical Integrity, In The Visual Display of Quantitative Information. Tufte.</>),
+              citation: (<>Chapter 4: Data-Ink and Graphical Redesign, In The Visual Display of Quantitative Information. Tufte.</>),
+            },
+            {
+              citation: (<>Chapter 5: Chartjunk, In The Visual Display of Quantitative Information. Tufte.</>),
             }
           ]
         },
         {
-          date: "Tu, Sep 16",
-          topic: "Good and bad data visualizations",
-          
-        },
-        {
           date: "Th, Sep 18",
           topic: "Perception",
+          description: "Psychological principles that influence how we perceive data visualizations.",
+          activities: [
+            {
+              title: "Slides",
+              url: "#",
+              draft: 1
+            },
+          ],
           readings: [
             {
               citation: (<><em>Perception in Visualization</em>. Christopher G. Healey. Department of Computer Science, North Carolina State University.</>),
@@ -292,7 +331,7 @@ const topics = [
           assigned: {
             titleShort: "Homework 2",
             title: "Critique an information visualization in the news",
-            url: "./assignments/hw02/",
+            url: "/assignments/hw02/",
             draft: 1
           }
         },
