@@ -1,5 +1,6 @@
 import { getPostData, getAllPostIds } from '@/lib/markdown';
 import PageHeader from '@/components/PageHeader';
+import MarkdownContent from '@/components/MarkdownContent';
 import { notFound } from 'next/navigation';
 
 interface ActivityPageProps {
@@ -21,9 +22,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           type="activity"
         />
         
-        <div className="prose prose-lg max-w-none">
-          <div dangerouslySetInnerHTML={{ __html: postData.content }} />
-        </div>
+        <MarkdownContent content={postData.content} />
       </div>
     );
   } catch (error) {

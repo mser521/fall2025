@@ -6,7 +6,6 @@ due_date: "2025-09-11"
 draft: 0
 ---
 
-
 Open <a href="https://docs.google.com/spreadsheets/d/1-kR9VPs0In0o8Z-Dc_xt55Qp2QjSyE5N7SiL2ykROhk/edit?usp=sharing" target="_blank">this coffee data spreadsheet</a> in Google sheets. Then make a copy of it (so you can edit it). Pretend this spreadsheet represents all coffee sales for Texas, California, and Florida in 2024.
 
 > ## Spreadsheet Basics
@@ -39,3 +38,8 @@ As a group, try to answer the following questions using your spreadsheet:
 1. Make a chart that shows sales of Espresso, Latte, and Drip in Texas from January to March.
 1. Make a chart that compares annual coffee sales for each state. 
 1. Make a chart that shows how coffee consumption varies across the 3 states throughout the year (intentionally vague...open to interpretation).
+
+
+## Gallery of Student Work
+
+<ImageGrid />
