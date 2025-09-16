@@ -286,14 +286,19 @@ const topics = [
         },
         {
           date: "Tu, Sep 16",
-          topic: "Good and bad data visualizations",
+          topic: "Visualization Dos and Don'ts",
           description: "What to do / not to do when creating data visualizations.",
           activities: [
             {
               title: "Slides",
-              url: "#",
-              draft: 1
+              url: "https://docs.google.com/presentation/d/1sPRjPw7f0_c2_X_mAfyZjtA6aPpm0DkCe2rGODD6oks/edit?usp=sharing",
+              draft: 0
             },
+            {
+              title: "Redesign Activity",
+              url: "/activities/vis02",
+              draft: 0
+            }
           ],
           readings: [            
             {
