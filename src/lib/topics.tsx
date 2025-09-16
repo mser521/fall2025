@@ -305,7 +305,13 @@ const topics = [
             {
               citation: (<>Chapter 5: Chartjunk, In The Visual Display of Quantitative Information. Tufte.</>),
             }
-          ]
+          ],
+          assigned: {
+            titleShort: "Homework 2",
+            title: "Critique an information visualization in the news",
+            url: "/assignments/hw02/",
+            draft: 0
+          }
         },
         {
           date: "Th, Sep 18",
@@ -323,17 +329,13 @@ const topics = [
               citation: (<><em>Perception in Visualization</em>. Christopher G. Healey. Department of Computer Science, North Carolina State University.</>),
               url: "https://www.csc2.ncsu.edu/faculty/healey/PP/"
             },
+          ],
+          optionalReadings: [
             {
               citation: (<>Durand, F. (2002, July). <em>Perceptual and artistic principles for effective computer depiction</em> [Course materials]. SIGGRAPH 2002, San Antonio, Texas. Massachusetts Institute of Technology.</>),
               url: "https://people.csail.mit.edu/fredo/SIG02_ArtScience/"
             }
-          ],
-          assigned: {
-            titleShort: "Homework 2",
-            title: "Critique an information visualization in the news",
-            url: "/assignments/hw02/",
-            draft: 1
-          }
+          ]
         },
       ]
     },
