@@ -325,8 +325,8 @@ const topics = [
           activities: [
             {
               title: "Slides",
-              url: "#",
-              draft: 1
+              url: "https://docs.google.com/presentation/d/114ov6B6L6UodILR5ZS9xv5NyrCDlcHQAAiF4eYFHFJI/edit?usp=sharing",
+              draft: 0
             },
           ],
           readings: [
