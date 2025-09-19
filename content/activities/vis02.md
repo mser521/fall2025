@@ -24,3 +24,7 @@ Just use pen-and-paper:
 
 ### Option 5
 <img class="w-full max-w-[600px]" src="/fall2025/images/activities/chart-redesign/option5.png" alt="option 5" />
+
+## Gallery of Student Work
+
+<ImageGrid set="vis02" />

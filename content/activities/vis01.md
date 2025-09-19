@@ -42,4 +42,4 @@ As a group, try to answer the following questions using your spreadsheet:
 
 ## Gallery of Student Work
 
-<ImageGrid />
+<ImageGrid set="vis01" />
