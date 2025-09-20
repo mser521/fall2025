@@ -5,7 +5,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary: #3b82f6;
-  --secondary: #22c55e;
+  --secondary: #081f87;
   --accent: transparent;
   --border: #e5e7eb;
   --muted: #6b7280;
@@ -34,15 +34,15 @@ h1 {
 }
 
 h2 {
-  @apply text-xl md:text-2xl mb-4 mt-8 font-bold;
+  @apply text-xl md:text-2xl mb-4 mt-8 font-bold pb-2 border-b border-gray-500 dark:border-gray-300;
   font-family: var(--font-poppins), serif;
   color: var(--foreground);
 }
 
 h3, .logo {
-  @apply text-lg md:text-xl font-bold mb-2 mt-6;
+  @apply text-lg md:text-xl font-bold mb-2 mt-6 ;
   font-family: var(--font-poppins), serif;
-  color: var(--foreground);
+  color: var(--secondary);
 }
 
 h4 {
@@ -85,6 +85,10 @@ ol {
   color: var(--foreground);
 }
 
+ol ol, ol ul, ul ol, ul ul {
+  @apply !mb-0;
+}
+
 ul {
   @apply list-disc pl-12 mb-4;
   color: var(--foreground);
@@ -104,7 +108,7 @@ blockquote {
 }
 
 blockquote h2 {
-  @apply mt-0;
+  @apply mt-0 !border-b-0;
 }
 
 .syllabus-page, .assignment-page {
@@ -296,4 +300,8 @@ code {
   border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.screenshot {
+  @apply mt-2 mb-2 w-full max-w-xl border border-gray-200 dark:border-gray-600;
 }
