@@ -141,6 +141,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Offset anchor links to account for fixed header */
+html {
+  scroll-padding-top: 80px; /* Adjust this value based on your header height */
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
