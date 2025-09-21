@@ -1,9 +1,9 @@
 ---
-title: "Building charts with Observable"
+title: "Intro to HTML & CSS"
 num: "3"
-date: "2025-10-02"
+date: "2025-09-30"
 type: "lab"
-due_date: "2025-10-14"
+due_date: "2025-10-09"
 draft: 1
 ---
 

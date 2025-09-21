@@ -42,7 +42,7 @@ export default function SchedulePage() {
       
       {topics.map((topic) => (
         <div key={topic.id} className="mb-16">
-          <h2>Topic {topic.id}: {topic.title}</h2>
+          <h2 className="!border-b-0">Topic {topic.id}: {topic.title}</h2>
           <p className="pb-6 !mb-0 border-b border-black dark:border-gray-700 text-gray-700 dark:text-gray-300">{topic.description}</p>
           
           {topic.meetings.map((meeting, index) => {

@@ -351,25 +351,51 @@ const topics = [
       meetings: [ 
         {
           date: "Tu, Sep 23",
-          topic: "Other visualization techniques (visualizing uncertainty; geospatial visualizations)",          
-        },
-        {
-          date: "Th, Sep 25",
-          topic: "Introduction to HTML and CSS",
+          topic: "Introduction to Tableau", 
+          activities: [
+            {
+              title: "Slides",
+              url: "#",
+              draft: 1
+            },
+            {
+              title: "Lab 2: Intro to Tableau Public",
+              url: "/assignments/lab02",
+              draft: 0
+            }
+          ], 
           due: {
             titleShort: "Homework 2",
             title: "Critique an information visualization in the news",
-            url: "./assignments/hw02/",
-            draft: 1
-          }
+            url: "/assignments/hw02",
+            draft: 0
+          }        
+        },
+        {
+          date: "Th, Sep 25",
+          topic: "Tableau Continued",
         },
         {
           date: "Tu, Sep 30",
-          topic: "Lab 2: HTML and CSS",
+          topic: "HTML and CSS Lab",
+          activities: [
+            {
+              title: "Slides",
+              url: "#",
+              draft: 1
+            },
+          ],
         },
         {
           date: "Th, Oct 2",
-          topic: "Introduction to Observable (and JavaScript)",
+          topic: "HTML and CSS Continued",
+          activities: [
+            {
+              title: "Lab 3: Intro to HTML & CSS",
+              url: "/assignments/lab03",
+              draft: 1
+            }
+          ],
         },
         {
           date: "Tu, Oct 7",
@@ -378,15 +404,15 @@ const topics = [
         },
         {
           date: "Th, Oct 9",
-          topic: "Lab 3: Building charts with observable",
+          topic: "Intro to JavaScript",
         },
         {
           date: "Tu, Oct 14",
-          topic: "Interaction with Observable"
+          topic: "Lab 4: JavaScript Widgets"
         },
         {
           date: "Th, Oct 16",
-          topic: "Lab 4: Interactive charts and maps with Observable",
+          topic: "Working with Lists and JSON Data"
         },
         
       ]
