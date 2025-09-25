@@ -46,16 +46,18 @@ export default async function AssignmentsPage() {
   
   // Sort assignments
   assignments.sort((a, b) => {
-    // If both have dates, sort by date
+    // Primary sort: by date
     if (a.due_date && b.due_date) {
-      return new Date(a.due_date).getTime() - new Date(b.due_date).getTime();
+      const dateComparison = new Date(a.due_date).getTime() - new Date(b.due_date).getTime();
+      if (dateComparison !== 0) return dateComparison;
     }
     // If only one has a date, put the one without date at the end
     if (a.due_date && !b.due_date) return -1;
     if (!a.due_date && b.due_date) return 1;
-    // If neither has a date, sort by assignment number
-    const aNum = parseInt(a.num as string) || 0;
-    const bNum = parseInt(b.num as string) || 0;
+    
+    // Secondary sort: by assignment number
+    const aNum = parseInt(a.num as string) || 100000;
+    const bNum = parseInt(b.num as string) || 100000;
     return aNum - bNum;
   });
 

@@ -16,9 +16,9 @@ export default function MarkdownContent({ content }: MarkdownContentProps) {
     if (!contentRef.current) return;
 
     // Find all ImageGrid placeholders and replace them with the actual component
-    const placeholders = contentRef.current.querySelectorAll('[data-imagegrid-placeholder="true"]');
+    const imageGridPlaceholders = contentRef.current.querySelectorAll('[data-imagegrid-placeholder="true"]');
     
-    placeholders.forEach((placeholder) => {
+    imageGridPlaceholders.forEach((placeholder) => {
       // Get the image set and alt text from data attributes
       const imageSet = placeholder.getAttribute('data-imagegrid-set') || 'vis01';
       const customAlt = placeholder.getAttribute('data-imagegrid-alt');
@@ -48,6 +48,23 @@ export default function MarkdownContent({ content }: MarkdownContentProps) {
           alt={altText}
         />
       );
+    });
+
+    // Find all LinkPreviewDemo placeholders and replace them with the actual component
+    const linkPreviewPlaceholders = contentRef.current.querySelectorAll('[data-linkpreview-placeholder="true"]');
+    
+    linkPreviewPlaceholders.forEach((placeholder) => {
+      // Create a container for the LinkPreviewDemo component
+      const container = document.createElement('div');
+      container.className = 'my-8';
+      
+      // Create a div where we'll mount the React component
+      const reactContainer = document.createElement('div');
+      container.appendChild(reactContainer);
+      
+      // Replace the placeholder with our container
+      placeholder.parentNode?.replaceChild(container, placeholder);
+      
     });
   }, [content]);
 

@@ -374,6 +374,13 @@ const topics = [
         {
           date: "Th, Sep 25",
           topic: "Tableau Continued",
+          activities: [
+            {
+              title: "Geospatial Visualization Activity",
+              url: "/activities/vis03",
+              draft: 0
+            }
+          ],
         },
         {
           date: "Tu, Sep 30",
