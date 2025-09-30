@@ -387,9 +387,13 @@ const topics = [
           topic: "HTML + GitHub Lab",
           activities: [
             {
-              title: "Slides",
-              url: "#",
-              draft: 1
+              title: "Slides from HTML Lecture",
+              url: "https://docs.google.com/presentation/d/1hZ1fDB2bEBQvWieqKQD-mp-8qnrUKpo7mHKk-yuYFMg/edit?slide=id.g378bcfc7f86_0_0#slide=id.g378bcfc7f86_0_0",
+              draft: 0
+            },{
+              title: "Today's Slides",
+              url: "https://docs.google.com/presentation/d/1hZ1fDB2bEBQvWieqKQD-mp-8qnrUKpo7mHKk-yuYFMg/edit?slide=id.g378bcfc7f86_0_0#slide=id.g378bcfc7f86_0_0",
+              draft: 0
             },
             {
               title: "Activity: Configuring GitHub",

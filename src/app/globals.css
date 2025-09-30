@@ -339,10 +339,14 @@ li > p {
 /* ol > li {
   @apply mb-4;
 } */
-/* 
+
+ol li {
+  @apply mb-4;
+}
+
 ol li > ul > li {
   @apply !mb-0;
-} */
+}
 
 /* li:has(> ol) {
   @apply mt-4;
