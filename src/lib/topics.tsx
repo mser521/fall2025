@@ -384,22 +384,32 @@ const topics = [
         },
         {
           date: "Tu, Sep 30",
-          topic: "HTML and CSS Lab",
+          topic: "HTML + GitHub Lab",
           activities: [
             {
               title: "Slides",
               url: "#",
               draft: 1
             },
+            {
+              title: "Activity: Configuring GitHub",
+              url: "/activities/github",
+              draft: 0
+            },
+            {
+              title: "Lab 3: Intro to HTML & CSS",
+              url: "/assignments/lab03",
+              draft: 0
+            }
           ],
         },
         {
           date: "Th, Oct 2",
-          topic: "HTML and CSS Continued",
+          topic: "Intro to CSS",
           activities: [
             {
-              title: "Lab 3: Intro to HTML & CSS",
-              url: "/assignments/lab03",
+              title: "Activity: CSS Exercises",
+              url: "/activities/css01",
               draft: 1
             }
           ],

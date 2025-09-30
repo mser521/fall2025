@@ -307,6 +307,38 @@ code {
   overflow: hidden;
 }
 
-.screenshot {
-  @apply mt-2 mb-2 w-full max-w-xl border border-gray-200 dark:border-gray-600;
+.screenshot-xs {
+  @apply mt-4 mb-4 w-full max-w-sm border border-gray-300 dark:border-gray-600;
 }
+
+.screenshot-sm {
+  @apply mt-4 mb-4 w-full max-w-md border border-gray-300 dark:border-gray-600;
+}
+
+.screenshot, .screenshot-md {
+  @apply mt-4 mb-4 w-full max-w-xl border border-gray-300 dark:border-gray-600;
+}
+
+.screenshot-lg {
+  @apply mt-4 mb-4 w-full border border-gray-300 dark:border-gray-600 rounded-sm;
+}
+
+
+ol li > ul {
+  @apply !mb-2 !mt-2;
+}
+
+li > p {
+  @apply !mb-0 !mt-0;
+}
+/* ol > li {
+  @apply mb-4;
+} */
+/* 
+ol li > ul > li {
+  @apply !mb-0;
+} */
+
+/* li:has(> ol) {
+  @apply mt-4;
+} */

@@ -2,6 +2,7 @@ import { getAllPostIds, getPostData, PostData } from '@/lib/markdown';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
 import DaysLeft from '@/components/DaysLeft';
+import externalAssignments from '@/data/external-assignments.json';
 
 interface AssignmentData {
   id: string;
@@ -13,6 +14,8 @@ interface AssignmentData {
   type?: string;
   assigned?: string;
   draft?: number;
+  external_url?: string;
+  external_type?: string;
 }
 
 function formatDate(dateString: string): string {
@@ -29,7 +32,7 @@ export default async function AssignmentsPage() {
   // Get all assignment files from content/assignments directory
   const assignmentIds = getAllPostIds('assignments');
   
-  const assignments: AssignmentData[] = await Promise.all(assignmentIds.map(async ({ params }) => {
+  const markdownAssignments: AssignmentData[] = await Promise.all(assignmentIds.map(async ({ params }) => {
     const postData = await getPostData(params.id, 'assignments');
     return {
       id: params.id,
@@ -43,6 +46,9 @@ export default async function AssignmentsPage() {
       draft: postData.draft,
     };
   }));
+
+  // Combine markdown assignments with external assignments
+  const assignments: AssignmentData[] = [...markdownAssignments, ...externalAssignments];
   
   // Sort assignments
   assignments.sort((a, b) => {
@@ -73,11 +79,27 @@ export default async function AssignmentsPage() {
     if (isDraft(assignment)) {
       return <>{assignment.type ? titleCase(assignment.type) : ''} {assignment.num ? assignment.num : ''}</>;
     }
-    return (
-      <Link  href={`/assignments/${assignment.id}`}
+    
+    // Handle external assignments
+    if (assignment.external_url) {
+      return (
+        <>
+        <a 
+          href={assignment.external_url} 
+          target="_blank" 
+          rel="noopener noreferrer"
         >
-          {assignment.type ? titleCase(assignment.type) : ''} {assignment.num ? assignment.num : ''}
-        </Link>
+          {assignment.type ? titleCase(assignment.type) : ''} {assignment.num ? assignment.num : ''}</a>
+        <span className="ml-1 text-xs">↗</span>
+        </>
+      );
+    }
+    
+    // Handle regular markdown assignments
+    return (
+      <Link href={`/assignments/${assignment.id}`}>
+        {assignment.type ? titleCase(assignment.type) : ''} {assignment.num ? assignment.num : ''}
+      </Link>
     );
   }
 
