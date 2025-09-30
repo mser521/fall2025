@@ -90,7 +90,7 @@ git config --global user.email "my_email@gmail.com"
 
 It's OK if your tutorials folder isn't set up yet, but make sure your lectures folder looks like the one shown above. This is very important. 
 
-### 3. Initialize a Git Repository
+### 2. Initialize a Git Repository
 After you've doublechecked your file structure, open your entire `mser521` folder in VS Code. Next, click on the icon that looks like a tree branch, and click the blue button that says "Initialize Repository":
 
 <img class="screenshot-lg" src="/fall2025/images/activities/configure-github/ss2.png" />

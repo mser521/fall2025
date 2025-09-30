@@ -1,6 +1,7 @@
 import { getPostData, getAllPostIds } from '@/lib/markdown';
 import PageHeader from '@/components/PageHeader';
 import MarkdownContent from '@/components/MarkdownContent';
+import TableOfContents from '@/components/TableOfContents';
 import { notFound } from 'next/navigation';
 
 interface ActivityPageProps {
@@ -15,14 +16,24 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
     const postData = await getPostData(slug, 'activities');
     
     return (
-      <div className="space-y-6 assignment-page">
+      <div className="space-y-6">
         <PageHeader 
           title={postData.title} 
           excerpt={postData.excerpt}
           type="activity"
         />
         
-        <MarkdownContent content={postData.content} />
+        <div className="flex gap-8">
+          {/* Main content */}
+          <div className="flex-1 min-w-0">
+            <MarkdownContent content={postData.content} />
+          </div>
+          
+          {/* Table of Contents */}
+          <div className="hidden xl:block flex-shrink-0">
+            <TableOfContents />
+          </div>
+        </div>
       </div>
     );
   } catch (error) {

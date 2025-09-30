@@ -1,5 +1,7 @@
 import { getPostData, getAllPostIds } from '@/lib/markdown';
 import PageHeader from '@/components/PageHeader';
+import MarkdownContent from '@/components/MarkdownContent';
+import TableOfContents from '@/components/TableOfContents';
 import { notFound } from 'next/navigation';
 
 interface AssignmentPageProps {
@@ -29,8 +31,17 @@ export default async function AssignmentPage({ params }: AssignmentPageProps) {
         type={postData.type}
       />
       { postData.due_date && <p className="mt-2 text-lg font-bold">Due {formatDate(postData.due_date)} at 11:59pm</p> }
-      <div className="prose prose-lg max-w-none">
-        <div dangerouslySetInnerHTML={{ __html: postData.content }} />
+      
+      <div className="flex gap-8">
+        {/* Main content */}
+        <div className="flex-1 min-w-0">
+          <MarkdownContent content={postData.content} />
+        </div>
+        
+        {/* Table of Contents */}
+        <div className="hidden lg:block">
+          <TableOfContents />
+        </div>
       </div>
     </div>
   );
