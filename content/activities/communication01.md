@@ -1,8 +1,7 @@
 ---
 title: "Discussion Questions 1"
-date: "2025-08-26"
+date: "2025-08-21"
 type: "activity"
-due_date: "2025-09-11"
 ---
 
 ## Reading 1: Why should we promote the public understanding of science?

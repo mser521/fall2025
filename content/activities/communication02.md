@@ -2,7 +2,6 @@
 title: "Who Said It? – Elite Cues in Environmental News"
 date: "2025-08-26"
 type: "activity"
-due_date: "2025-09-11"
 draft: 0
 ---
 

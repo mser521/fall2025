@@ -1,8 +1,7 @@
 ---
 title: "Bias"
-date: "2025-08-26"
+date: "2025-09-09"
 type: "activity"
-due_date: "2025-09-11"
 draft: 0
 ---
 

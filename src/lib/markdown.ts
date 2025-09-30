@@ -27,6 +27,7 @@ export interface PostData {
   optionalReadings?: string[];
   activities?: string[];
   draft?: number;
+  excluded?: boolean;
 }
 
 export function getAllPostIds(subdirectory?: string) {

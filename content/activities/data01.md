@@ -1,8 +1,7 @@
 ---
 title: "'Raw Data' is an Oxymoron Discussion"
-date: "2025-08-26"
+date: "2025-09-02"
 type: "activity"
-due_date: "2025-09-11"
 draft: 0
 ---
 

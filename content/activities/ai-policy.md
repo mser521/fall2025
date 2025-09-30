@@ -3,6 +3,7 @@ title: "AI Policy"
 date: "2025-08-26"
 type: "activity"
 due_date: "2025-09-11"
+excluded: true
 ---
 
 ## Part 1: Definitions

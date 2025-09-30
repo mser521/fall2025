@@ -1,4 +1,5 @@
 import { getAllPostIds, getPostData, PostData } from '@/lib/markdown';
+import { formatDate } from '@/lib/utils';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
 import DaysLeft from '@/components/DaysLeft';
@@ -16,15 +17,6 @@ interface AssignmentData {
   draft?: number;
   external_url?: string;
   external_type?: string;
-}
-
-function formatDate(dateString: string): string {
-  // Handle the YYYY-MM-DD format from markdown frontmatter
-  const date = new Date(dateString + 'T00:00:00');
-  const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'short' });
-  const month = (date.getMonth() + 1).toString().padStart(2, '0');
-  const day = date.getDate().toString().padStart(2, '0');
-  return `${dayOfWeek}, ${month}/${day}`;
 }
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Activity: Write your first HTML Page"
-date: "2025-08-26"
+title: "Write your first HTML Page"
+date: "2025-09-02"
 type: "activity"
 ---
 
