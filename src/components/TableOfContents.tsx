@@ -64,16 +64,16 @@ export default function TableOfContents() {
 
   return (
     <nav className="sticky top-20 w-64 flex-shrink-0">
-      <div className="bg-gray-50 rounded-lg p-4">
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700">
         <ul className="!list-none !p-0 !m-0">
           {tocItems.map((item) => (
             <li key={item.id}>
               <a
                 href={`#${item.id}`}
-                className={`block py-1 px-2 !text-gray-700 text-sm transition-colors whitespace-nowrap overflow-hidden !border-0 text-ellipsis ${
+                className={`block py-1 px-2 text-sm transition-colors whitespace-nowrap overflow-hidden !border-0 text-ellipsis ${
                   activeId === item.id
-                    ? 'bg-blue-100 text-blue-700 font-bold'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                    ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-bold'
+                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
                 } ${
                   item.level === 3 ? '!pl-8' : ''
                 }`}

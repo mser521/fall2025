@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -34,13 +35,13 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white dark:bg-black" suppressHydrationWarning>
+    <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700" suppressHydrationWarning>
       <div className="px-4 sm:px-6 lg:px-8 flex justify-between h-16">
         {/* Logo */}
         <div className="flex items-center">
           <Link 
             href="/" 
-            className="!border-transparent dark:!border-gray-800 !text-black dark:!text-white font-bold !text-xl"
+            className="border-transparent dark:border-gray-800 text-black dark:text-white font-bold text-xl !border-0"
             suppressHydrationWarning
           >
             MSER 521
@@ -57,8 +58,8 @@ export default function Navigation() {
                 href={item.href}
                 className={`transition-colors dark:hover:!text-sky-300 hover:!text-sky-700 hover:!border-sky-700 ${
                   isActive
-                    ? "!font-semibold !border-sky-700 dark:!border-sky-300"
-                    : "!border-transparent !hover:border-sky-700 !text-black dark:!text-white"
+                    ? "!font-semibold !border-sky-700 dark:!border-sky-300 text-black dark:!text-white"
+                    : "!border-transparent !hover:border-sky-700 text-black dark:!text-white"
                 }`}
                 suppressHydrationWarning
               >
@@ -66,10 +67,12 @@ export default function Navigation() {
               </Link>
             );
           })}
+          <ThemeToggle />
         </div>
 
-        {/* Mobile menu button */}
-        <div className="md:hidden flex items-center">
+        {/* Mobile menu button and theme toggle */}
+        <div className="md:hidden flex items-center space-x-2">
+          <ThemeToggle />
           <button
             onClick={toggleMenu}
             className="focus:outline-none"
@@ -103,7 +106,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-        <div className="border-t border-gray-200">
+        <div className="border-t border-gray-200 dark:border-gray-700 mobile-nav-border">
           {navItems.slice(1).map((item) => {
             const isActive = mounted && normalizePath(pathname) === normalizePath(item.href);
             return (
@@ -111,7 +114,7 @@ export default function Navigation() {
                 key={item.href}
                 href={item.href}
                 onClick={closeMenu}
-                className={`block px-6 py-4 text-base font-medium transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 ${
+                className={`block px-6 py-4 text-base font-medium transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 text-black dark:text-white ${
                   isActive
                     ? "bg-gray-100 dark:bg-gray-800 font-semibold !border-gray-100 dark:!border-gray-800"
                     : "!border-transparent"

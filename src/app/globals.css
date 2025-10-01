@@ -1,7 +1,11 @@
 /* stylelint-disable at-rule-no-unknown */
 @import "tailwindcss";
 
+/* Configure custom dark variant for class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
+  /* Light theme colors */
   --background: #ffffff;
   --foreground: #171717;
   --primary: #3b82f6;
@@ -11,44 +15,73 @@
   --muted: #6b7280;
   --card: #ffffff;
   --card-foreground: #171717;
+  
+  /* Additional semantic colors */
+  --surface: #f9fafb;
+  --surface-hover: #f3f4f6;
+  --surface-active: #e5e7eb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 /* Dark mode variables */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #b8e6fe;
-    --accent: #b8e6fe;
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --border: #374151;
-    --muted: #9ca3af;
-    --card: #1f2937;
-    --card-foreground: #f9fafb;
-  }
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #60a5fa;
+  --secondary: #93c5fd;
+  --accent: #60a5fa;
+  --border: #374151;
+  --muted: #9ca3af;
+  --card: #1f2937;
+  --card-foreground: #f9fafb;
+  
+  /* Dark theme semantic colors */
+  --surface: #1f2937;
+  --surface-hover: #374151;
+  --surface-active: #4b5563;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --error: #f87171;
+  --info: #60a5fa;
 }
+
 
 h1 {
   @apply text-3xl md:text-4xl font-light mb-8 mt-12;
-  font-family: var(--font-poppins), serif;
   color: var(--foreground);
+  font-family: var(--font-poppins), serif;
 }
 
 h2 {
   @apply text-xl md:text-2xl mb-4 mt-8 font-bold pb-2 border-b border-gray-500 dark:border-gray-300;
-  font-family: var(--font-poppins), serif;
   color: var(--foreground);
+  font-family: var(--font-poppins), serif;
 }
 
 h3, .logo {
-  @apply text-lg md:text-xl font-bold mb-2 mt-6 ;
-  font-family: var(--font-poppins), serif;
+  @apply text-lg md:text-xl font-bold mb-2 mt-6;
   color: var(--secondary);
+  font-family: var(--font-poppins), serif;
 }
 
 h4 {
   @apply md:text-lg font-bold mb-4 mt-4;
-  font-family: var(--font-poppins), serif;
   color: var(--foreground);
+  font-family: var(--font-poppins), serif;
 }
 
 table {
@@ -104,7 +137,10 @@ li {
 }
 
 blockquote {
-  @apply bg-gray-50 dark:bg-gray-800 rounded-xl p-8 pb-2 mb-4 border border-gray-200 dark:border-gray-600;
+  @apply rounded-xl p-8 pb-2 mb-4;
+  background-color: var(--surface);
+  border-color: var(--border);
+  color: var(--text-primary);
 }
 
 blockquote h2 {
@@ -130,7 +166,7 @@ blockquote h2 {
 
 /* Global base styles */
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -203,7 +239,19 @@ html {
 }
 
 code {
-  @apply bg-gray-100 dark:bg-gray-800 p-1 rounded-md;
+  @apply p-1 rounded-md font-mono text-sm;
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+/* Inline code elements inherit from base code styles */
+p code, li code, span code, div code {
+  @apply px-1 py-0.5 rounded text-sm;
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border-color: var(--border);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
 }
 
 /* Syntax highlighting styles */
@@ -219,16 +267,32 @@ code {
   margin: 1em 0;
 }
 
+.dark .hljs {
+  background: #1e1e1e;
+  color: #d4d4d4;
+}
+
 .hljs-comment,
 .hljs-quote {
   color: #6a737d;
   font-style: italic;
 }
 
+.dark .hljs-comment,
+.dark .hljs-quote {
+  color: #6a9955;
+}
+
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
   color: #d73a49;
+}
+
+.dark .hljs-keyword,
+.dark .hljs-selector-tag,
+.dark .hljs-subst {
+  color: #569cd6;
 }
 
 .hljs-number,
@@ -239,9 +303,22 @@ code {
   color: #005cc5;
 }
 
+.dark .hljs-number,
+.dark .hljs-literal,
+.dark .hljs-variable,
+.dark .hljs-template-variable,
+.dark .hljs-tag .hljs-attr {
+  color: #b5cea8;
+}
+
 .hljs-string,
 .hljs-doctag {
   color: #032f62;
+}
+
+.dark .hljs-string,
+.dark .hljs-doctag {
+  color: #ce9178;
 }
 
 .hljs-title,
@@ -249,6 +326,12 @@ code {
 .hljs-selector-id {
   color: #6f42c1;
   font-weight: bold;
+}
+
+.dark .hljs-title,
+.dark .hljs-section,
+.dark .hljs-selector-id {
+  color: #dcdcaa;
 }
 
 .hljs-subst {
@@ -261,6 +344,11 @@ code {
   font-weight: bold;
 }
 
+.dark .hljs-type,
+.dark .hljs-class .hljs-title {
+  color: #4ec9b0;
+}
+
 .hljs-tag,
 .hljs-name,
 .hljs-attribute {
@@ -268,9 +356,20 @@ code {
   font-weight: normal;
 }
 
+.dark .hljs-tag,
+.dark .hljs-name,
+.dark .hljs-attribute {
+  color: #92c5f7;
+}
+
 .hljs-regexp,
 .hljs-link {
   color: #032f62;
+}
+
+.dark .hljs-regexp,
+.dark .hljs-link {
+  color: #d16969;
 }
 
 .hljs-symbol,
@@ -278,9 +377,19 @@ code {
   color: #e36209;
 }
 
+.dark .hljs-symbol,
+.dark .hljs-bullet {
+  color: #d7ba7d;
+}
+
 .hljs-built_in,
 .hljs-builtin-name {
   color: #e36209;
+}
+
+.dark .hljs-built_in,
+.dark .hljs-builtin-name {
+  color: #d7ba7d;
 }
 
 .hljs-meta {
@@ -288,12 +397,24 @@ code {
   font-weight: bold;
 }
 
+.dark .hljs-meta {
+  color: #569cd6;
+}
+
 .hljs-deletion {
   background: #ffeef0;
 }
 
+.dark .hljs-deletion {
+  background: #4b1818;
+}
+
 .hljs-addition {
   background: #f0fff4;
+}
+
+.dark .hljs-addition {
+  background: #1e3a1e;
 }
 
 .hljs-emphasis {
@@ -311,6 +432,116 @@ code {
   border-radius: 4px;
   overflow: hidden;
 }
+
+.dark .codepen-frame {
+  border-color: #374151;
+}
+
+/* Additional dark mode styles for navigation and UI elements */
+.dark nav {
+  background-color: #111827 !important;
+  border-bottom: 1px solid #374151;
+}
+
+.dark nav a {
+  color: #e5e7eb;
+}
+
+.dark nav a:hover {
+  color: #60a5fa;
+}
+
+.dark .mobile-nav-border {
+  border-color: #374151;
+}
+
+/* Dark mode for any missing text elements */
+.dark p, .dark li, .dark span {
+  color: #e5e7eb;
+}
+
+/* Dark mode for links */
+.dark a {
+  color: #60a5fa;
+}
+
+.dark a:hover {
+  color: #93c5fd;
+}
+
+/* Dark mode for tables */
+.dark table {
+  border-color: #374151;
+}
+
+.dark th, .dark td {
+  border-color: #374151;
+}
+
+.dark th {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.dark td {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+/* Dark mode for form elements */
+.dark input, .dark textarea, .dark select {
+  background-color: #1f2937;
+  border-color: #374151;
+  color: #e5e7eb;
+}
+
+.dark input:focus, .dark textarea:focus, .dark select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 1px #60a5fa;
+}
+
+/* Override Tailwind's hover media query for dark mode */
+@media (hover: hover) {
+  .dark .hover\:bg-gray-100:hover {
+    background-color: #595c62 !important;
+  }
+}
+
+/* TableOfContents and other components using bg-gray-50 should use surface variable */
+.bg-gray-50 {
+  background-color: var(--surface) !important;
+}
+
+/* Utility classes using @apply with theme variables */
+.surface {
+  background-color: var(--surface);
+  color: var(--text-primary);
+}
+
+.surface-hover:hover {
+  background-color: var(--surface-hover);
+}
+
+.surface-active {
+  background-color: var(--surface-active);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.border-theme {
+  border-color: var(--border);
+}
+
 
 .screenshot-xs {
   @apply mt-4 mb-4 w-full max-w-sm border border-gray-300 dark:border-gray-600;
