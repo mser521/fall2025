@@ -4,43 +4,6 @@ date: "2025-09-30"
 type: "activity"
 ---
 
-<!-- 
-TODO for next time:
-git config --global user.name "Sarah"
-git config --global user.email "my_email@gmail.com"
-
-On Mac, people had to install XCode Tools
--->
-<style>
-    img {
-        max-width: 750px;
-        width: 60%;
-        border: solid 1px #000;
-    }
-    img.large {
-        max-width: 100%;
-        width: 100%;
-        border: solid 1px #000;
-    }
-    .schematic {
-        border: none;
-        max-width: 850px;
-        width: 70%;
-        display: block;
-        margin: auto;
-    }
-    table.instructions td, table.instructions th {
-        font-size: 1.0em;
-    }
-    table.instructions td:first-child {
-        white-space: nowrap;
-    }
-    ul.spaced li, ol.spaced li {
-        margin-bottom: 25px;
-    }
-
-</style>
-
 
 > ## Overview
 > The goal of this activity is to help you publish your web page to GitHub. To do this:
@@ -54,16 +17,13 @@ On Mac, people had to install XCode Tools
 
 
 ## 1. Reference / Background Readings <span id="part1"></span>
-Please complete the following readings / video tutorials:
-1. [Intro to git and GitHub](https://medium.com/the-underdog-writing-project/introduction-to-git-and-github-a5fdf5633923). A little technical, but please do your best to read it and come to tutorial with questions.
-2. [Using GitHub with Visual Studio Code](https://youtu.be/i_23KUAEtUM). How we will be using GitHub in this class.
+Please complete the following video tutorial: [Using GitHub with Visual Studio Code](https://youtu.be/i_23KUAEtUM) (how we will be using GitHub in this class).
 
 
 ## 2. Register for an account on GitHub <span id="part2"></span>
 If you don’t already have a GitHub account, register for one: <a href="https://github.com/" target="_blank">https://github.com/join</a>. Some notes:
 
-1. Please have your password close at hand. Particularly if you are using the computer lab computers, you will keep being prompted for your password.
-
+* Please remember your password. 
 
 ## 3. Install Git <span id="part3"></span>
 In order to interact with GitHub, you need to install git. Before you install it, check and make sure it’s not already installed by:
@@ -91,11 +51,13 @@ git config --global user.name "Sarah"
 git config --global user.email "my_email@gmail.com"
 ```
 
-
-It's OK if your tutorials folder isn't set up yet, but make sure your lectures folder looks like the one shown above. This is very important. 
-
 ### 2. Initialize a Git Repository
-After you've doublechecked your file structure, open your entire `mser521` folder in VS Code. Next, click on the icon that looks like a tree branch, and click the blue button that says "Initialize Repository":
+After you've doublechecked your file structure, **open your entire `mser521` folder** in VS Code by:
+1. Clicking the paper icon in the left-hand toolbar towards the top.
+1. Clicking the "Add Folder" button (blue), located in the left-hand panel.
+1. Navigating to your `mser521` directory.
+
+Once you've done this, click on the icon that looks like a tree branch (left-hand toolbar), and click the blue button that says "Initialize Repository":
 
 <img class="screenshot-lg" src="/fall2025/images/activities/configure-github/ss2.png" />
 
@@ -107,7 +69,7 @@ After you "stage" your changes, you will note that the left-hand panel has chang
 
 
 * The panel lists all of the files that are "staged" to be committed, with an "A" next to each file (indicating that you are adding the files for the first time). 
-* To commit these changes, type a message in the text box that says "My First Commit" and then click the check button to actually issue the commit:
+* To commit these changes, type a message in the text box that says **"My First Commit"** and then click the check button to actually issue the commit:
 
 <img class="screenshot-lg" src="/fall2025/images/activities/configure-github/ss4.png" />
 
@@ -148,4 +110,4 @@ This will generate a link to your GitHub site.
 
 > ### A note on GitHub Pages
 > * It make take a few minutes for your webpage to display
-> * In order to preview the webpage you made in the `lecture04` folder, you have to append the `/lectures/lecture04/index.html` file path to the end of your github pages to indicate which file to display.
+> * In order to preview the webpage you made in the `intro-html` folder, you have to append the `/intro-html/index.html` file path to the end of your github pages to indicate which file to display.

@@ -1,6 +1,12 @@
 /* stylelint-disable at-rule-no-unknown */
 @import "tailwindcss";
 
+@layer base {
+  html.dark {
+    color-scheme: dark;
+  }
+}
+
 /* Configure custom dark variant for class-based dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
 

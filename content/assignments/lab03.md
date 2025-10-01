@@ -28,7 +28,6 @@ Download the `lab03.zip` file, unzip it, and move the unzipped `lab03` folder in
 ```bash
 mser521
     ├── intro-html
-    ├── lab01
     ├── lab02
     └── lab03
         ...

@@ -115,7 +115,7 @@ export default async function AssignmentsPage() {
         <tbody>
         {assignments.map((assignment, index) => {
           const currentWeek = assignment.due_date ? getWeek(assignment.due_date) : '';
-          const previousWeek = index > 0 && assignments[index - 1].due_date ? getWeek(assignments[index - 1].due_date) : '';
+          const previousWeek = index > 0 && assignments[index - 1].due_date ? getWeek(assignments[index - 1].due_date!) : '';
           const showWeek = currentWeek !== previousWeek;
           
           return (
