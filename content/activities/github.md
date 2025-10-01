@@ -63,18 +63,22 @@ Please complete the following readings / video tutorials:
 If you don’t already have a GitHub account, register for one: <a href="https://github.com/" target="_blank">https://github.com/join</a>. Some notes:
 
 1. Please have your password close at hand. Particularly if you are using the computer lab computers, you will keep being prompted for your password.
-2. Mac users may also need to create a **"Personal Access Token"**. The process is described <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token" target="_blank">here</a>.
 
 
 ## 3. Install Git <span id="part3"></span>
 In order to interact with GitHub, you need to install git. Before you install it, check and make sure it’s not already installed by:
 
-1. Windows: search for the software program "GitBash." If you find it, git is already installed. 
+1. Windows: search for the software program "GitBash." 
+    * If you find it, git is already installed
+    * If you don't, please download and install it using this link: <a href="https://git-scm.com/downloads/win" target="_blank">https://git-scm.com/downloads/win</a>.
 2. Mac:
-    1. Opening your Terminal and type the word `git` at the command prompt. 
-    2. If you get a message that says "not recognized" or something along those lines, then you need to install it.
-
-If you need to install it, follow these instructions:   <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a>.
+    * Opening your Terminal and type the word `git` at the command prompt. 
+    * If you don't get an error message, it's already installed. Move onto the next step.
+    * If you get a message that says "not recognized" or something along those lines, then you need to install it by following these instructions: <a href="https://git-scm.com/downloads/mac" target="_blank">https://git-scm.com/downloads/mac</a>. You may need to install XCode by typing the following in your Terminal:
+    
+        ```bash
+        xcode-select --install
+        ```
 
 
 ## 4. Configure the Git / Visual Studio Code Plugin <span id="part4"></span>

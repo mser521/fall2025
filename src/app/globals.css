@@ -199,7 +199,7 @@ html {
 
 /* Assignment layout overrides */
 [data-assignment-layout] {
-  max-width: 1100px !important;
+  @apply max-w-5xl;
 }
 
 code {
@@ -339,6 +339,10 @@ li > p {
 /* ol > li {
   @apply mb-4;
 } */
+
+blockquote ol li, nav ol li {
+  @apply mb-0;
+}
 
 ol li {
   @apply mb-4;

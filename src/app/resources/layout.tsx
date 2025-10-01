@@ -30,7 +30,7 @@ export default function ResourcesLayout({
   return (
     <div className="flex flex-col lg:flex-row gap-8 mx-auto">
       <ResourcesNav resourcePages={resourcePages} />
-      <div className="max-w-4xl w-full">
+      <div className="max-w-5xl w-full px-6">
         {children}
       </div>
     </div>

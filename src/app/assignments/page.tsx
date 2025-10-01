@@ -1,5 +1,5 @@
 import { getAllPostIds, getPostData, PostData } from '@/lib/markdown';
-import { formatDate } from '@/lib/utils';
+import { formatDate, getWeek } from '@/lib/utils';
 import PageHeader from '@/components/PageHeader';
 import Link from 'next/link';
 import DaysLeft from '@/components/DaysLeft';
@@ -102,27 +102,35 @@ export default async function AssignmentsPage() {
         excerpt="All lab, homework, and project assignments are due at 11:59pm ET on the due date. Assignments should be submitted to the course Moodle unless otherwise specified."
       />
       
-      <table>
+      <table className="table-fixed w-full">
         <thead>
           <tr>
+            <th className="md:w-[100px]">Week</th>
             <th>Assignment</th>
-            <th>Title</th>
-            <th>Due</th>
-            <th>Days Left</th>
+            <th className="md:w-[400px]">Title</th>
+            <th className="md:w-[120px]">Due</th>
+            <th className="md:w-[100px]">Days Left</th>
           </tr> 
         </thead>
         <tbody>
-        {assignments.map((assignment) => (
-          <tr key={assignment.id} className="p-6">
-            <td>
-              {getAssignmentLink(assignment)}
-            </td>
-            <td>{assignment.title}</td>
-            <td>{assignment.due_date ? formatDate(assignment.due_date) : ''}</td>
-            <td><DaysLeft dueDate={assignment.due_date || ''} /></td>
-            
-          </tr>
-        ))}
+        {assignments.map((assignment, index) => {
+          const currentWeek = assignment.due_date ? getWeek(assignment.due_date) : '';
+          const previousWeek = index > 0 && assignments[index - 1].due_date ? getWeek(assignments[index - 1].due_date) : '';
+          const showWeek = currentWeek !== previousWeek;
+          
+          return (
+            <tr key={assignment.id} className="p-6">
+              <td className="w-[100px]"><strong>{showWeek ? currentWeek : ''}</strong></td>
+              <td>
+                {getAssignmentLink(assignment)}
+              </td>
+              <td>{assignment.title}</td>
+              <td>{assignment.due_date ? formatDate(assignment.due_date) : ''}</td>
+              <td><DaysLeft dueDate={assignment.due_date || ''} /></td>
+              
+            </tr>
+          );
+        })}
         </tbody>
       </table>
     </div>
