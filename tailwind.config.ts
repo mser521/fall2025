@@ -4,15 +4,15 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
         // Theme variables for use with @apply
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         accent: 'var(--accent)',
@@ -31,6 +31,21 @@ const config: Config = {
         error: 'var(--error)',
         info: 'var(--info)',
       },
+      // // Ensure CSS variables work with all color utilities
+      // backgroundColor: {
+      //   primary: 'var(--primary)',
+      //   secondary: 'var(--secondary)',
+      //   accent: 'var(--accent)',
+      //   surface: 'var(--surface)',
+      //   'surface-hover': 'var(--surface-hover)',
+      //   'surface-active': 'var(--surface-active)',
+      // },
+      // textColor: {
+      //   primary: 'var(--text-primary)',
+      //   secondary: 'var(--text-secondary)',
+      //   muted: 'var(--text-muted)',
+      //   foreground: 'var(--foreground)',
+      // },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

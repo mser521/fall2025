@@ -10,7 +10,7 @@ draft: 0
 
 > **Assumptions:** This tutorial assumes that you have:
 >
-> 1. [Installed and configured VS Code](https://docs.google.com/document/d/1Vu_bVKlnzeQceoxp7hRTXdyTeCcLDQIz/edit#heading=h.gjdgxs)
+> 1. Installed and configured VS Code
 > 2. [Installed and configured GitHub](/fall2025/activities/github)
 
 

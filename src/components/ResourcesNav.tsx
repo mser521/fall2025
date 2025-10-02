@@ -47,7 +47,7 @@ export default function ResourcesNav({ resourcePages }: ResourcesNavProps) {
                     onClick={() => setNavOpen(false)}
                     className={`text-sm font-medium transition-colors ${
                       isActive
-                        ? 'font-bold !text-black hover:!text-gray-900 !border-0'
+                        ? '!border-0 text-bold'
                         : 'text-blue-700 border-blue-500 '
                     }`}
                   >

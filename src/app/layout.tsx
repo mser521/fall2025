@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter, Abril_Fatface, Poppins } from "next/font/google";
 import Navigation from "@/components/Nav";
 import LayoutWrapper from "@/components/LayoutWrapper";
+import BackToTop from "@/components/BackToTop";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -42,6 +43,7 @@ export default function RootLayout({
             {children}
           </main>
         </LayoutWrapper>
+        <BackToTop />
       </body>
     </html>
   );

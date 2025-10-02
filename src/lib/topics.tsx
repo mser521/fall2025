@@ -390,9 +390,10 @@ const topics = [
               title: "Slides from HTML Lecture",
               url: "https://docs.google.com/presentation/d/1hZ1fDB2bEBQvWieqKQD-mp-8qnrUKpo7mHKk-yuYFMg/edit?slide=id.g378bcfc7f86_0_0#slide=id.g378bcfc7f86_0_0",
               draft: 0
-            },{
+            },
+            {
               title: "Today's Slides",
-              url: "https://docs.google.com/presentation/d/1hZ1fDB2bEBQvWieqKQD-mp-8qnrUKpo7mHKk-yuYFMg/edit?slide=id.g378bcfc7f86_0_0#slide=id.g378bcfc7f86_0_0",
+              url: "https://docs.google.com/presentation/d/1RJ3077a6vAYrl77jQPGzV0WKsFfqtiU-/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
               draft: 0
             },
             {
@@ -400,22 +401,27 @@ const topics = [
               url: "/activities/github",
               draft: 0
             },
-            {
-              title: "Lab 3: Intro to HTML & CSS",
-              url: "/assignments/lab03",
-              draft: 0
-            }
           ],
         },
         {
           date: "Th, Oct 2",
-          topic: "Intro to CSS",
+          topic: "HTML Continued",
           activities: [
             {
-              title: "Activity: CSS Exercises",
-              url: "/activities/css01",
-              draft: 1
-            }
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/1q3TIUw9Fh1P6aygcKg4vHaynIFX84OFE/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
+              draft: 0
+            },
+            {
+              title: "Lab 3: Intro to HTML & CSS",
+              url: "/assignments/lab03",
+              draft: 0
+            },
+            {
+              title: "Activity: Linking",
+              url: "/downloads/linking-activity.zip",
+              draft: 0
+            },
           ],
         },
         {
@@ -425,15 +431,15 @@ const topics = [
         },
         {
           date: "Th, Oct 9",
-          topic: "Intro to JavaScript",
+          topic: "Intro to CSS and Responsive Design",
         },
         {
           date: "Tu, Oct 14",
-          topic: "Lab 4: JavaScript Widgets"
+          topic: "Lab 4: CSS"
         },
         {
           date: "Th, Oct 16",
-          topic: "Working with Lists and JSON Data"
+          topic: "Intro to JavaScript"
         },
         
       ]

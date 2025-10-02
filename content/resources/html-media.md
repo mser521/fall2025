@@ -15,7 +15,6 @@ Sample code to make an IFrame (to embed another web page).
 
 **Other Websites**
 
-*Note*: *This page blocks IFrames, so you'll have to view this code in CodePen.io*
 <iframe src="//codepen.io/vanwars/embed/dXyaRE/?theme-id=18654&default-tab=html,result" allowfullscreen="true" class="codepen-frame"></iframe>
 
 
