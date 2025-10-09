@@ -554,6 +554,10 @@ p code, li code, span code, div code {
 }
 
 
+.screenshot-xxs {
+  @apply mt-4 mb-4 w-full max-w-xs border border-gray-300 dark:border-gray-600;
+}
+
 .screenshot-xs {
   @apply mt-4 mb-4 w-full max-w-sm border border-gray-300 dark:border-gray-600;
 }

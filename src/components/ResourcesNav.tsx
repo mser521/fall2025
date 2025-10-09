@@ -67,7 +67,7 @@ export default function ResourcesNav({ resourcePages }: ResourcesNavProps) {
       {/* Mobile: Collapsible accordion navigation */}
       <div className="lg:hidden">
         <button 
-          className="w-full p-3 bg-gray-100 hover:bg-gray-200 rounded-lg mb-4 flex justify-between items-center transition-colors"
+          className="w-full p-3 bg-gray-100 hover:bg-gray-200 rounded-lg mb-4 flex justify-between dark:bg-gray-800 dark:hover:bg-gray-700 items-center transition-colors mt-6"
           onClick={() => setNavOpen(!navOpen)}
         >
           <span className="font-medium">Resource Pages</span>

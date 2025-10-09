@@ -1,210 +1,123 @@
 ---
-title: "Advanced CSS"
+title: "CSS Lab"
 num: "4"
 date: "2025-10-09"
 type: "lab"
 due_date: "2025-10-16"
-draft: 0
+draft: 1
 ---
 
 
-> **Assumptions:** This tutorial assumes that you have:
+## Overview
+This lab can be completed individually or in pairs. Working in pairs does not mean "splitting up the work" so that each person does half of the tasks. Rather, both parties should complete the tasks and help one another as questions arise. We will use class time on Tuesday to work on the lab, but you are encouraged to start it before class.
+
+> ### References
+> CSS is best understood through practice, and by consulting online resources as needed. Here are a curated list of resources that should help you complete your tasks:
+> 
+> #### Common CSS Properties and Techniques
+> * <a href="../resources/css">CSS Rules of Thumb</a> 
+> * <a href="../resources/css-selectors">Selectors</a>
+>     * [CSS Diner](https://flukeout.github.io/)
+> * <a href="../resources/css-color/">Color</a>
+> * [CSS Units](../resources/css-units/)
+> * <a href="../resources/css-fonts/">Text &amp; Fonts</a>
+> * <a href="../resources/css-box-model/">The Box Model</a>
+> * <a href="../resources/css-grid/">CSS Grid</a>  
+> * <a href="../resources/css-flexbox/">Flexbox</a>  
+> * <a href="../resources/css-media-queries/">Media Queries</a>    
 >
-> 1. Installed and configured VS Code
-> 2. [Installed and configured GitHub](/fall2025/activities/github)
+> #### CSS Grid
+> * <a href="https://cssgridgarden.com/" target="_blank">CSS Grid Garden</a> <br>Please try to complete at least the first 10 levels 
+> 
+> #### Flex
+> 
+> * <a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a>.<br>Please try to complete at least the first 10 levels  
 
 
-## Part 1. Setting Up Your Development Environment
 
-### 1. Install Visual Studio Code (if you haven't already)
-Download and install Visual Studio Code: <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>. 
+## Your Tasks
+<a href="/fall2025/downloads/lab04.zip" class="nu-button">Download Lab Files <i class="fas fa-download"></i></a>
 
-### 2. Organize your files
-<a href="/fall2025/downloads/lab03.zip" class="nu-button">Download Tutorial Files <i class="fas fa-download"></i></a>
+Download the `lab04.zip` file, unzip it and move the unzipped `lab04` folder into the `mser521` folder (see diagram below).
 
-Download the `lab03.zip` file, unzip it, and move the unzipped `lab03` folder into the `mser521` folder (see diagram below).
-
-
-```bash
+```
 mser521
-    ├── intro-html
+    ├── intro-htmlt
     ├── lab02
-    └── lab03
+    ├── lab03
+    └── lab04
         ...
 ```
 
-### 3. Take a look at your lab03 files
-You will be ***editing*** your files using VS Code (or another code editor of your choice), and ***viewing*** your rendered files in your web browser.
+### Task 1: CSS Selectors
+Complete the first 14 steps of <a href="https://flukeout.github.io/" target="_blank">CSS Diner</a>. When you're done, take a screenshot showing you completed all of the levels. Your screenshot should have a green checkmark next to each level (like the one below but with checkmarks).
 
-#### A. View file in Visual Studio Code
-1. Open VS Code (your code editor).
-2. Add **your entire mser521 folder** to VS Code by 
-   * clicking `File >> Add Folder to Workspace...`  
-   * and then navigating to your mser521 folder (wherever you saved it)
-3. Open your index.html file inside of the `lab03` folder and take a look at it. You should see a very simple HTML file that looks like this:
+<img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise01.png" />
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-        <!-- stylesheets and metadata go here -->
-       <title>Home</title>       
-       <!-- <link rel="stylesheet" href="style.css"> -->
-   </head>
-   <body>
-       <!-- HTML content tags go here -->
-        <nav class="navbar">
-            <strong>Home</strong>
-            <a href="#">Music</a>
-            <a href="#">Videos</a>
-        </nav>
-        <main>
-            <h1>Home</h1>
-            <p>Here is some text for the homepage.</p>
+### Task 2: Box Model Properties
+Open `02-box-model` and modify the CSS so that the card looks like the screenshot shown below. You should only need to use [Box Model](../resources/box-model/) properties.
 
-            <section class="photo-section">
-                <!-- photos go here-->
-            </section>
-        </main>
-   </body>
-</html>
-```
+<img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise02.png" />
 
-#### B. View file in Web Browser 
-Once you’ve taken a look at the code in VS Code, view it in your browser using the Live Server plugin you previously installed. It should look something like this:
+### Task 3: Use an external stylesheet
+Open `03-fonts` and use CSS to style the `h1` and `h2` tags using a Google font (example shown below). If you need help...
+* Check out <a href="https://www.youtube.com/watch?v=E7QPO8P8nls" target="_blank">this video</a>
+* You can Google "How to use a Google Font in CSS" 
 
-<img class="screenshot-xs" src="/fall2025/images/labs/lab01/a.png" />
+<img class="screenshot-xxs" src="/fall2025/images/labs/lab04/exercise03.png" />
 
-## Part 2. Completing the Exercises
-Now that you're set up, please complete the 6 tasks below:
+### Task 4: Center-align elements within a container
 
-> 1. [Connect your stylesheet to your HTML files](#step1)
-> 1. [Link your HTML files together](#step2)
-> 1. [Add some images to index.html](#step3)
-> 1. [Add some embedded videos to videos.html](#step4) 
-> 1. [Add a music player to music.html](#step5)
-> 1. [Attempt the optional enhancements (if time)](#step6)
-            
+Open `04-flex` and create the layout shown below by editing the CSS file. You should not need to edit the HTML. Some hints:
+* Put each of the containers into "flex" mode and give them a height of 100vh (vh stands for viewport height)
+* To get the children of the container to stack vertically, experiment with the "flex-direction" property
+* To align the items horizontally and vertically, experiment with the "justify-content" and "align-center" properties
 
 
-### 1. Connect your style.css stylesheet <span id="step1"></span>
-Open your `index.html` file. Within the `<head></head>` section, uncomment the following line by removing the `<!--` on one side and the `-->` on the other:
+<img class="screenshot" src="/fall2025/images/labs/lab04/exercise04.gif" />
 
-```html
-<!-- <link rel="stylesheet" href="style.css"> -->
-```
+Please ensure that the following criteria are met:
 
-This "link tag" instructs the browser to style the `index.html` according to the rules specified in the `styles.css` stylesheet. When you're done, it your code should look like this:
+* The height of each `section` should be the same as the height of the browser window.
+* The content inside of each `section` tag should be centered horizontally and vertically.
+* Each `section` should have a different background color.
+* The content in each `section` should be stacked vertically
 
-```html
-<link rel="stylesheet" href="style.css">
-```
+### Task 5: Create a Navigation Bar
+Open `05-navbar`, and try to make the following layout using flex. The navigation bar should also be anchored to the top so when you scroll, the nav bar stays fixed.
 
-Test your change by refreshing your web browser. Your page should now look like this:
+<img class="screenshot-lg" src="/fall2025/images/labs/lab04/exercise05.png" />
 
-<img class="screenshot-md" src="/fall2025/images/labs/lab01/b.png" />
+Hints:
 
-Next, add this same stylesheet link tag inside of the head tag of the `videos.html` and `music.html` files, and then preview both of these in your web browser. These pages should look like this:
-
-<img class="screenshot-md" src="/fall2025/images/labs/lab01/c.png" />
-<img class="screenshot-md" src="/fall2025/images/labs/lab01/d.png" />
-
-<span id="step2"></span>
-
-### 2. Link your pages to one another in the navigation section 
-Next, modify the anchor tags within the navigation section (in each of your pages) so that your pages link to one another. To do this, you will modify the value that corresponds to the `href` ***attribute*** so that it points to the file you want to open when your user clicks the link. In other words, you will replace the `#` with a ***relative path*** to the relevant HTML file.
-
-```html
-<nav class="navbar">
-    <strong>Home</strong>
-    <a href="#">Music</a>
-    <a href="#">Videos</a>
-</nav>
-```
-
-> **Hint**: Please review the <a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank">W3Schools reference</a> on "HTML File Paths," if you are not sure what a relative path is (open this link in a new tab so that you can get back to these instructions).
-
-Update all of your anchor tags on all three pages. When you're done, all of the pages should link together as shown below:
-
-<img class="screenshot-sm" src="/fall2025/images/labs/lab01/e.gif" />
-
-<span id="step3"></span>
-
-### 3. Add some images to the index.html file
-Inside the `index.html` file:
-
-1. Add three image tags inside of the `<section class="photo-section"></section>` region of your page.
-2. Each image should reference one of the flower images inside of the `images` folder.
-3. Make sure that you use **relative** paths to each of your images.
-4. Feel free to save other images into your `images` folder and use those if you want.
-
-When you're done, your page should look like this:
-
-<img class="screenshot-md" src="/fall2025/images/labs/lab01/f.png" />
+* Both the `nav` and `ul` elements will need to be put into flex mode.
+* Use the Chrome inspector to adjust the alignment properties.
+* To turn the bullets off, set the `list-style-type` property to `none`.
+* To create a fixed menu, see <a href="https://codepen.io/vanwars/pen/LYBdyzJ" target="_blank">this code sample</a>: 
 
 
-> **Hint**: Please see the course resources on [images](/fall2025/resources/html-images/) for more detail (open this link in a new tab so that you can get back to these instructions).
+### Task 6: Create this layout
 
-<span id="step4"></span>
+Open `06-grid`, and try to make the following layout using CSS Grid. You should not need to modify the HTML file. Note that the gridlines are just for demonstration, but they won’t actually be visible.
 
-### 4. Add two videos to the videos.html file
-Inside the `videos.html` file, add two different YouTube or Vimeo videos inside of the `<section class="video-section"></section>` region of your page. To get the embed code of any YouTube video, (a) navigate to the video, (b) click "share", (c) then click "embed," and (d) then copy the embed code (iframe tag), as pictured below (note the pink squares):
+<img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise06b.png" />
 
-<img class="screenshot-xs" src="/fall2025/images/labs/lab01/g.png" />
+**Note:** You do NOT have to center the text inside of each section unless you want to.
 
-<img class="screenshot-xs" src="/fall2025/images/labs/lab01/h.png" />
+### Task 7: Create the Taco Temple layout
 
-<img class="screenshot-xs" src="/fall2025/images/labs/lab01/i.png" />
+Open `07-tacotemple`, and try to make the following layout using CSS Grid. You should only have to edit the CSS file. 
 
-When you're done, your page should look like this (except with *your* videos):
+<img class="screenshot-lg" src="/fall2025/images/labs/lab04/tacotemple01.png" />
 
-<img class="screenshot-md" src="/fall2025/images/labs/lab01/j.png" />
+**A few hints:**
+The `main` container is a grid with two columns -- no rows specified). See grid lines: 
 
-If you want, you can also try embedding one of the Tableau charts that you made -- or one of the maps you've made in your GIS course.
+<img class="screenshot-lg" src="/fall2025/images/labs/lab04/tacotemple02.png" />
 
-> **More examples**: Please also see the course resources on [media tags](/fall2025/resources/html-media/) (open this link in a new tab so that you can get back to these instructions).
+The `section` container is also a grid with two columns. See grid lines: 
 
-<span id="step5"></span>
-
-### 5. Add a Spotify player to music.html
-Inside the `music.html` file, add one or more embedded music players inside of the `<section class="music-section"></section>` region of your page. There are instructions on how to get the embed code of a Spotify artist profile, album, song, playlist, or podcast on Spotify's <a href="https://artists.spotify.com/en/help/article/embedded-players" target="_blank">documentation page</a>. 
-
-When you're done, your page should look like this (except with *your* videos):
-
-<img class="screenshot-md" src="/fall2025/images/labs/lab01/k.png" />
-
-
-<span id="step6"></span>
-
-### 6. Optional Enhancements
-While we have not yet covered CSS, try using Google and various online resources to see how you might edit the `style.css` file to achieve the following:
-
-* Change the fonts and/or text color of the h1 tag
-* Resize the images
-* Style your iframe to have the the same dimensions as your image
-* Change the background color of you web page
-* Give your hyperlinks a hover effect
-
-
-> #### CSS Reference
-> Please also see the course resources on CSS (open this link in a new tab so that you can get back to these instructions):
->
-> * [fonts](/fall2025/resources/css-fonts)
-> * [color](/fall2025/resources/css-color/)
-> * [selectors](/fall2025/resources/css-selectors/)
-
-<!-- ## Part 3. Publishing to GitHub
-Please [follow these instructions](../activities/github) to publish your tutorial02 to GitHub. -->
-
-
-## How to think about this exercise (meta-comment)
-The purpose of this lab was to get you familiar with some HTML widgets and conventions. We are now officially done with HTML instruction. What you should be comfortable with after this tutorial:
-
-
-1. Finding online resources (like <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools</a> and the [course HTML reference](/fall2025/resources/html)) that help you learn about and integrate HTML tags.
-2. Understanding the rules of various tags, and how to nest them.
-3. Understanding how to link files together using both relative and absolute paths.
-4. Semantic containers
+<img class="screenshot-sm" src="/fall2025/images/labs/lab04/tacotemple03.png" />
 
 ## What to turn in
-Please commit and push all of your edits to GitHub. Then, paste a link to your GitHub Repository (code files) and to your GitHub pages (website) in the Moodle submission.
+Please create a link from your homepage to your completed in class (see <a href="https://vanwars.github.io/csci344" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
