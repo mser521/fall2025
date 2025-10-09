@@ -13,10 +13,8 @@ order: 7
 
 ## Examples
 
-### Example 1
-Simple: Flexbox cards + responsive elements
+### Example 1: Rows
 <iframe src="//codepen.io/vanwars/embed/EJQwej?editors=0100" allowfullscreen="true" class="codepen-frame"></iframe>
 
-### Example 2
-Cards + Material Design Effect
-<iframe src="//codepen.io/vanwars/embed/oOEoBo?editors=0100" allowfullscreen="true" class="codepen-frame"></iframe>
+### Example 2: Columns
+<iframe src="//codepen.io/vanwars/embed/KwVmjGa?editors=0100" allowfullscreen="true" class="codepen-frame"></iframe>

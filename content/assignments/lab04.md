@@ -4,7 +4,7 @@ num: "4"
 date: "2025-10-09"
 type: "lab"
 due_date: "2025-10-16"
-draft: 1
+draft: 0
 ---
 
 
@@ -55,14 +55,14 @@ Complete the first 14 steps of <a href="https://flukeout.github.io/" target="_bl
 <img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise01.png" />
 
 ### Task 2: Box Model Properties
-Open `02-box-model` and modify the CSS so that the card looks like the screenshot shown below. You should only need to use [Box Model](../resources/box-model/) properties.
+Open `02-box-model` and modify the CSS so that the card looks like the screenshot shown below. You should only need to use [Box Model](../resources/css-box-model/) CSS properties.
 
 <img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise02.png" />
 
 ### Task 3: Use an external stylesheet
 Open `03-fonts` and use CSS to style the `h1` and `h2` tags using a Google font (example shown below). If you need help...
 * Check out <a href="https://www.youtube.com/watch?v=E7QPO8P8nls" target="_blank">this video</a>
-* You can Google "How to use a Google Font in CSS" 
+* You can also Google "How to use a Google Font in CSS" 
 
 <img class="screenshot-xxs" src="/fall2025/images/labs/lab04/exercise03.png" />
 
@@ -72,6 +72,8 @@ Open `04-flex` and create the layout shown below by editing the CSS file. You sh
 * Put each of the containers into "flex" mode and give them a height of 100vh (vh stands for viewport height)
 * To get the children of the container to stack vertically, experiment with the "flex-direction" property
 * To align the items horizontally and vertically, experiment with the "justify-content" and "align-center" properties
+
+Check out the <a href="../resources/css-flexbox/" target="_blank">Flexbox</a> documentation for help.
 
 
 <img class="screenshot" src="/fall2025/images/labs/lab04/exercise04.gif" />
@@ -84,7 +86,7 @@ Please ensure that the following criteria are met:
 * The content in each `section` should be stacked vertically
 
 ### Task 5: Create a Navigation Bar
-Open `05-navbar`, and try to make the following layout using flex. The navigation bar should also be anchored to the top so when you scroll, the nav bar stays fixed.
+Open `05-navbar`, and try to make the following layout using flex. The boxes don't have to look exactly like the ones below, but do your best:
 
 <img class="screenshot-lg" src="/fall2025/images/labs/lab04/exercise05.png" />
 
@@ -92,9 +94,7 @@ Hints:
 
 * Both the `nav` and `ul` elements will need to be put into flex mode.
 * Use the Chrome inspector to adjust the alignment properties.
-* To turn the bullets off, set the `list-style-type` property to `none`.
-* To create a fixed menu, see <a href="https://codepen.io/vanwars/pen/LYBdyzJ" target="_blank">this code sample</a>: 
-
+* To turn the bullets off, set the `ul` tag's `list-style-type` property to `none`.
 
 ### Task 6: Create this layout
 
@@ -103,6 +103,7 @@ Open `06-grid`, and try to make the following layout using CSS Grid. You should 
 <img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise06b.png" />
 
 **Note:** You do NOT have to center the text inside of each section unless you want to.
+Check out the <a href="../resources/css-grid/" target="_blank">Flexbox</a> documentation for help.
 
 ### Task 7: Create the Taco Temple layout
 
