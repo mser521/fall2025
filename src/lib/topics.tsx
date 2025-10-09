@@ -432,20 +432,83 @@ const topics = [
         {
           date: "Th, Oct 9",
           topic: "Intro to CSS and Responsive Design",
+          description: "Intro to CSS and layout techniques.",
+          activities: [
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/15bYEixF3LYEARx-rtKYQ8vwkMrH39FaD/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
+              draft: 0
+            },
+            {
+              title: "Photo Gallery Activity",
+              url: "/activities/css01/",
+              draft: 0
+            },
+          ],
+          due: {
+            titleShort: "Lab 3",
+            title: "HTML + CSS Lab",
+            url: "/assignments/lab03",
+            draft: 0
+          }
         },
         {
           date: "Tu, Oct 14",
-          topic: "Lab 4: CSS"
+          topic: "Lab 4: CSS",
+          description: "The goal of this lab is to get you familiar with CSS layout techniques.",
+          activities: [
+          {
+            title: "Slides",
+            url: "https://docs.google.com/presentation/d/1RARJYCCSgurwVkvT-hBXYE57GoIT7Yqi/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
+            draft: 1
+          },
+          {
+            title: "CSS Layout Activity",
+            url: "/activities/css02/",
+            draft: 1
+          },
+          {
+            title: "Lab 4: CSS Lab",
+            url: "/assignments/lab04",
+            draft: 0
+          }]
         },
         {
           date: "Th, Oct 16",
-          topic: "Intro to JavaScript"
+          topic: "CSS Interactions & Flourishes"
         },
         
       ]
     },
     {
-      id: 5,
+      id: 6,
+      title: "JavaScript",
+      description: "An overview of design principles and techniques for creating effective visualizations.",
+      meetings: [
+        {
+          date: "Tu, Oct 21",
+          topic: "JavaScript I",
+        },{
+          date: "Th, Oct 23",
+          topic: "Lab 5: JavaScript DOM Manipulation",
+        },
+        {
+          date: "Tu, Oct 28",
+          topic: "JavaScript II",
+        },
+        {
+          date: "Th, Oct 30",
+          topic: "Lab 6: JavaScript: Working with Data + Observable",
+        },
+        {
+          date: "Tu, Nov 4",
+          topic: "Build an Interactive Chart + Map with Javascript",
+          description: "Sarah will be at a conference for this lab, but will create a video tutorial to help you.",
+        },
+      ]
+    },
+    {
+      id: 7,
       title: "Design",
       description: "An overview of design principles and techniques for creating effective visualizations.",
       meetings: [
@@ -460,39 +523,24 @@ const topics = [
           ]
         },
         {
-          date: "Th, Oct 23",
-          topic: "Creating effective layouts",
-        },
-        {
-          date: "Tu, Oct 28",
-          topic: "Lab 5: Introduction to Figma",
-        },
-        {
-          date: "Th, Oct 30",
-          topic: "Introduction to storyboarding",
-        },
-        {
-          date: "Tu, Nov 4",
-          topic: "Lab 6: Wireframing and storyboarding with Figma",
-        },
-        {
           date: "Th, Nov 6",
-          topic: "Incorporating qualitative and crowd-sourced data"
+          topic: "Introduction to storyboarding"
         },
         {
           date: "Tu, Nov 11",
-          topic: "Lab 7: PhotoVoice"
+          topic: "Lab 7: Wireframing and storyboarding with Figma",
+          description: "Sarah will be at a conference for this lab, but will create a video tutorial to help you.",
         },
       ]
     },
     {
-      id: 6,
+      id: 8,
       title: "Special Topics",
       description: "Case studies and special topics. TBD.",
       meetings: [
         {
           date: "Th, Nov 13",
-          topic: "TBD",
+          topic: "Incorporating qualitative and crowd-sourced data",
         },
         {
           date: "Tu, Nov 18",
@@ -501,11 +549,11 @@ const topics = [
         },
         {
           date: "Th, Nov 20",
-          topic: "TBD",
+          topic: "Lab 7: PhotoVoice",
         },
         {
           date: "Tu, Nov 25",
-          topic: "TBD",
+          topic: "Scrollytelling",
         },
         {
           date: "Th, Nov 27",
