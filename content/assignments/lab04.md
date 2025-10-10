@@ -121,4 +121,4 @@ The `section` container is also a grid with two columns. See grid lines:
 <img class="screenshot-sm" src="/fall2025/images/labs/lab04/tacotemple03.png" />
 
 ## What to turn in
-Please create a link from your homepage to your completed in class (see <a href="https://vanwars.github.io/csci344" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
+Please create a link from your homepage to your completed in class (see Sarah's homepage: <a href="https://vanwars.github.io/mser521/" target="_blank">https://vanwars.github.io/mser521/</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
