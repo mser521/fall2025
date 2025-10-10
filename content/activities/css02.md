@@ -1,9 +1,7 @@
 ---
 title: "CSS Layouts: Flex, Grid, and Media Queries"
-date: "2025-10-09"
+date: "2025-10-14"
 type: "activity"
-draft: 1
-excluded: 1
 ---
 
 Please download the exercise files (below).

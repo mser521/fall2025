@@ -460,12 +460,12 @@ const topics = [
           {
             title: "Slides",
             url: "https://docs.google.com/presentation/d/1RARJYCCSgurwVkvT-hBXYE57GoIT7Yqi/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
-            draft: 1
+            draft: 0
           },
           {
             title: "CSS Layout Activity",
             url: "/activities/css02/",
-            draft: 1
+            draft: 0
           },
           {
             title: "Lab 4: CSS Lab",
@@ -475,7 +475,7 @@ const topics = [
         },
         {
           date: "Th, Oct 16",
-          topic: "CSS Interactions & Flourishes"
+          topic: "Integrating Interactiive Elements"
         },
         
       ]
@@ -513,7 +513,7 @@ const topics = [
       description: "An overview of design principles and techniques for creating effective visualizations.",
       meetings: [
         {
-          date: "Tu, Oct 21",
+          date: "Th, Nov 6",
           topic: "Fundamentals of design",
           readings: [
             {
@@ -523,13 +523,13 @@ const topics = [
           ]
         },
         {
-          date: "Th, Nov 6",
-          topic: "Introduction to storyboarding"
-        },
-        {
           date: "Tu, Nov 11",
           topic: "Lab 7: Wireframing and storyboarding with Figma",
           description: "Sarah will be at a conference for this lab, but will create a video tutorial to help you.",
+        },
+        {
+          date: "Th, Nov 13",
+          topic: "'Scrollytelling' Techniques",
         },
       ]
     },
@@ -539,21 +539,17 @@ const topics = [
       description: "Case studies and special topics. TBD.",
       meetings: [
         {
-          date: "Th, Nov 13",
-          topic: "Incorporating qualitative and crowd-sourced data",
-        },
-        {
           date: "Tu, Nov 18",
           holiday: true,
           topic: "Symposium - No class"
         },
         {
           date: "Th, Nov 20",
-          topic: "Lab 7: PhotoVoice",
+          topic: "Incorporating qualitative and crowd-sourced data",
         },
         {
           date: "Tu, Nov 25",
-          topic: "Scrollytelling",
+          topic: "Lab 7: PhotoVoice",
         },
         {
           date: "Th, Nov 27",
