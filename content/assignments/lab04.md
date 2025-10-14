@@ -103,7 +103,7 @@ Open `06-grid`, and try to make the following layout using CSS Grid. You should 
 <img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise06b.png" />
 
 **Note:** You do NOT have to center the text inside of each section unless you want to.
-Check out the <a href="../resources/css-grid/" target="_blank">Flexbox</a> documentation for help.
+Check out the <a href="../resources/css-grid/" target="_blank">CSS Grid</a> documentation for help.
 
 ### Task 7: Create the Taco Temple layout
 
