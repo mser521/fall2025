@@ -20,11 +20,11 @@ This lab can be completed individually or in pairs. Working in pairs does not me
 >     * [CSS Diner](https://flukeout.github.io/)
 > * <a href="../resources/css-color/">Color</a>
 > * [CSS Units](../resources/css-units/)
-> * <a href="../resources/css-fonts/">Text &amp; Fonts</a>
-> * <a href="../resources/css-box-model/">The Box Model</a>
-> * <a href="../resources/css-grid/">CSS Grid</a>  
-> * <a href="../resources/css-flexbox/">Flexbox</a>  
-> * <a href="../resources/css-media-queries/">Media Queries</a>    
+> * <a href="../resources/css-fonts">Text &amp; Fonts</a>
+> * <a href="../resources/css-box-model">The Box Model</a>
+> * <a href="../resources/css-grid">CSS Grid</a>  
+> * <a href="../resources/css-flexbox">Flexbox</a>  
+> * <a href="../resources/css-media-queries">Media Queries</a>    
 >
 > #### CSS Grid
 > * <a href="https://cssgridgarden.com/" target="_blank">CSS Grid Garden</a> <br>Please try to complete at least the first 10 levels 
@@ -55,7 +55,7 @@ Complete the first 14 steps of <a href="https://flukeout.github.io/" target="_bl
 <img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise01.png" />
 
 ### Task 2: Box Model Properties
-Open `02-box-model` and modify the CSS so that the card looks like the screenshot shown below. You should only need to use [Box Model](../resources/css-box-model/) CSS properties.
+Open `02-box-model` and modify the CSS so that the card looks like the screenshot shown below. You should only need to use [Box Model](../resources/css-box-model) CSS properties.
 
 <img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise02.png" />
 
@@ -73,7 +73,7 @@ Open `04-flex` and create the layout shown below by editing the CSS file. You sh
 * To get the children of the container to stack vertically, experiment with the "flex-direction" property
 * To align the items horizontally and vertically, experiment with the "justify-content" and "align-center" properties
 
-Check out the <a href="../resources/css-flexbox/" target="_blank">Flexbox</a> documentation for help.
+Check out the <a href="../resources/css-flexbox" target="_blank">Flexbox</a> documentation for help.
 
 
 <img class="screenshot" src="/fall2025/images/labs/lab04/exercise04.gif" />
@@ -103,7 +103,7 @@ Open `06-grid`, and try to make the following layout using CSS Grid. You should 
 <img class="screenshot-sm" src="/fall2025/images/labs/lab04/exercise06b.png" />
 
 **Note:** You do NOT have to center the text inside of each section unless you want to.
-Check out the <a href="../resources/css-grid/" target="_blank">CSS Grid</a> documentation for help.
+Check out the <a href="../resources/css-grid" target="_blank">CSS Grid</a> documentation for help.
 
 ### Task 7: Create the Taco Temple layout
 
