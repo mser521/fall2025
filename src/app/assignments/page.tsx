@@ -14,6 +14,7 @@ interface AssignmentData {
   due_date?: string;
   type?: string;
   assigned?: string;
+  notes?: string;
   draft?: number;
   external_url?: string;
   external_type?: string;
@@ -35,6 +36,7 @@ export default async function AssignmentsPage() {
       due_date: postData.due_date,
       type: postData.type,
       assigned: postData.assigned,
+      notes: postData.notes,
       draft: postData.draft,
     };
   }));
@@ -88,10 +90,14 @@ export default async function AssignmentsPage() {
     }
     
     // Handle regular markdown assignments
-    return (
+    return (<>
       <Link href={`/assignments/${assignment.id}`}>
         {assignment.type ? titleCase(assignment.type) : ''} {assignment.num ? assignment.num : ''}
       </Link>
+      {assignment.notes && (
+        <span className="ml-1 text-xs">({assignment.notes})</span>
+      )}
+      </>
     );
   }
 

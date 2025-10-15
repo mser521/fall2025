@@ -28,6 +28,7 @@ export interface PostData {
   activities?: string[];
   draft?: number;
   excluded?: boolean;
+  notes?: string;
 }
 
 export function getAllPostIds(subdirectory?: string) {

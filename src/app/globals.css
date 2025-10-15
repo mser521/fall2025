@@ -553,7 +553,15 @@ p code, li code, span code, div code {
   border-color: var(--border);
 }
 
-
+.nu-button {
+  @apply border-0 items-center gap-2 px-6 py-3 rounded-md bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200;
+  &:hover {
+    @apply border-0 hover:border-0 bg-gray-300 dark:bg-gray-700;
+  }
+  &:active {
+    @apply border-0 hover:border-0 bg-gray-400 dark:bg-gray-600;
+  }
+}
 .screenshot-xxs {
   @apply mt-4 mb-4 w-full max-w-xs border border-gray-300 dark:border-gray-600;
 }

@@ -18,6 +18,7 @@ export default async function ActivitiesPage() {
       date: postData.date,
       type: postData.type,
       excluded: postData.excluded,
+      notes: postData.notes,
     };
   }));
 
@@ -59,11 +60,16 @@ export default async function ActivitiesPage() {
 
               <td>{activity.date ? formatDate(activity.date) : ''}</td>
               <td>
+                <>
                 <Link 
                   href={`/activities/${activity.id}`}
                 >
                   {activity.title}
                 </Link>
+                {activity.notes && (
+                  <span className="ml-1">({activity.notes})</span>
+                )}
+              </>
             </td>
             
           </tr>

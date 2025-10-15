@@ -3,7 +3,7 @@ title: "CSS Lab"
 num: "4"
 date: "2025-10-09"
 type: "lab"
-due_date: "2025-10-16"
+due_date: "2025-10-23"
 draft: 0
 ---
 

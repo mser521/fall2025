@@ -475,9 +475,38 @@ const topics = [
         },
         {
           date: "Th, Oct 16",
-          topic: "Integrating Interactiive Elements"
+          topic: "Lab 4 Continued",
+          description: "Today will will spend some time working on the lab and creating a homepage. You will also be sharing out your HW3 Presentations.",
+          activities: [
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/1RARJYCCSgurwVkvT-hBXYE57GoIT7Yqi/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
+              draft: 1
+            },
+          ]
         },
-        
+        {
+          date: "Tu, Oct 21",
+          topic: "CSS Flourishes",
+          description: "An overview of some techniques to add visual interest to your website.",
+          activities: [
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/1RARJYCCSgurwVkvT-hBXYE57GoIT7Yqi/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
+              draft: 0
+            },
+            {
+              title: "Demo Files",
+              url: "/downloads/css-flourishes-demos.zip",
+              draft: 0
+            },
+            {
+              title: "Activity: CSS Flourishes",
+              url: "/activities/css03",
+              draft: 0
+            },
+          ]
+        },
       ]
     },
     {
@@ -485,24 +514,22 @@ const topics = [
       title: "JavaScript",
       description: "An overview of design principles and techniques for creating effective visualizations.",
       meetings: [
+        
         {
-          date: "Tu, Oct 21",
-          topic: "JavaScript I",
-        },{
           date: "Th, Oct 23",
-          topic: "Lab 5: JavaScript DOM Manipulation",
+          topic: "Intro to JavaScript"
         },
         {
           date: "Tu, Oct 28",
-          topic: "JavaScript II",
+          topic: "Lab 5: JavaScript DOM Manipulation",
         },
         {
           date: "Th, Oct 30",
-          topic: "Lab 6: JavaScript: Working with Data + Observable",
+          topic: "Working with Data + JavaScript Libraries",
         },
         {
           date: "Tu, Nov 4",
-          topic: "Build an Interactive Chart + Map with Javascript",
+          topic: "Lab 6: Build an Interactive Chart + Map with Javascript",
           description: "Sarah will be at a conference for this lab, but will create a video tutorial to help you.",
         },
       ]
