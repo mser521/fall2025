@@ -42,7 +42,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${abril.variable} ${poppins.variable}`}>
         <Navigation />
         <LayoutWrapper>
-          <main className="max-w-5xl mx-auto px-6" data-assignment-layout="false">
+          <main className="mb-72 max-w-5xl mx-auto px-6" data-assignment-layout="false">
             {children}
           </main>
         </LayoutWrapper>

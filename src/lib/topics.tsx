@@ -480,8 +480,13 @@ const topics = [
           activities: [
             {
               title: "Slides",
-              url: "https://docs.google.com/presentation/d/1RARJYCCSgurwVkvT-hBXYE57GoIT7Yqi/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
-              draft: 1
+              url: "https://docs.google.com/presentation/d/1kTUosyGL5qHgmT0SQ0qWB3Wz7QeEYyrE/edit?usp=sharing&rtpof=true&sd=true",
+              draft: 0
+            },
+            {
+              title: "Activity: Homepage",
+              url: "/activities/html02",
+              draft: 0
             },
           ]
         },
@@ -492,7 +497,7 @@ const topics = [
           activities: [
             {
               title: "Slides",
-              url: "https://docs.google.com/presentation/d/1RARJYCCSgurwVkvT-hBXYE57GoIT7Yqi/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
+              url: "https://docs.google.com/presentation/d/1HmaecghrgmCwfvXzAddrz1X3yvKWpC6l/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
               draft: 0
             },
             {

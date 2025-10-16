@@ -14,5 +14,10 @@
   },
   "files.associations": {
     "*.css": "tailwindcss"
-  }
+  },
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000
 } 

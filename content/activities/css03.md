@@ -1,6 +1,6 @@
 ---
 title: "CSS Flourishes"
-date: "2025-10-16"
+date: "2025-10-21"
 type: "activity"
 ---
 
