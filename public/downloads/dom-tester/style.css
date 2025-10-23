@@ -1,0 +1,90 @@
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-content: flex-start;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.box,
+.frame {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #4f43b6;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(79, 67, 182, 0.1);
+  font-weight: 600;
+  color: #4f43b6;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.9em;
+}
+
+.box:hover,
+.frame:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79, 67, 182, 0.2);
+  border-color: #6366f1;
+}
+
+.frame {
+  border: 2px solid #10b981;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  color: #059669;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
+}
+
+.frame:hover {
+  border-color: #34d399;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+img.box,
+img.frame {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive design for container */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .box,
+  .frame {
+    width: 100px;
+    height: 100px;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .box,
+  .frame {
+    width: 80px;
+    height: 80px;
+    font-size: 0.7em;
+  }
+}

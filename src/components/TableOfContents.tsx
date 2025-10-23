@@ -16,16 +16,29 @@ export default function TableOfContents() {
     // Find all h2 and h3 elements
     const headings = document.querySelectorAll('h2, h3');
     const items: TocItem[] = [];
+    const usedIds = new Set<string>();
 
-    headings.forEach((heading) => {
-      const id = heading.id || heading.textContent?.toLowerCase()
-        .replace(/[^a-z0-9\s]/g, '')
-        .replace(/\s+/g, '-') || '';
+    headings.forEach((heading, index) => {
+      let id = heading.id;
       
-      // Set the id if it doesn't exist
-      if (!heading.id) {
+      // If no id exists, generate one
+      if (!id) {
+        const baseId = heading.textContent?.toLowerCase()
+          .replace(/[^a-z0-9\s]/g, '')
+          .replace(/\s+/g, '-') || `heading-${index}`;
+        
+        // Ensure uniqueness by adding a number if needed
+        id = baseId;
+        let counter = 1;
+        while (usedIds.has(id)) {
+          id = `${baseId}-${counter}`;
+          counter++;
+        }
+        
         heading.id = id;
       }
+      
+      usedIds.add(id);
 
       items.push({
         id: heading.id,

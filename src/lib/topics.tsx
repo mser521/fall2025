@@ -522,7 +522,25 @@ const topics = [
         
         {
           date: "Th, Oct 23",
-          topic: "Intro to JavaScript"
+          topic: "Intro to JavaScript",
+          description: "An overview of JavaScript and its use in web development.",
+          activities: [
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/1gVaCiW9abReMbq8-gYRfMDleDa4t9c1k/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
+              draft: 0
+            },
+            {
+              title: "Activity: Online DOM Tester",
+              url: "/downloads/dom-tester/index.html",
+              draft: 0
+            },
+            {
+              title: "Activity: Introductory JavaScript Exercises",
+              url: "/activities/js01",
+              draft: 0
+            },
+          ]
         },
         {
           date: "Tu, Oct 28",

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <!-- <link rel="stylesheet" href="dark.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <form onsubmit="updateScreen(event)">
+            <section id="formula">
+                <span>let</span>
+                <span>myElement</span>
+                <span>=</span>
+                <span>document.querySelector("</span><select id="selector">
+                    <option value=""></option>
+                    <option value="#section1">#section1</option>
+                    <option value="#section2">#section2</option>
+                    <option value="#section3">#section3</option>
+                    <option value=".box">.box</option>
+                    <option value="img">img</option>
+                    <option value="#img1">#img1</option>
+                    <option value="#img2">#img2</option>
+                    <option value="#img3">#img3</option>
+                </select>
+                <span>");</span>
+            </section>
+            <section id="formula">
+                <div>
+                    <span>myElement.</span>
+                    <select id="thing-to-change">
+                        <option value=""></option>
+                        <option value="style.width">style.width</option>
+                        <option value="style.height">style.height</option>
+                        <option value="style.backgroundColor">style.backgroundColor</option>
+                        <option value="style.borderWidth">style.borderWidth</option>
+                        <option value="style.padding">style.padding</option>
+                        <option value="style.display">style.display</option>
+                        <option value="style.borderRadius">style.borderRadius</option>
+                        <option value="className">className</option>
+                        <option value="innerHTML">innerHTML</option>
+                        <option value="src">src</option>
+                    </select>
+                    <span>=</span>
+                    <span>"</span>
+                    <input id="value" type="text" placeholder="new value" />
+                    <span>";</span>
+                    <button class="button"><i class="fa-solid fa-plus"></i> Add Rule</button>
+                </div>
+                <div>
+                </div>
+            </section>
+        </form>
+    </header>
+    <main>
+        <section class="output">
+            <div>
+                <h1>HTML</h1>
+                <pre id="code">
+                    <code class="language-html">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;section id=&quot;section1&quot; class=&quot;box&quot;&gt;Section 1&lt;/section&gt;
+    &lt;section id=&quot;section2&quot; class=&quot;box&quot;&gt;Section 2&lt;/section&gt;
+    &lt;section id=&quot;section3&quot; class=&quot;box&quot;&gt;Section 3&lt;/section&gt;
+    &lt;img id=&quot;img1&quot; class=&quot;box&quot; src=&quot;images/bird.jpg&quot /&gt;
+    &lt;img id=&quot;img2&quot; class=&quot;box&quot; src=&quot;images/cat.jpg&quot /&gt;
+    &lt;img id=&quot;img3&quot; class=&quot;box&quot; src=&quot;images/dog.jpg&quot /&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+                <h1>JavaScript</h1>
+                <pre><code class="language-js" id="js">/* JavaScript code will appear here */</code></pre>
+
+        </section>
+
+        <div class="container">
+            <section id="section1" class="box">Section 1</section>
+            <section id="section2" class="box">Section 2</section>
+            <section id="section3" class="box">Section 3</section>
+            <img id="img1" class="box" src="images/bird.jpg" />
+            <img id="img2" class="box" src="images/cat.jpg" />
+            <img id="img3" class="box" src="images/dog.jpg" />
+            <h2>Instructions</h2>
+            <ul>
+                <li>Change the first section's background color to red.</li>
+                <li>Change the second section's text color to blue.</li>
+                <li>Change the third section's inner HTML to "Hello world!"</li>
+                <li>Change the second and third image to display a bird.</li>
+                <li>Change each image's class from "box" to "frame".</li>
+            </ul>
+        </div>
+
+    </main>
+
+
+
+    <script>hljs.highlightAll();</script>
+
+</body>
+
+</html>
