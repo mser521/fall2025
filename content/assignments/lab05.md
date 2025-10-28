@@ -57,7 +57,7 @@ If you have time, try creating your own theme in the `styles.css` file and creat
 ## 2. Hamburger Menu
 As you probably already know, a hamburger menu is a common design pattern for showing and hiding the navigation of your web page if you are on a mobile device. 
 
-<img class="screenshot-xs" src="/fall2025/images/labs/lab05/hamburger.gif" />
+<img class="screenshot-xs border" src="/fall2025/images/labs/lab05/hamburger.gif" />
 
 
 Your job is to modify the JavaScript file so that it achieves the effect shown below. Specifically:
@@ -69,6 +69,8 @@ Your job is to modify the JavaScript file so that it achieves the effect shown b
 
 ## 3. Drawer
 Create a sliding drawer that opens from the left side of the screen by implementing the JavaScript functionality for the drawer.
+
+<img class="screenshot-xl border" src="/fall2025/images/labs/lab05/drawer.gif" />
 
 ### Requirements for `drawer.js`
 1. **Select the drawer element** using `document.querySelector("#drawer")`
@@ -89,6 +91,9 @@ Create a sliding drawer that opens from the left side of the screen by implement
 
 ## 4. Fancy Drawer (Bonus)
 For an extra challenge, try implementing the fancy drawer in the `04-drawer-fancy` folder. This drawer displays a gallery of images and shows the clicked image in a larger view.
+
+<img class="screenshot-xl border" src="/fall2025/images/labs/lab05/drawer-fancy.gif" />
+
 
 To do this you will modify the template in the JavaScript `openDrawer()` function to use some data from the DOM.
 
@@ -117,13 +122,7 @@ Given this, please open the `05-carousel` folder and make the following changes:
 
 
 ## What to Submit
-Please make sure that you have completed the following:
+Please make sure that you have completed all 5 exercises.
 
-* Implemented the font size adjuster
-* Implemented the hamburger menu
-* Commented the carousel widget JavaScript code explaining how it works.
-
-When you're done, please create a link from your homepage to each of your Tutorial 5 web pages (see <a href="https://vanwars.github.io/csci344" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
-
-* If you collaborated with someone, please list your partner's name in the comments section.
+When you're done, please create a link from your homepage to each of your Lab 5 exercises (see <a href="https://vanwars.github.io/csci344" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
 
