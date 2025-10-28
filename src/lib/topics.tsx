@@ -545,6 +545,22 @@ const topics = [
         {
           date: "Tu, Oct 28",
           topic: "Lab 5: JavaScript DOM Manipulation",
+          activities: [
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/15J_LOZvPqkmNVcJZqzqWfIa0yyW8MnsQ/edit?usp=sharing&ouid=113376576186080604800&rtpof=true&sd=true",
+              draft: 0
+            },
+            {
+                title: "Sign up for a project proposal meeting",
+                url: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0WlhbiJDcZXnMdgIYBxag1M22tER2wiUT8D1R--ITr766TsnobDhjZAO1u9DsxSMAIbysB1zel"
+            },
+            {
+              title: "Lab 5: JavaScript DOM Manipulation",
+              url: "/assignments/lab05",
+              draft: 0
+            }
+          ]
         },
         {
           date: "Th, Oct 30",

@@ -1,0 +1,28 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#myDiv {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/* Make cursor pointer when hovering over data points */
+#myDiv .scatterlayer .trace .points .point {
+  cursor: pointer;
+}
+
+/* Alternative approach - target all scatter points */
+#myDiv svg .scatterlayer .trace .points path {
+  cursor: pointer;
+}
