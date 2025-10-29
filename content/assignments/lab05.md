@@ -26,7 +26,7 @@ Please see the [JavaScript Cheatsheet](/fall2025/resources/js-dom-cheatsheet) to
 
 ## Setup
 
-<a href="/fall2025/downloads/lab05.zip" class="nu-button">Download Lab 5 <i class="fas fa-download"></i></a> 
+<a href="/fall2025/downloads/labs/lab05.zip" class="nu-button">Download Lab 5 <i class="fas fa-download"></i></a> 
 
 Please download the lab05.zip file, unzip it, and move the tutorials folder inside of your `csci344/tutorials` folder. Then complete the tasks:
 

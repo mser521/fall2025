@@ -37,7 +37,7 @@ This lab can be completed individually or in pairs. Working in pairs does not me
 
 
 ## Your Tasks
-<a href="/fall2025/downloads/lab04.zip" class="nu-button">Download Lab Files <i class="fas fa-download"></i></a>
+<a href="/fall2025/downloads/labs/lab04.zip" class="nu-button">Download Lab Files <i class="fas fa-download"></i></a>
 
 Download the `lab04.zip` file, unzip it and move the unzipped `lab04` folder into the `mser521` folder (see diagram below).
 

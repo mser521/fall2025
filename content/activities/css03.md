@@ -8,7 +8,7 @@ type: "activity"
 
 Please download the exercise files (below), and then pick one of the three options to try:
 
-<a href="/fall2025/downloads/css-flourishes-activity.zip" class="nu-button">Download Activity Files <i class="fas fa-download"></i></a>
+<a href="/fall2025/downloads/activities/css-flourishes-activity.zip" class="nu-button">Download Activity Files <i class="fas fa-download"></i></a>
 
 
 ## Pick ONE of the Following Exercises

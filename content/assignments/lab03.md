@@ -20,7 +20,7 @@ draft: 0
 Download and install Visual Studio Code: <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>. 
 
 ### 2. Organize your files
-<a href="/fall2025/downloads/lab03.zip" class="nu-button">Download Tutorial Files <i class="fas fa-download"></i></a>
+<a href="/fall2025/downloads/labs/lab03.zip" class="nu-button">Download Tutorial Files <i class="fas fa-download"></i></a>
 
 Download the `lab03.zip` file, unzip it, and move the unzipped `lab03` folder into the `mser521` folder (see diagram below).
 

@@ -419,7 +419,7 @@ const topics = [
             },
             {
               title: "Activity: Linking",
-              url: "/downloads/linking-activity.zip",
+              url: "/downloads/activities/linking-activity.zip",
               draft: 0
             },
           ],
@@ -502,7 +502,7 @@ const topics = [
             },
             {
               title: "Demo Files",
-              url: "/downloads/css-flourishes-demos.zip",
+              url: "/downloads/activities/css-flourishes-demos.zip",
               draft: 0
             },
             {

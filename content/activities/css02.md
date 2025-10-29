@@ -6,7 +6,7 @@ type: "activity"
 
 Please download the exercise files (below).
 
-<a href="/fall2025/downloads/css-layouts.zip" class="nu-button">Download Activity Files <i class="fas fa-download"></i></a>
+<a href="/fall2025/downloads/activities/css-layouts.zip" class="nu-button">Download Activity Files <i class="fas fa-download"></i></a>
 
 Then, try to complete the following exercises.
 

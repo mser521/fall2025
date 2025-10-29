@@ -6,7 +6,7 @@ type: "activity"
 
 Please download the exercise files (below).
 
-<a href="/fall2025/downloads/intro-css-gallery.zip" class="nu-button">Download Activity Files <i class="fas fa-download"></i></a>
+<a href="/fall2025/downloads/activities/intro-css-gallery.zip" class="nu-button">Download Activity Files <i class="fas fa-download"></i></a>
 
 Then, use the CSS Property Cheatsheet (below) and what you've learned about selectors to make the following drawing:
 
