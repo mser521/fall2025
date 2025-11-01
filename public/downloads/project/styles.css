@@ -71,7 +71,6 @@ body {
   max-width: var(--container-max-width);
   padding: 0 var(--container-outer-padding);
   position: relative;
-  width: var(--container-width);
 }
 
 .container.grid {
@@ -213,7 +212,7 @@ header nav a {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   color: white;
   background-image: url(images/hero-bg.jpg);
   background-size: cover;
@@ -266,7 +265,7 @@ header nav a {
   display: block;
   width: 26px;
   height: 30px;
-  margin-top: var(--text-spacing-medium);
+  margin-top: 20px;
   background: url(images/arrow-down.svg) no-repeat;
   transition: all 0.2s ease-in-out;
 }
@@ -324,9 +323,7 @@ header nav a {
   transform: scaleX(0.8);
 }
 
-.btn.primary:hover,
 .btn-container:hover .btn.primary,
-.btn.tertiary:hover:after,
 .btn-container:hover .btn.tertiary:after {
   background-color: var(--persian-coral-hover);
 }
@@ -472,7 +469,7 @@ a.card:hover {
 }
 
 li article {
-  padding: var(--text-spacing-medium) 68px var(--text-spacing-large) 28px;
+  padding: 20px 68px 30px 28px;
   width: 100%;
 }
 
@@ -524,7 +521,7 @@ li article {
 
 .column .media {
   aspect-ratio: 425 / 286;
-  margin: 0 auto var(--text-spacing-small);
+  margin: 0 auto 15px;
   width: calc(425 / 538 * 100%);
 }
 
@@ -599,7 +596,7 @@ li article {
 
 #section-1 h2 {
   color: var(--matcha-green);
-  margin-bottom: var(--text-spacing-xsmall);
+  margin-bottom: 10px;
 }
 
 .content-styles {
@@ -637,7 +634,7 @@ li article {
 
 #section-3 img {
   height: 56px;
-  margin-bottom: var(--text-spacing-xxsmall);
+  margin-bottom: 8px;
   width: auto;
 }
 
@@ -866,11 +863,6 @@ li article {
     margin-left: 20px;
     padding: 0 20px;
   }
-
-  /* #section-6 .card {
-    width: 100%;
-    max-width: 360px;
-  } */
 }
 
 @media screen and (max-width: 768px) {
