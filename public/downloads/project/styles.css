@@ -213,9 +213,9 @@ header nav a {
   position: relative;
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
-  background-image: url(https://naturalareasnyc.org/wp-content/uploads/2023/12/NYC-Natural-Areas-R62-5942.jpg);
+  background-image: url(images/hero-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -267,7 +267,7 @@ header nav a {
   width: 26px;
   height: 30px;
   margin-top: var(--text-spacing-medium);
-  background: url(//naturalareasnyc.org/wp-content/themes/studio-simpatico/svgs/arrow-down.svg) no-repeat;
+  background: url(images/arrow-down.svg) no-repeat;
   transition: all 0.2s ease-in-out;
 }
 
@@ -349,8 +349,7 @@ header nav a {
 }
 
 .btn.icon.arrow {
-  background: url(//naturalareasnyc.org/wp-content/themes/studio-simpatico/svgs/btn-arrow.svg) var(--persian-coral)
-    no-repeat center / 100% auto;
+  background: url(images/btn-arrow.svg) var(--persian-coral) no-repeat center / 100% auto;
 }
 
 a.card .btn {
@@ -613,7 +612,7 @@ li article {
 #section-2 {
   margin-top: 100px;
   position: relative;
-  background-image: url(https://naturalareasnyc.org/wp-content/uploads/2023/12/bkg.png);
+  background-image: url(images/section-2-bkg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -621,8 +620,9 @@ li article {
   min-height: 100vh;
 }
 
-#section-2 h2 {
+#section-2 .heading-1 {
   text-align: center;
+  padding-top: 50px;
 }
 
 #section-2 .grid {
@@ -668,7 +668,7 @@ li article {
 }
 
 #section-5 {
-  background-image: url(https://naturalareasnyc.org/wp-content/uploads/2023/12/bkg-2.png);
+  background-image: url(images/section-5-bkg.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -769,5 +769,278 @@ li article {
 
   .heading-5 {
     font-size: 1.25rem;
+  }
+
+  /* Section 1 Responsive */
+  #section-1 {
+    grid-template-columns: 1fr;
+    padding: 100px 20px;
+  }
+
+  #section-1 .media {
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .content-styles {
+    padding: 40px 30px;
+    margin-left: 0;
+  }
+
+  #section-1 h2,
+  .content-styles .heading-4 {
+    font-size: 1.1rem;
+  }
+
+  /* Section 3 Responsive */
+  #section-3 {
+    padding: 60px 0;
+  }
+
+  #section-3 .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #section-3 .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    row-gap: 3rem;
+  }
+
+  #section-3 img {
+    height: 48px;
+  }
+
+  /* Section 4 Responsive */
+  #section-4 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  #section-4 .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .column:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--button-gray);
+    padding-bottom: 3rem;
+  }
+
+  .column:last-child {
+    padding-top: 3rem;
+  }
+
+  /* Section 5 Responsive */
+  #section-5 {
+    padding-top: 16vw;
+    background: none;
+  }
+
+  #section-5 .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #section-5 .heading-1.mega {
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+  }
+
+  #section-5 .cards {
+    align-items: stretch;
+  }
+
+  /* Section 6 Responsive */
+  #section-6 {
+    padding-top: 80px;
+    padding-bottom: 200px;
+  }
+
+  #section-6 .container {
+    margin-left: 20px;
+    padding: 0 20px;
+  }
+
+  /* #section-6 .card {
+    width: 100%;
+    max-width: 360px;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  /* Section 1 Mobile */
+  #section-1 .media {
+    margin-top: 0;
+  }
+
+  .content-styles {
+    padding: 30px 20px;
+  }
+
+  .content-styles .heading-4 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #section-1 h2.eyebrow {
+    font-size: calc(14rem / 16);
+    margin-bottom: 1rem;
+  }
+
+  .media .play-button {
+    font-size: calc(18rem / 16);
+    bottom: 16px;
+    left: 16px;
+    gap: 10px;
+  }
+
+  .btn.icon.large {
+    width: 48px;
+    height: 48px;
+    font-size: calc(18rem / 16);
+  }
+
+  /* Section 3 Mobile */
+  #section-3 {
+    padding: 40px 0;
+  }
+
+  #section-3 .heading-1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #section-3 .grid {
+    row-gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  #section-3 img {
+    height: 40px;
+    margin-bottom: 0.5rem;
+  }
+
+  #section-3 .heading-4 {
+    font-size: 1.1rem;
+  }
+
+  #section-3 .small {
+    font-size: calc(14rem / 16);
+    margin-bottom: 1rem;
+  }
+
+  /* Section 4 Mobile */
+  #section-4 {
+    padding: 0 15px;
+  }
+
+  #section-4 h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #section-4 .grid {
+    gap: 2rem;
+  }
+
+  .column .media {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .column .large {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .column:first-child {
+    padding-bottom: 2rem;
+  }
+
+  .column:last-child {
+    padding-top: 2rem;
+  }
+
+  /* Section 5 Mobile */
+  #section-5 {
+    padding-top: 16vw;
+    background: none;
+  }
+
+  #section-5 .container {
+    gap: 1.5rem;
+    padding: 0 20px;
+  }
+
+  #section-5 .heading-1.mega {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  #section-5 .cards {
+    row-gap: 1.5rem;
+  }
+
+  #section-5 .card article {
+    padding: 1.5rem;
+  }
+
+  #section-5 .heading-4 {
+    font-size: 1.1rem;
+  }
+
+  #section-5 .large {
+    font-size: 16px;
+  }
+
+  /* Section 6 Mobile */
+  #section-6 {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    background-size: cover;
+  }
+
+  #section-6 .container {
+    margin-left: 0;
+    padding: 0 15px;
+  }
+
+  #section-6 .heading-1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #section-6 .heading-6 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  #section-6 .heading-5 {
+    font-size: 1.1rem;
+  }
+
+  /* Carousel navigation on mobile - reposition arrows */
+  #section-6 .slick-prev,
+  #section-6 .slick-next {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin: 20px 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #section-6 .slick-prev {
+    transform: scale(-1, 1);
   }
 }

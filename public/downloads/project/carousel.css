@@ -16,7 +16,7 @@
 }
 
 .slick-arrow {
-  background: url(//naturalareasnyc.org/wp-content/themes/studio-simpatico/svgs/btn-arrow.svg) no-repeat center;
+  background: url(images/btn-arrow.svg) no-repeat center;
   border: 2px solid var(--black);
   border-radius: 100%;
   font-size: 0px;
