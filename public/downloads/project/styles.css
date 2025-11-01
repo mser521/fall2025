@@ -27,7 +27,7 @@
 }
 
 /* ============================================
-   BASE STYLES
+   CSS VARIABLES
    ============================================ */
 
 :root {
@@ -47,9 +47,14 @@
   --container-outer-padding: 50px;
 }
 
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
 html {
   scroll-behavior: smooth;
 }
+
 body * {
   box-sizing: border-box;
 }
@@ -67,6 +72,97 @@ body {
   padding: 0 var(--container-outer-padding);
   position: relative;
   width: var(--container-width);
+}
+
+.container.grid {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  margin-left: 50px;
+  z-index: 1;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1,
+.heading-1 {
+  font-size: calc(60rem / 16);
+  letter-spacing: -1.4px;
+  line-height: calc(68 / 60);
+}
+
+h4,
+.heading-4 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2px;
+  line-height: calc(34 / 28);
+}
+
+.heading-5 {
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.heading-5 span {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.heading-6 {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  font-size: 1.2rem;
+}
+
+.eyebrow {
+  display: block;
+  font-size: calc(15rem / 16);
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: calc(24 / 15);
+}
+
+p.xlarge {
+  font-size: calc(24rem / 16);
+  line-height: calc(33.6 / 24);
+  max-width: 50vw;
+  letter-spacing: 0;
+}
+
+.small {
+  font-size: calc(15rem / 16);
+  line-height: calc(24 / 15);
+  letter-spacing: 0.2px;
+  margin: 0 0 1.5rem;
+  color: #666;
+}
+
+.large {
+  font-size: 20px;
+}
+
+.caption {
+  margin-left: 8px;
+  opacity: 0.6;
+  vertical-align: text-bottom;
+  font-size: calc(11rem / 16);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: calc(16 / 11);
+  text-transform: uppercase;
+}
+
+.accessibility {
+  position: absolute;
+  left: -999999999px;
+  opacity: 0;
+  backface-visibility: hidden;
 }
 
 /* ============================================
@@ -123,8 +219,8 @@ header nav a {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
   background-color: #222;
+  -webkit-font-smoothing: antialiased;
 }
 
 .hero:before {
@@ -145,14 +241,6 @@ header nav a {
   width: 100%;
   height: 400px;
   background: linear-gradient(180deg, rgba(15, 16, 16, 0.7) 11.98%, rgba(15, 16, 16, 0) 76.69%);
-}
-
-.container.grid {
-  position: relative;
-  display: grid;
-  gap: 20px;
-  margin-left: 50px;
-  z-index: 1;
 }
 
 .hero h1 {
@@ -187,44 +275,61 @@ header nav a {
   transform: translateY(5px);
 }
 
-.eyebrow {
-  display: block;
-  font-size: calc(15rem / 16);
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: calc(24 / 15);
-}
-
-/* ============================================
-   TYPOGRAPHY
-   ============================================ */
-
-p.xlarge {
-  font-size: calc(24rem / 16);
-  line-height: calc(33.6 / 24);
-  max-width: 50vw;
-  letter-spacing: 0;
-}
-
-.accessibility {
-  position: absolute;
-  left: -999999999px;
-  opacity: 0;
-  backface-visibility: hidden;
-}
-
-/* ============================================
-   PANELS
-   ============================================ */
-
-.panel {
-  padding: 50px;
-  background-color: #f4f2ef;
-}
-
 /* ============================================
    BUTTONS
    ============================================ */
+
+.btn {
+  color: var(--black);
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.btn.primary {
+  background: var(--persian-coral);
+  padding: 22px 32px;
+  font-size: calc(17rem / 16);
+  letter-spacing: 0;
+  line-height: calc(18 / 17);
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn.primary:hover {
+  background-color: var(--persian-coral-hover);
+  text-decoration: none;
+}
+
+.btn.tertiary {
+  font-size: calc(15rem / 16);
+  line-height: calc(18 / 15);
+  padding-bottom: 2px;
+  position: relative;
+}
+
+.btn.tertiary:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--persian-coral);
+  transition: transform 0.25s ease;
+}
+
+.btn.tertiary:hover:after,
+.btn-container:hover .btn.tertiary:after {
+  transform: scaleX(0.8);
+}
+
+.btn.primary:hover,
+.btn-container:hover .btn.primary,
+.btn.tertiary:hover:after,
+.btn-container:hover .btn.tertiary:after {
+  background-color: var(--persian-coral-hover);
+}
 
 .btn.icon {
   display: flex;
@@ -232,7 +337,7 @@ p.xlarge {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: #ff9d79;
+  background: var(--persian-coral);
   border-radius: 100%;
   font-size: 1rem;
 }
@@ -241,6 +346,21 @@ p.xlarge {
   width: 64px;
   height: 64px;
   font-size: calc(22rem / 16);
+}
+
+.btn.icon.arrow {
+  background: url(//naturalareasnyc.org/wp-content/themes/studio-simpatico/svgs/btn-arrow.svg) var(--persian-coral)
+    no-repeat center / 100% auto;
+}
+
+a.card .btn {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.card:hover .btn.icon.arrow {
+  transform: translateX(4px);
 }
 
 /* ============================================
@@ -281,15 +401,9 @@ svg:not(:root) {
   object-fit: cover;
   object-position: center;
 }
-#section-1 {
-  align-items: self-start;
-}
-#section-1 .media {
+
+.media {
   position: relative;
-  max-width: 50vw;
-  aspect-ratio: 5 / 4;
-  margin-top: 80px;
-  margin-left: 80px;
 }
 
 .media .play-button {
@@ -307,7 +421,7 @@ svg:not(:root) {
 }
 
 /* ============================================
-   CARDS & GRID (Section 2, lines 167-251)
+   LAYOUT - GRID & CARDS
    ============================================ */
 
 .grid {
@@ -315,16 +429,6 @@ svg:not(:root) {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-#section-1 h2 {
-  color: var(--matcha-green);
-  margin-bottom: var(--text-spacing-xsmall);
-}
-
-#section-2 .grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
 }
 
 .btn-container {
@@ -335,11 +439,18 @@ svg:not(:root) {
 
 .card {
   display: flex;
-  transform: translate3d(0, 0, 0);
   background: white;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.25s ease;
 }
 
-.card:hover {
+a.card {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.card:hover,
+a.card:hover {
   box-shadow: 8px 24px 40px 0px rgba(0, 0, 0, 0.06);
   color: var(--black);
 }
@@ -357,9 +468,12 @@ svg:not(:root) {
   display: block;
 }
 
-.fancy-boxes img {
-  height: 100%;
-  object-fit: cover;
+.card article {
+  padding: 2rem;
+}
+
+li article {
+  padding: var(--text-spacing-medium) 68px var(--text-spacing-large) 28px;
   width: 100%;
 }
 
@@ -368,17 +482,26 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+.fancy-boxes img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 .fancy-boxes:before,
 .fancy-boxes:after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  width: calc(100% - 26px);
+  height: 30%;
   border: 3px solid white;
   border-bottom: none;
-  content: '';
-  height: 30%;
-  left: 10px;
-  position: absolute;
-  top: 10px;
   transition: all 0.25s ease;
-  width: calc(100% - 26px);
+}
+
+.fancy-boxes:before {
+  top: 10px;
 }
 
 .fancy-boxes:after {
@@ -387,242 +510,9 @@ svg:not(:root) {
   transform: scale(1, -1);
 }
 
-li article {
-  padding: var(--text-spacing-medium) 68px var(--text-spacing-large) 28px;
-  width: 100%;
-}
-
-.card:hover .fancy-boxes::before,
-.card:hover .fancy-boxes::after {
+.card:hover .fancy-boxes:before,
+.card:hover .fancy-boxes:after {
   height: 50%;
-}
-
-.card article {
-  padding: 2rem;
-}
-
-a.card:hover {
-  box-shadow: 8px 24px 40px 0px rgba(0, 0, 0, 0.06);
-  color: var(--black);
-}
-
-.heading-5 {
-  font-size: 1.5rem;
-  line-height: 1.4em;
-  font-weight: 700;
-  margin: 0 0 1rem;
-}
-
-.heading-5 span {
-  color: #9acd32;
-  font-weight: 700;
-}
-
-.small {
-  font-size: 0.875rem;
-  line-height: 1.6em;
-  margin: 0 0 1.5rem;
-  color: #666;
-  font-size: calc(15rem / 16);
-  letter-spacing: 0.2px;
-  line-height: calc(24 / 15);
-}
-
-#geese {
-  position: absolute;
-  right: 30px;
-  top: 20px;
-}
-
-h1,
-.heading-1 {
-  font-size: calc(60rem / 16);
-  letter-spacing: -1.4px;
-  line-height: calc(68 / 60);
-}
-
-h2,
-.heading-2 {
-  font-size: calc(44rem / 16);
-  letter-spacing: -1.4px;
-  line-height: calc(50 / 44);
-}
-
-h4,
-.heading-4 {
-  font-size: 1.3rem;
-  letter-spacing: 0.2px;
-  line-height: calc(34 / 28);
-}
-
-.btn.icon.arrow {
-  background: url(//naturalareasnyc.org/wp-content/themes/studio-simpatico/svgs/btn-arrow.svg) var(--persian-coral)
-    no-repeat center / 100% auto;
-}
-
-a.card .btn {
-  bottom: 10px;
-  position: absolute;
-  right: 10px;
-}
-
-.btn.icon {
-  align-items: center;
-  background: var(--persian-coral);
-  border-radius: 100%;
-  display: flex;
-  font-size: 1rem;
-  height: 40px;
-  justify-content: center;
-  width: 40px;
-}
-.btn {
-  color: var(--black);
-  display: inline-block;
-  font-weight: 700;
-  transition: all 0.25s ease;
-}
-.btn.tertiary {
-  font-size: calc(15rem / 16);
-  line-height: calc(18 / 15);
-  padding-bottom: 2px;
-  position: relative;
-}
-
-.btn,
-.expanding-sections .openers,
-.gform_footer input[type='submit'],
-.ppw-pwd-submit-btn {
-  color: var(--black);
-  display: inline-block;
-  font-weight: 700;
-  transition: all 0.25s ease;
-}
-
-.btn.tertiary:hover:after,
-.btn-container:hover .btn.tertiary:after {
-  transform: scaleX(0.8);
-}
-.btn.primary:hover,
-.btn-container:hover .btn.primary,
-.btn.secondary:hover:after,
-.btn-container:hover .btn.secondary:after,
-.btn.tertiary:hover:after,
-.btn-container:hover .btn.tertiary:after {
-  background-color: var(--persian-coral-hover);
-}
-.btn.tertiary:after {
-  background: var(--persian-coral);
-  bottom: 0;
-  content: '';
-  height: 2px;
-  left: 0;
-  position: absolute;
-  transition: transform 0.25s ease;
-  width: 100%;
-}
-
-.btn.primary {
-  background: var(--persian-coral);
-  padding: 22px 32px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.btn.primary,
-.btn.secondary {
-  font-size: calc(17rem / 16);
-  letter-spacing: 0;
-  line-height: calc(18 / 17);
-}
-
-.btn.primary,
-.btn.primary:hover {
-  text-decoration: none;
-}
-
-.card:hover .btn.icon.arrow {
-  transform: translateX(4px);
-}
-
-.card:hover .btn.icon.arrow::after {
-  border-left-color: white;
-}
-
-/* ============================================
-   SECTIONS
-   ============================================ */
-
-#section-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0;
-}
-
-.content-styles {
-  background-color: #26281e;
-  color: white;
-  padding: 80px 140px;
-  margin-left: -100px;
-}
-
-#section-2 {
-  margin-top: 100px;
-  position: relative;
-  background-image: url(https://naturalareasnyc.org/wp-content/uploads/2023/12/bkg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  /* background-attachment: fixed; */
-  padding-bottom: 400px;
-  /* background: no-repeat center bottom / 100% auto; */
-  min-height: 100vh;
-}
-
-#section-2 h2 {
-  text-align: center;
-}
-
-#section-3 {
-  background: no-repeat center top/100% auto;
-  padding: 120px 0;
-}
-
-#section-3 img {
-  height: 56px;
-  margin-bottom: var(--text-spacing-xxsmall);
-  width: auto;
-}
-
-#section-3 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  row-gap: 6rem;
-}
-
-#section-3 .container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
-}
-
-#section-4 {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-#section-4 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-#section-4 {
-  max-width: 1150px;
-}
-#section-4 h2 {
-  font-size: 2rem;
 }
 
 .column,
@@ -639,8 +529,11 @@ a.card .btn {
   width: calc(425 / 538 * 100%);
 }
 
-.large {
-  font-size: 20px;
+.column .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .column .large {
@@ -648,14 +541,130 @@ a.card .btn {
   font-weight: 700;
 }
 
-.column .media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
 .column:first-child {
-  border-right: 1px solid #dfded9;
+  border-right: 1px solid var(--button-gray);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.panel {
+  padding: 50px;
+  background-color: #f4f2ef;
+}
+
+.pill,
+.content-styles h4:not([class]) {
+  background: var(--black);
+  border-radius: 24px;
+  color: var(--white);
+  display: inline-block;
+  font-size: calc(9rem / 16);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: calc(15 / 9);
+  padding: 6px 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pill.green {
+  background: var(--green);
+  color: var(--soil-green);
+}
+
+.pill.small {
+  border-radius: 40px;
+  line-height: calc(16 / 9);
+  padding: 3px 12px;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+
+#section-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  align-items: self-start;
+}
+
+#section-1 .media {
+  max-width: 50vw;
+  aspect-ratio: 5 / 4;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+#section-1 h2 {
+  color: var(--matcha-green);
+  margin-bottom: var(--text-spacing-xsmall);
+}
+
+.content-styles {
+  background-color: #26281e;
+  color: white;
+  padding: 80px 140px;
+  margin-left: -100px;
+}
+
+#section-2 {
+  margin-top: 100px;
+  position: relative;
+  background-image: url(https://naturalareasnyc.org/wp-content/uploads/2023/12/bkg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 400px;
+  min-height: 100vh;
+}
+
+#section-2 h2 {
+  text-align: center;
+}
+
+#section-2 .grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#section-3 {
+  background: no-repeat center top/100% auto;
+  padding: 120px 0;
+}
+
+#section-3 img {
+  height: 56px;
+  margin-bottom: var(--text-spacing-xxsmall);
+  width: auto;
+}
+
+#section-3 .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+#section-3 .grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  row-gap: 6rem;
+}
+
+#section-4 {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+#section-4 h2 {
+  font-size: 2rem;
+}
+
+#section-4 .grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 #section-5 {
@@ -663,8 +672,8 @@ a.card .btn {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: left bottom;
-  padding-top: 20vw; /* Ensures enough vertical space for the image */
-  min-height: 600px; /* Fallback minimum height */
+  padding-top: 20vw;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -686,6 +695,7 @@ a.card .btn {
   border-bottom: 1px solid white;
   padding-bottom: 2rem;
 }
+
 #section-5 .heading-1 {
   color: white;
 }
@@ -696,6 +706,12 @@ a.card .btn {
   padding-top: 150px;
 }
 
+#section-6 .container {
+  margin-left: 5vw;
+  position: relative;
+  padding: 0;
+}
+
 #section-6 .heading-1 {
   margin: 0;
 }
@@ -704,14 +720,6 @@ a.card .btn {
   line-height: 1.2em;
   font-size: 1.2rem;
   margin-bottom: 20px;
-}
-
-#section-6 .heading-6 {
-  margin-top: 0;
-  margin-bottom: 4rem;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  font-size: 1.2rem;
 }
 
 #section-6 .card {
@@ -726,52 +734,10 @@ a.card .btn {
   width: 100%;
 }
 
-#section-6 .container {
-  margin-left: 5vw;
-  position: relative;
-  padding: 0;
-}
-
-a.card {
-  text-decoration: none;
-  transition: all 0.25s ease;
-  color: var(--black);
-}
-
-.pill.green {
-  background: var(--green);
-  color: var(--soil-green);
-}
-
-.pill.small {
-  border-radius: 40px;
-  line-height: calc(16 / 9);
-  padding: 3px 12px;
-}
-.pill,
-.content-styles h4:not([class]) {
-  background: var(--black);
-  border-radius: 24px;
-  color: var(--white);
-  display: inline-block;
-  font-size: calc(9rem / 16);
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  line-height: calc(15 / 9);
-  padding: 6px 16px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.caption {
-  margin-left: 8px;
-  opacity: 0.6;
-  vertical-align: text-bottom;
-  font-size: calc(11rem / 16);
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  line-height: calc(16 / 11);
-  text-transform: uppercase;
+#geese {
+  position: absolute;
+  right: 30px;
+  top: 20px;
 }
 
 /* ============================================

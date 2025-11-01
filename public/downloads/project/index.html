@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="carousel.css">
     <script src="carousel.js" defer></script>
+    <link rel="stylesheet" href="scroll-effects.css">
+    <script src="scroll-effects.js" defer></script>
     <title>NYC Website</title>
 </head>
 
@@ -97,9 +99,9 @@
                         </defs>
                     </svg>
                 </a>
-                <a href="#">What We Do</a>
-                <a href="#">About Us</a>
-                <a href="#">Events</a>
+                <a href="#section-2">What We Do</a>
+                <a href="#section-3">About Us</a>
+                <a href="#section-6">Events</a>
             </div>
             <div class="right">
                 <a href="#">Get Involved</a>
@@ -129,7 +131,7 @@
             </div>
         </section>
         <section id="section-1" class="panel">
-            <div class="container-off">
+            <div class="container-off" data-scroll="slide-up" data-scroll-delay="100">
                 <div class="media">
                     <a class="play-video play-iframe" href="https://www.youtube.com/watch?v=dn75qhZWbh4">
                         <div class="cover-image">
@@ -159,9 +161,10 @@
                 </div>
             </div>
             <article class="content-styles">
-                <h2 class="eyebrow">Who are we?</h2>
+                <h2 class="eyebrow" data-scroll="fade-in">Who are we?</h2>
 
-                <h3 class="heading-4">The Natural Areas Conservancy strives to deepen the connection between people and
+                <h3 class="heading-4" data-scroll="fade-in" data-scroll-delay="200">The Natural Areas Conservancy
+                    strives to deepen the connection between people and
                     nature in NYC by increasing access, providing education, and building the parks workforce. Through
                     research, partnerships, and advocacy, we ensure that urban natural areas are healthy and thriving
                     and that their benefits reach all New Yorkers.
@@ -169,15 +172,16 @@
             </article>
         </section>
         <section id="section-2" class="panel">
-            <img id="geese" width="630" height="97"
+            <img id="geese" width="630" height="97" data-parallax="0.3"
                 src="https://naturalareasnyc.org/wp-content/uploads/2023/12/goose.png"
                 class="attachment-xlarge size-xlarge" alt="Geese flying" decoding="async" fetchpriority="high">
 
 
-            <h2 class="heading-1">What we do</h2>
+            <h2 class="heading-1" data-scroll="slide-up">What we do</h2>
 
             <div class="grid">
-                <a class="btn-container card" href="https://naturalareasnyc.org/internships/" target="">
+                <a class="btn-container card" href="https://naturalareasnyc.org/internships/" target=""
+                    data-scroll="slide-up">
                     <div class="media fancy-boxes">
                         <img width="1024" height="669"
                             src="https://naturalareasnyc.org/wp-content/uploads/2023/12/Intern-prepping-planter-1024x669.jpg"
@@ -195,7 +199,8 @@
                         </span>
                     </article>
                 </a>
-                <a class="btn-container card" href="https://naturalareasnyc.org/research/" target="">
+                <a class="btn-container card" href="https://naturalareasnyc.org/research/" target=""
+                    data-scroll="slide-up" data-scroll-delay="100">
                     <div class="media fancy-boxes"><img width="1024" height="768"
                             src="https://naturalareasnyc.org/wp-content/uploads/2023/12/Staff-in-Action-6-1024x768.jpg"
                             alt="Three staff members walk one by one into a forest, NAC logos are visible on back of shirts"
@@ -213,7 +218,8 @@
                         </span>
                     </article>
                 </a>
-                <a class="btn-container card" href="https://naturalareasnyc.org/connect-nyc-to-nature/" target="">
+                <a class="btn-container card" href="https://naturalareasnyc.org/connect-nyc-to-nature/" target=""
+                    data-scroll="slide-up" data-scroll-delay="200">
                     <div class="media fancy-boxes"><img width="1024" height="768"
                             src="https://naturalareasnyc.org/wp-content/uploads/2023/12/Natural-Areas-Conservancy-Program-1024x768.jpg"
                             alt="Two volunteers smiling wearing safety gloves, one holds a branch" loading="lazy"
@@ -222,7 +228,7 @@
                     <article>
                         <h3 class="heading-5"><span>Connect</span> New Yorkers to nature</h3>
                         <p class="small">We host tours and volunteer events in local natural areas and work to
-                            improve NYC’s network of trails.</p>
+                            improve NYC's network of trails.</p>
 
                         <span class="btn icon arrow">
                             <span class="accessibility">
@@ -231,7 +237,8 @@
                         </span>
                     </article>
                 </a>
-                <a class="btn-container card" href="https://naturalareasnyc.org/coalition-advocacy/" target="">
+                <a class="btn-container card" href="https://naturalareasnyc.org/coalition-advocacy/" target=""
+                    data-scroll="slide-up" data-scroll-delay="300">
                     <div class="media fancy-boxes"><img width="1024" height="768"
                             src="https://naturalareasnyc.org/wp-content/uploads/2023/12/Advocacy-Natural-Areas-Conservancy-1-1024x768.jpg"
                             alt="Large group of protestors holding Play Fair signs stand on steps of NYC city hall"
@@ -254,11 +261,11 @@
         <section id="section-3" class="module ctas style2 has-bkg-img"
             style="background-image: url(https://naturalareasnyc.org/wp-content/uploads/2023/12/bkg-1.png);">
             <div class="container">
-                <h2 class="heading-1">Join our efforts</h2>
+                <h2 class="heading-1" data-scroll="fade-in">Join our efforts</h2>
 
                 <div class="grid">
 
-                    <a class="btn-container" href="https://naturalareasnyc.org/donate/" target="">
+                    <a class="btn-container" href="https://naturalareasnyc.org/donate/" target="" data-scroll="scale">
                         <div class="media"><img
                                 src="https://naturalareasnyc.org/wp-content/uploads/2024/01/Donate-Expand_On-Light.svg"
                                 class="attachment-medium size-medium" alt="Donate icon" decoding="async"></div>
@@ -271,7 +278,8 @@
                         </article>
                     </a>
 
-                    <a class="btn-container" href="https://naturalareasnyc.org/super-steward-program/" target="">
+                    <a class="btn-container" href="https://naturalareasnyc.org/super-steward-program/" target=""
+                        data-scroll="scale" data-scroll-delay="100">
                         <div class="media"><img
                                 src="https://naturalareasnyc.org/wp-content/uploads/2024/01/Volunteer-Expand_On-Light.svg"
                                 class="attachment-medium size-medium" alt="volunteer icon" decoding="async"></div>
@@ -284,7 +292,8 @@
                         </article>
                     </a>
 
-                    <a class="btn-container" href="https://naturalareasnyc.org/corporate-partnerships/" target="">
+                    <a class="btn-container" href="https://naturalareasnyc.org/corporate-partnerships/" target=""
+                        data-scroll="scale" data-scroll-delay="200">
                         <div class="media"><img
                                 src="https://naturalareasnyc.org/wp-content/uploads/2024/01/Partner-Expand_On-Light-copy-3.svg"
                                 class="attachment-medium size-medium" alt="Partnership icon" decoding="async"></div>
@@ -296,7 +305,7 @@
                             <span class="btn tertiary">Learn more</span>
                         </article>
                     </a>
-                    <a class="btn-container" href="/events" target="">
+                    <a class="btn-container" href="/events" target="" data-scroll="scale" data-scroll-delay="300">
                         <div class="media"><img
                                 src="https://naturalareasnyc.org/wp-content/uploads/2024/01/Get-Outside-Expand_On-Light.svg"
                                 class="attachment-medium size-medium" alt="Get Outside icon" decoding="async"></div>
@@ -314,20 +323,20 @@
 
         <section id="section-4">
             <div class="container grid">
-                <div class="column">
+                <div class="column" data-scroll="slide-right">
                     <div class="media"><img width="1024" height="611"
                             src="https://naturalareasnyc.org/wp-content/uploads/2023/12/callout1.jpg"
                             class="attachment-large size-large" alt="Image of Forests in Cities Climate Tool"></div>
                     <article>
                         <h2>The NYC Nature Map</h2>
-                        <p class="large">Experience a bird's-eye-view of our natural areas and learn what’s in your
+                        <p class="large">Experience a bird's-eye-view of our natural areas and learn what's in your
                             neighborhood.</p>
 
                         <a href="https://naturalareasnyc.org/nyc-nature-map/" class="btn primary" target="">Explore
                             Now</a>
                     </article>
                 </div>
-                <div class="column">
+                <div class="column" data-scroll="slide-left">
                     <div class="media"><img width="1024" height="611"
                             src="https://naturalareasnyc.org/wp-content/uploads/2024/06/Screenshot-2024-06-27-at-1.01.08 PM-1024x611.png"
                             class="attachment-large size-large" alt="Image of Forests in Cities Climate Tool"
@@ -349,23 +358,24 @@
 
         <section id="section-5">
             <div class="container">
-                <h2 class="heading-1 mega">Forests in <br>Cities network</h2>
+                <h2 class="heading-1 mega" data-scroll="fade-in">Forests in <br>Cities network</h2>
                 <div class="cards">
                     <a class="btn-container card" href="https://naturalareasnyc.org/forests-in-cities-network/"
-                        target="">
+                        target="" data-scroll="slide-up">
                         <article>
                             <h3 class="heading-4">What is Forests in Cities?</h3>
                             <p class="large">We created the FiC network in 2019 to advance healthy forested natural
                                 areas across America. By nurturing a network of interdisciplinary experts from 26
                                 cities, together we advance urban forest science and practice while advocating for
-                                increased resources and support for our cities’ forests. </p>
+                                increased resources and support for our cities' forests. </p>
 
                             <span class="btn icon arrow medium"><span class="accessibility">FiC</span></span>
                         </article>
                     </a>
 
 
-                    <a class="btn-container card" href="https://fic.naturalareasnyc.org/" target="_blank">
+                    <a class="btn-container card" href="https://fic.naturalareasnyc.org/" target="_blank"
+                        data-scroll="slide-up" data-scroll-delay="200">
                         <article>
                             <h3 class="heading-4">Explore the Resource Library</h3>
                             <p class="large">Everything you need to know about forested natural areas—all in one
@@ -387,9 +397,9 @@
             style="background-image: url(https://naturalareasnyc.org/wp-content/uploads/2023/12/bkg-scaled.jpg);">
             <div class="container">
 
-                <article>
+                <article data-scroll="fade-in">
                     <h2 class="heading-1">Understories</h2>
-                    <p class="heading-6">The backdoor to NYC’s backyard</p>
+                    <p class="heading-6">The backdoor to NYC's backyard</p>
                 </article>
 
                 <div class="carousel slick-initialized slick-slider">
