@@ -2,7 +2,7 @@
 title: "Midterm Project"
 date: "2025-11-03"
 type: "midterm project"
-draft: 1
+draft: 0
 ---
 
 # Midterm Project: Building a Multi-Section Website
