@@ -89,23 +89,25 @@ Create a sliding drawer that opens from the left side of the screen by implement
 1. Attach the `openDrawer()` function to the "Open" button's click event
 2. Attach the `closeDrawer()` function to the "Close" button's click event
 
-## 4. Fancy Drawer (Bonus)
-For an extra challenge, try implementing the fancy drawer in the `04-drawer-fancy` folder. This drawer displays a gallery of images and shows the clicked image in a larger view.
+## 4. Fancy Drawer
+For an extra challenge, try implementing the fancy drawer in the `04-drawer-fancy` folder. In addition to showing / hiding the drawer, you will actually modify the content of the drawer to show the image and the caption (which can be accessed from the `img` element).
 
 <img class="screenshot-xl border" src="/fall2025/images/labs/lab05/drawer-fancy.gif" />
 
-
-To do this you will modify the template in the JavaScript `openDrawer()` function to use some data from the DOM.
+To do this you will modify the template in the JavaScript `openDrawer()` function to display some data from the DOM.
 
 **Hints:**
 - Use template literals (backticks) to create multi-line HTML strings
 - Use `${variable}` syntax to insert variables into the template
 - Use `element.innerHTML` to set the drawer's content
 
+> Here is a [video walkthrough](#) if you need some help.
 
 
 ## 5. Carousel
 If you were on a front-end team and in need of a carousel, you would probably use a pre-made widget from an existing design system / UI kit. That said, it is useful to understand how these widgets work so that you understand the basic idea.
+
+<img class="screenshot-xl border" src="/fall2025/images/labs/lab05/carousel.gif" />
 
 Given this, please open the `05-carousel` folder and make the following changes:
 1. Add comments to the `index.js` file explaining what each of the statements does.
@@ -117,8 +119,6 @@ Given this, please open the `05-carousel` folder and make the following changes:
 > **Understanding the Carousel**: The carousel works by moving all slides together using `transform: translateX()`. The math `(slideWidth + gap) * currentPosition` calculates how far to move based on the current position. For example, if each slide is 400px wide with a 10px gap, and we're at position 2, we move all slides by `(400 + 10) * 2 = 820px` to the left.
 
 > For this task, you may not use an AI assistant to comment the `index.js` code for you. YOU need to do it.
-
-
 
 
 ## What to Submit

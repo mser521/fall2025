@@ -1,10 +1,9 @@
 /* stylelint-disable at-rule-no-unknown */
 /* @import "tailwindcss"; */
 @layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css" layer(utilities);
-
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss/utilities.css' layer(utilities);
 
 @layer base {
   html.dark {
@@ -26,7 +25,7 @@
   --muted: #6b7280;
   --card: #ffffff;
   --card-foreground: #171717;
-  
+
   /* Additional semantic colors */
   --surface: #f9fafb;
   --surface-hover: #f3f4f6;
@@ -56,7 +55,7 @@ body {
   --muted: #9ca3af;
   --card: #1f2937;
   --card-foreground: #f9fafb;
-  
+
   /* Dark theme semantic colors */
   --surface: #1f2937;
   --surface-hover: #374151;
@@ -70,7 +69,6 @@ body {
   --info: #60a5fa;
 }
 
-
 h1 {
   @apply text-3xl md:text-4xl font-light mb-8 mt-12;
   color: var(--foreground);
@@ -83,7 +81,8 @@ h2 {
   font-family: var(--font-poppins), serif;
 }
 
-h3, .logo {
+h3,
+.logo {
   @apply text-lg md:text-xl font-bold mb-2 mt-6;
   color: var(--secondary);
   font-family: var(--font-poppins), serif;
@@ -129,7 +128,10 @@ ol {
   color: var(--foreground);
 }
 
-ol ol, ol ul, ul ol, ul ul {
+ol ol,
+ol ul,
+ul ol,
+ul ul {
   @apply !mb-0;
 }
 
@@ -158,13 +160,14 @@ blockquote h2 {
   @apply mt-0 !border-b-0;
 }
 
-.syllabus-page, .assignment-page {
+.syllabus-page,
+.assignment-page {
   li {
     @apply mb-2;
   }
   table li {
     @apply mb-0;
-  } 
+  }
 }
 
 /* stylelint-disable-next-line */
@@ -257,12 +260,15 @@ code {
 }
 
 /* Inline code elements inherit from base code styles */
-p code, li code, span code, div code {
+p code,
+li code,
+span code,
+div code {
   @apply px-1 py-0.5 rounded text-sm;
   background-color: var(--surface);
   color: var(--text-primary);
   border-color: var(--border);
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
 /* Syntax highlighting styles */
@@ -467,7 +473,9 @@ p code, li code, span code, div code {
 }
 
 /* Dark mode for any missing text elements */
-.dark p, .dark li, .dark span {
+.dark p,
+.dark li,
+.dark span {
   color: #e5e7eb;
 }
 
@@ -485,7 +493,8 @@ p code, li code, span code, div code {
   border-color: #374151;
 }
 
-.dark th, .dark td {
+.dark th,
+.dark td {
   border-color: #374151;
 }
 
@@ -500,13 +509,17 @@ p code, li code, span code, div code {
 }
 
 /* Dark mode for form elements */
-.dark input, .dark textarea, .dark select {
+.dark input,
+.dark textarea,
+.dark select {
   background-color: #1f2937;
   border-color: #374151;
   color: #e5e7eb;
 }
 
-.dark input:focus, .dark textarea:focus, .dark select:focus {
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
   border-color: #60a5fa;
   box-shadow: 0 0 0 1px #60a5fa;
 }
@@ -562,8 +575,8 @@ p code, li code, span code, div code {
     @apply border-0 hover:border-0 bg-gray-400 dark:bg-gray-600;
   }
 }
-.screenshot-xxs {
-  @apply mt-4 mb-4 w-full max-w-xs border border-gray-300 dark:border-gray-600;
+.screenshot-2xs {
+  @apply mt-4 mb-4 w-full max-w-2xs border border-gray-300 dark:border-gray-600;
 }
 
 .screenshot-xs {
@@ -574,14 +587,15 @@ p code, li code, span code, div code {
   @apply mt-4 mb-4 w-full max-w-md border border-gray-300 dark:border-gray-600;
 }
 
-.screenshot, .screenshot-md {
+.screenshot,
+.screenshot-md {
   @apply mt-4 mb-4 w-full max-w-xl border border-gray-300 dark:border-gray-600;
 }
 
-.screenshot-lg {
+.screenshot-lg,
+.screenshot-xl {
   @apply mt-4 mb-4 w-full border border-gray-300 dark:border-gray-600 rounded-sm;
 }
-
 
 ol li > ul {
   @apply !mb-2 !mt-2;
@@ -594,7 +608,8 @@ li > p {
   @apply mb-4;
 } */
 
-blockquote ol li, nav ol li {
+blockquote ol li,
+nav ol li {
   @apply mb-0;
 }
 

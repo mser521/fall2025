@@ -1,0 +1,172 @@
+/* ============================================
+   SECTION 4 - THE NYC NATURE MAP
+   ============================================ */
+
+.container {
+  clear: both;
+  margin: 0 auto;
+  max-width: var(--container-max-width);
+  padding: 0 var(--container-outer-padding);
+  position: relative;
+}
+
+#section-4 {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+#section-4 h2 {
+  font-size: 2rem;
+}
+
+#section-4 .grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* ============================================
+   GRID LAYOUT
+   ============================================ */
+
+.grid {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ============================================
+   COLUMN LAYOUT
+   ============================================ */
+
+.column,
+.column article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column .media {
+  aspect-ratio: 425 / 286;
+  margin: 0 auto 15px;
+  width: calc(425 / 538 * 100%);
+}
+
+.column .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.column .large {
+  color: var(--moss-green);
+  font-weight: 700;
+}
+
+.column:first-child {
+  border-right: 1px solid var(--button-gray);
+}
+
+/* ============================================
+   MEDIA & IMAGES
+   ============================================ */
+
+.media {
+  position: relative;
+}
+
+/* ============================================
+   BUTTON PRIMARY STYLES
+   ============================================ */
+
+.btn {
+  color: var(--black);
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.btn.primary {
+  background: var(--persian-coral);
+  padding: 22px 32px;
+  font-size: calc(17rem / 16);
+  letter-spacing: 0;
+  line-height: calc(18 / 17);
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn.primary:hover {
+  background-color: var(--persian-coral-hover);
+  text-decoration: none;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+.large {
+  font-size: 20px;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+@media screen and (max-width: 1024px) {
+  #section-4 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  #section-4 .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .column:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--button-gray);
+    padding-bottom: 3rem;
+  }
+
+  .column:last-child {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #section-4 {
+    padding: 0 15px;
+  }
+
+  #section-4 h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #section-4 .grid {
+    gap: 2rem;
+  }
+
+  .column .media {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .column .large {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .column:first-child {
+    padding-bottom: 2rem;
+  }
+
+  .column:last-child {
+    padding-top: 2rem;
+  }
+}
+

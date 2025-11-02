@@ -1,0 +1,390 @@
+/* ============================================
+   FONTS
+   ============================================ */
+
+@font-face {
+  font-display: swap;
+  font-family: 'Bau';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//naturalareasnyc.org/wp-content/themes/studio-simpatico/fonts/BauPro-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Bau';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//naturalareasnyc.org/wp-content/themes/studio-simpatico/fonts/BauPro-Medium.otf) format('opentype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Bau';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//naturalareasnyc.org/wp-content/themes/studio-simpatico/fonts/BauPro-Bold.otf) format('opentype');
+}
+
+/* ============================================
+     CSS VARIABLES
+     ============================================ */
+
+:root {
+  --white: #fff;
+  --ivory: #f4f2ee;
+  --button-gray: #dfded9;
+  --gray: #58595b;
+  --black: #0f1010;
+  --persian-coral: #ff9d79;
+  --persian-coral-hover: #dd896a;
+  --matcha-green: #b6dc68;
+  --green: #9acd32;
+  --green-callout: #0e8104;
+  --moss-green: #4a5d22;
+  --soil-green: #25281e;
+  --container-max-width: 1600px;
+  --container-outer-padding: 50px;
+}
+
+/* ============================================
+     BASE STYLES
+     ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Bau', sans-serif;
+  background-color: var(--ivory);
+}
+/* ============================================
+   CONTAINER
+   ============================================ */
+.container {
+  clear: both;
+  margin: 0 auto;
+  max-width: var(--container-max-width);
+  padding: 0 var(--container-outer-padding);
+  position: relative;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   TODO: Style your headings (adjust sizes, spacing, etc.)
+   ============================================ */
+h1,
+.heading-1 {
+  /* TODO: Add heading styles */
+  /* Hint: Large font size (try 3-4rem), adjust line-height */
+}
+
+h2,
+.heading-2 {
+  /* TODO: Add heading styles */
+  /* Hint: Medium font size (try 2-3rem) */
+}
+
+h3,
+.heading-3 {
+  /* TODO: Add heading styles */
+}
+
+h4,
+.heading-4 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2px;
+  /* TODO: Add other styles as needed */
+}
+
+.heading-5 {
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  /* TODO: Adjust as needed */
+}
+
+.heading-6 {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  font-size: 1.2rem;
+}
+
+.eyebrow {
+  display: block;
+  font-size: calc(15rem / 16);
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: calc(24 / 15);
+}
+
+/* Text size utilities */
+.mega {
+  /* TODO: Style large hero headings */
+}
+
+.xlarge {
+  font-size: calc(24rem / 16);
+  line-height: calc(33.6 / 24);
+  letter-spacing: 0;
+}
+
+.large {
+  font-size: 20px;
+}
+
+.small {
+  font-size: calc(15rem / 16);
+  line-height: calc(24 / 15);
+  letter-spacing: 0.2px;
+  margin: 0 0 1.5rem;
+  color: #666;
+}
+
+.caption {
+  margin-left: 8px;
+  opacity: 0.6;
+  vertical-align: text-bottom;
+  font-size: calc(11rem / 16);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: calc(16 / 11);
+  text-transform: uppercase;
+}
+
+/* ============================================
+   HEADER
+   TODO: 
+   - Position header (absolute or fixed?)
+   - Style navigation with flexbox
+   - Add hover effects to links
+   ============================================ */
+header {
+  /* TODO: Add header styles */
+}
+
+header nav {
+  /* TODO: Add navigation layout styles */
+}
+
+header nav a {
+  /* TODO: Add link styles */
+}
+
+/* ============================================
+   HERO SECTION
+   TODO:
+   - Make full viewport height (100vh)
+   - Add background image
+   - Center content
+   - Add overlay effects if needed
+   ============================================ */
+.hero {
+  /* TODO: Add hero section styles */
+}
+
+.hero h1 {
+  /* TODO: Style hero heading */
+}
+
+/* ============================================
+   SECTIONS
+   TODO: Style each section as needed
+   ============================================ */
+.panel {
+  /* TODO: Add panel styles (padding, background, etc.) */
+}
+
+#section-1 {
+  /* TODO: Add section 1 specific styles */
+}
+
+#section-2 {
+  /* TODO: Add section 2 specific styles */
+}
+
+#section-3 {
+  /* TODO: Add section 3 specific styles */
+}
+
+#section-4 {
+  /* TODO: Add section 4 specific styles (if implementing optional section) */
+}
+
+#section-5 {
+  /* TODO: Add section 5 specific styles (if implementing optional section) */
+}
+
+#section-6 {
+  /* TODO: Add section 6 specific styles (if implementing optional section) */
+}
+
+/* ============================================
+   GRID & CARDS
+   TODO:
+   - Create grid layout (CSS Grid)
+   - Style card components
+   - Add hover effects
+   ============================================ */
+.grid {
+  /* TODO: Add grid layout styles */
+  /* Hint: Use display: grid and grid-template-columns */
+}
+
+.card {
+  /* TODO: Add card styles */
+  /* Hint: Use flexbox or grid for card layout */
+}
+
+.card:hover {
+  /* TODO: Add hover effects (shadow, transform, etc.) */
+}
+
+/* Column layout utility */
+.column {
+  /* TODO: Style two-column layout for section 4 */
+  /* Hint: Use flexbox with flex-direction: column */
+}
+
+/* Button container utility */
+.btn-container {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  /* TODO: Add other styles as needed */
+}
+
+/* Media/image container */
+.media {
+  position: relative;
+  /* TODO: Add styles for image containers */
+}
+
+/* Accessibility utility */
+.accessibility {
+  position: absolute;
+  left: -999999999px;
+  opacity: 0;
+  backface-visibility: hidden;
+  /* Hides text visually but keeps it for screen readers */
+}
+
+/* Pill badge utility */
+.pill {
+  background: var(--black);
+  border-radius: 24px;
+  color: var(--white);
+  display: inline-block;
+  font-size: calc(9rem / 16);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: calc(15 / 9);
+  padding: 6px 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pill.green {
+  background: var(--green);
+  color: var(--soil-green);
+}
+
+.pill.small {
+  border-radius: 40px;
+  line-height: calc(16 / 9);
+  padding: 3px 12px;
+}
+
+/* ============================================
+   BUTTONS
+   TODO: Complete button styles and add hover effects
+   ============================================ */
+.btn {
+  color: var(--black);
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  /* TODO: Add other base styles as needed */
+}
+
+.btn.primary {
+  background: var(--persian-coral);
+  padding: 22px 32px;
+  font-size: calc(17rem / 16);
+  letter-spacing: 0;
+  line-height: calc(18 / 17);
+  text-align: center;
+  text-decoration: none;
+  /* TODO: Adjust padding, font-size as needed */
+}
+
+.btn.primary:hover {
+  background-color: var(--persian-coral-hover);
+  text-decoration: none;
+  /* TODO: Add other hover effects (transform, shadow, etc.) */
+}
+
+.btn.secondary {
+  /* TODO: Add secondary button styles if needed */
+}
+
+.btn.tertiary {
+  font-size: calc(15rem / 16);
+  line-height: calc(18 / 15);
+  padding-bottom: 2px;
+  position: relative;
+  text-decoration: none;
+  /* TODO: Add text color */
+}
+
+.btn.tertiary:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--persian-coral);
+  transition: transform 0.25s ease;
+  /* This creates the underline effect */
+}
+
+.btn.tertiary:hover:after {
+  transform: scaleX(0.8);
+  /* TODO: Add other hover effects */
+}
+
+.btn.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--persian-coral);
+  border-radius: 100%;
+  font-size: 1rem;
+  /* TODO: Add icon arrow background image if needed */
+}
+
+.btn.icon.large {
+  width: 64px;
+  height: 64px;
+  font-size: calc(22rem / 16);
+}
+
+.btn.icon.arrow {
+  background: url(./images/btn-arrow.svg) var(--persian-coral) no-repeat center / 100% auto;
+}
+
+.btn.icon.medium {
+  /* TODO: Add medium size if needed */
+}
