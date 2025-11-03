@@ -1,8 +1,90 @@
 /* Demo-specific styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  padding: 40px;
+  padding: 0;
+  margin: 0;
   background-color: var(--ivory);
   font-family: 'Bau', sans-serif;
+  display: flex;
+}
+
+/* Left Sidebar Navigation */
+.style-guide-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  border-right: 2px solid var(--button-gray);
+  padding: 30px 20px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.style-guide-nav h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: var(--moss-green);
+  font-weight: 700;
+}
+
+.style-guide-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.style-guide-nav li {
+  margin-bottom: 10px;
+}
+
+.style-guide-nav a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--black);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.style-guide-nav a:hover {
+  background: var(--ivory);
+  color: var(--persian-coral);
+  text-decoration: none;
+}
+
+.style-guide-nav a:active,
+.style-guide-nav a:focus {
+  background: var(--ivory);
+  color: var(--persian-coral);
+  outline: 2px solid var(--persian-coral);
+  outline-offset: 2px;
+}
+
+/* Main Content Wrapper */
+.style-guide-wrapper {
+  margin-left: 250px;
+  padding: 40px;
+  width: calc(100% - 250px);
+}
+
+/* Responsive: Hide sidebar on mobile */
+@media (max-width: 768px) {
+  .style-guide-nav {
+    display: none;
+  }
+
+  .style-guide-wrapper {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 .demo-section {
@@ -11,6 +93,7 @@ body {
   background: white;
   border: 2px solid var(--button-gray);
   border-radius: 8px;
+  scroll-margin-top: 20px;
 }
 
 /* .demo-section h2 {
@@ -26,13 +109,21 @@ body {
   padding: 15px;
   background: var(--ivory);
   border-left: 4px solid var(--persian-coral);
-
 }
 
-.demo-item h3 {
+.demo-item header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.demo-item > header > h3,
+.demo-item > h3 {
   margin-top: 0;
   font-size: 1rem;
-  color: var(--gray);
+  color: var(--persian-coral-hover);
   font-weight: 700;
 }
 

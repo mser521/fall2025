@@ -81,25 +81,6 @@ header nav a {
   transform: rotate(-45deg) translate(3.5px, -3.5px);
 }
 
-/* @media screen and (max-width: 1024px) {
-  header {
-    padding: 10px 0 0 30px;
-  }
-
-  header nav {
-    padding-right: 30px;
-  }
-
-  header .left,
-  header .right {
-    gap: 20px;
-  }
-
-  header nav a {
-    font-size: calc(15rem / 16);
-  }
-} */
-
 @media screen and (max-width: 768px) {
   header {
     padding: 10px 0 0 20px;

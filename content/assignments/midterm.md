@@ -1,14 +1,12 @@
 ---
-title: "Midterm Project"
-date: "2025-11-03"
+title: "Midterm Project: Building a Multi-Section Website"
+date: "2025-11-04"
+due_date: "2025-11-20"
 type: "midterm project"
-draft: 0
+draft: 1
 ---
 
-
-# Midterm Project: Building a Multi-Section Website
-
-This project consists of 8 exercises, each focused on implementing a specific section of a Natural Areas Conservancy website. Each exercise is in its own folder with a blank `index.html` and corresponding CSS file. The shared `styles.css` file contains all the base styles, CSS variables, and utility classes you'll need.
+This project consists of 8 exercises, each focused on implementing a specific section of the <a href="https://naturalareasnyc.org" target="_blank">Natural Areas Conservancy</a> website (<a href="https://naturalareasnyc.org" target="_blank">https://naturalareasnyc.org</a>). Each exercise is in its own folder with a blank `index.html` and corresponding CSS file. The shared `styles.css` file contains all the base styles, CSS variables, and utility classes you'll need.
 
 **Note:** Screenshots for each exercise show what the final result should look like.
 
@@ -21,9 +19,12 @@ This project consists of 8 exercises, each focused on implementing a specific se
 3. All exercises should link to `../styles.css` for base styles
 4. Use relative paths for images: `../images/filename.jpg`
 
+## Before You Begin
+Before you begin, please read [How to Use the Style Guide](./midterm-0) carefully. Then, when you're done, complete the exercises.
+
 ## Exercises
 
-- [Exercise 1: Hero Section](./midterm-1) - **Complete solution provided as reference**
+- [Exercise 1: Hero Section](./midterm-1)
 - [Exercise 2: Navigation](./midterm-2)
 - [Exercise 3: Section 1 (Video Introduction)](./midterm-3)
 - [Exercise 4: Section 2 (What We Do)](./midterm-4)

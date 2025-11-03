@@ -2,11 +2,6 @@
    SECTION 2 - WHAT WE DO
    ============================================ */
 
-.panel {
-  padding: 50px;
-  background-color: #f4f2ef;
-}
-
 #section-2 {
   margin-top: 100px;
   position: relative;
@@ -37,136 +32,10 @@
   top: 20px;
 }
 
-/* ============================================
-   GRID LAYOUT
-   ============================================ */
-
-.grid {
-  display: grid;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* ============================================
-   CARD STYLES
-   ============================================ */
-
-/* btn-container styles are defined in styles.css */
-
-.card {
-  display: flex;
-  background: white;
-  transform: translate3d(0, 0, 0);
-  transition: all 0.25s ease;
-}
-
-a.card {
-  text-decoration: none;
-  color: var(--black);
-}
-
-.card:hover,
-a.card:hover {
-  box-shadow: 8px 24px 40px 0px rgba(0, 0, 0, 0.06);
-  color: var(--black);
-}
-
 .card .media {
   aspect-ratio: 1;
-  flex-shrink: 0;
-  width: calc(180 / 578 * 100%);
+  width: 30%;
 }
-
-.card .media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.card article {
-  padding: 2rem;
-}
-
-/* ============================================
-   FANCY BOXES DECORATION
-   ============================================ */
-
-.fancy-boxes {
-  position: relative;
-  overflow: hidden;
-}
-
-.fancy-boxes img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
-.fancy-boxes:before,
-.fancy-boxes:after {
-  content: '';
-  position: absolute;
-  left: 10px;
-  width: calc(100% - 26px);
-  height: 30%;
-  border: 3px solid white;
-  border-bottom: none;
-  transition: all 0.25s ease;
-}
-
-.fancy-boxes:before {
-  top: 10px;
-}
-
-.fancy-boxes:after {
-  bottom: 10px;
-  top: auto;
-  transform: scale(1, -1);
-}
-
-.card:hover .fancy-boxes:before,
-.card:hover .fancy-boxes:after {
-  height: 50%;
-}
-
-/* ============================================
-   BUTTON ICON STYLES
-   ============================================ */
-
-/* Base .btn.icon styles are defined in styles.css */
-
-.btn.icon.arrow {
-  background: url(../images/btn-arrow.svg) var(--persian-coral) no-repeat center / 100% auto;
-}
-
-a.card .btn {
-  bottom: 10px;
-  position: absolute;
-  right: 10px;
-}
-
-.card:hover .btn.icon.arrow {
-  transform: translateX(4px);
-}
-
-/* ============================================
-   TYPOGRAPHY
-   ============================================ */
-
-/* .heading-5 and .small styles are defined in styles.css */
-
-.heading-5 span {
-  color: var(--green);
-  font-weight: 700;
-}
-
-/* ============================================
-   ACCESSIBILITY
-   ============================================ */
-
-/* .accessibility styles are defined in styles.css */
 
 /* ============================================
    RESPONSIVE STYLES
@@ -176,14 +45,6 @@ a.card .btn {
   #section-2 .grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-
-  .card article {
-    padding: 1.5rem;
-  }
-
-  .heading-5 {
-    font-size: 1.25rem;
   }
 }
 
