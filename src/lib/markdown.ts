@@ -29,6 +29,7 @@ export interface PostData {
   draft?: number;
   excluded?: boolean;
   notes?: string;
+  toc?: boolean;
 }
 
 export function getAllPostIds(subdirectory?: string) {

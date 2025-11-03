@@ -2,6 +2,7 @@ import { getPostData, getAllPostIds } from '@/lib/markdown';
 import PageHeader from '@/components/PageHeader';
 import MarkdownContent from '@/components/MarkdownContent';
 import TableOfContents from '@/components/TableOfContents';
+import StyleGuideStyles from '@/components/StyleGuideStyles';
 import { notFound } from 'next/navigation';
 
 interface AssignmentPageProps {
@@ -22,6 +23,7 @@ function formatDate(dateString: string): string {
 export default async function AssignmentPage({ params }: AssignmentPageProps) {
   const { slug } = await params;
   const postData = await getPostData(slug, 'assignments');
+  const isStyleGuideDemo = slug === 'style-guide-demo';
   
   return (
     <div className="space-y-6">
@@ -35,13 +37,16 @@ export default async function AssignmentPage({ params }: AssignmentPageProps) {
       <div className="flex gap-8">
         {/* Main content */}
         <div className="flex-1 min-w-0">
+          {isStyleGuideDemo && <StyleGuideStyles />}
           <MarkdownContent content={postData.content} />
         </div>
         
         {/* Table of Contents */}
-        <div className="hidden lg:block">
-          <TableOfContents />
-        </div>
+        {postData.toc !== false && (
+          <div className="hidden lg:block">
+            <TableOfContents />
+          </div>
+        )}
       </div>
     </div>
   );

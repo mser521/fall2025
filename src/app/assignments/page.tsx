@@ -18,6 +18,7 @@ interface AssignmentData {
   draft?: number;
   external_url?: string;
   external_type?: string;
+  excluded?: boolean;
 }
 
 
@@ -38,12 +39,14 @@ export default async function AssignmentsPage() {
       assigned: postData.assigned,
       notes: postData.notes,
       draft: postData.draft,
+      excluded: postData.excluded,
     };
   }));
 
   // Combine markdown assignments with external assignments
-  const assignments: AssignmentData[] = [...markdownAssignments, ...externalAssignments];
-  
+  let assignments: AssignmentData[] = [...markdownAssignments, ...externalAssignments];
+  assignments = assignments.filter(assignment => !assignment.excluded);
+
   // Sort assignments
   assignments.sort((a, b) => {
     // Primary sort: by date

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: black;
+  min-height: 100vh;
 }
 
 header {
@@ -80,7 +81,7 @@ header nav a {
   transform: rotate(-45deg) translate(3.5px, -3.5px);
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   header {
     padding: 10px 0 0 30px;
   }
@@ -97,7 +98,7 @@ header nav a {
   header nav a {
     font-size: calc(15rem / 16);
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   header {
@@ -118,8 +119,8 @@ header nav a {
     display: none;
   }
 
-  /* Show nav links when hamburger is active */
-  .nav-links.active {
+  /* Show nav links when parent nav has active class (CSS cascading) */
+  nav.active .nav-links {
     display: flex;
     position: fixed;
     top: 0;
@@ -137,26 +138,8 @@ header nav a {
     overflow-y: auto;
   }
 
-  /* Stack both nav link groups when active */
-  header .left .nav-links.active,
-  header .right .nav-links.active {
-    display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 80%;
-    max-width: 300px;
-    height: 100vh;
-    background-color: rgba(15, 16, 16, 0.98);
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 80px 30px 30px;
-    gap: 20px;
-    z-index: 2;
-  }
-
-  /* Position right nav links below left when both are active */
-  header .right .nav-links.active {
+  /* Position right nav links below left when nav is active */
+  nav.active .right .nav-links {
     top: auto;
     bottom: 0;
     height: auto;

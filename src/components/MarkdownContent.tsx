@@ -73,6 +73,7 @@ export default function MarkdownContent({ content }: MarkdownContentProps) {
       ref={contentRef}
       className="prose prose-lg max-w-none"
       dangerouslySetInnerHTML={{ __html: content }}
+      suppressHydrationWarning
     />
   );
 }
