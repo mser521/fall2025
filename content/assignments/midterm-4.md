@@ -8,7 +8,7 @@ excluded: true
 
 <img src="/fall2025/images/midterm-project/section2.png" class="screenshot-lg" />
 
-**Folder:** `04_section2/`  
+**Folder:** `04_what_we_do/`  
 **Files:** `index.html`, `section2.css`
 
 ## Overview

@@ -6,9 +6,8 @@ draft: 0
 excluded: true
 ---
 
-# Exercise 2: Navigation
 **Folder:** `02_nav/`  
-**Files:** `index.html`, `nav.css`, `nav.js`
+**Files:** `index.html`, `nav.js`
 
 **Screenshot of Solution:**
 

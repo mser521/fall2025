@@ -9,7 +9,7 @@ excluded: true
 
 <img src="/fall2025/images/midterm-project/section5.png" class="screenshot-lg" />
 
-**Folder:** `07_section5/`  
+**Folder:** `07_forests_in_cities/`  
 **Files:** `index.html`, `section5.css`
 
 ## Overview

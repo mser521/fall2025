@@ -6,6 +6,13 @@ type: "midterm project"
 draft: 1
 ---
 
+<style>
+    ol li {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+</style>
+
 This project consists of 8 exercises, each focused on implementing a specific section of the <a href="https://naturalareasnyc.org" target="_blank">Natural Areas Conservancy</a> website. 
 
 
@@ -37,15 +44,16 @@ Before you begin, please read [How to Use the Style Guide](./midterm-0) carefull
 
 ## Exercises
 
-- [Hero Section](./midterm-1)
-- [ Navigation](./midterm-2)
-- [Section 1 (Video Introduction)](./midterm-3)
-- [Section 2 (What We Do)](./midterm-4)
-- [Section 3 (Join Our Efforts)](./midterm-5)
-- [Section 4 (The NYC Nature Map)](./midterm-6)
-- [Section 5 (Forests in Cities Network)](./midterm-7)
-- [Section 6 (Carousel)](./midterm-8)
-- [Section 7 (Putting Everything Together)](./midterm-9)
+1. [Hero Section](./midterm-1)
+1. [ Navigation](./midterm-2)
+1. [Video Introduction](./midterm-3)
+1. [What We Do](./midterm-4)
+1. [Join Our Efforts](./midterm-5)
+1. [The NYC Nature Map](./midterm-6)
+1. [Forests in Cities Network](./midterm-7)
+1. [Carousel](./midterm-8)
+1. [Putting Everything Together](./midterm-9)
+1. [Scrolling Effects](./midterm-10)
 
 ## General Tips
 
