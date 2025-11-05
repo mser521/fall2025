@@ -73,6 +73,7 @@
                     <li><a href="#patterns-hero">Hero Section</a></li>
                     <li><a href="#patterns-card">Card</a></li>
                     <li><a href="#patterns-icon-card">Icon Card</a></li>
+                    <li><a href="#patterns-text-card">Text-Only Card</a></li>
                     <li><a href="#patterns-carousel-card">Carousel Card</a></li>
                 </ul>
             </li>
@@ -392,18 +393,18 @@
                     <div class="demo-with-code">
                         <div class="code-snippet">
                             <pre><code class="language-markup">&lt;div class="grid"&gt;
-    &lt;div&gt;Grid Item 1&lt;/div&gt;
-    &lt;div&gt;Grid Item 2&lt;/div&gt;
-    &lt;div&gt;Grid Item 3&lt;/div&gt;
-    &lt;div&gt;Grid Item 4&lt;/div&gt;
+    &lt;div&gt;Item 1&lt;/div&gt;
+    &lt;div&gt;Item 2&lt;/div&gt;
+    &lt;div&gt;Item 3&lt;/div&gt;
+    &lt;div&gt;Item 4&lt;/div&gt;
 &lt;/div&gt;</code></pre>
                         </div>
                         <div class="demo-visual">
                             <div class="grid-two-column">
-                                <div class="bg-white">Grid Item 1</div>
-                                <div class="bg-white">Grid Item 2</div>
-                                <div class="bg-white">Grid Item 3</div>
-                                <div class="bg-white">Grid Item 4</div>
+                                <div class="bg-white">Item 1</div>
+                                <div class="bg-white">Item 2</div>
+                                <div class="bg-white">Item 3</div>
+                                <div class="bg-white">Item 4</div>
                             </div>
                         </div>
                     </div>
@@ -460,7 +461,14 @@
         &lt;/article&gt;
     &lt;/div&gt;
     &lt;div class="column"&gt;
-        &lt;!-- Second column --&gt;
+        &lt;div class="media"&gt;
+            &lt;img src="image.jpg" alt=""&gt;
+        &lt;/div&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Title&lt;/h2&gt;
+            &lt;p class="large"&gt;Description&lt;/p&gt;
+            &lt;a href="#" class="btn primary"&gt;Button&lt;/a&gt;
+        &lt;/article&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                         </div>
@@ -472,9 +480,10 @@
                                     <div>Image</div>
                                 </div>
                                 <article>
-                                    <h2>The NYC Nature Map</h2>
-                                    <p class="large">Experience a bird's-eye-view of our natural areas.</p>
-                                    <a href="#" class="btn primary">Explore Now</a>
+                                    <h2>Title</h2>
+                                    <p class="large">This is a longer description that demonstrates how the column
+                                        content spans the full width of its container.</p>
+                                    <a href="#" class="btn primary">Button</a>
                                 </article>
                             </div>
                             <div class="column">
@@ -482,9 +491,10 @@
                                     <div>Image</div>
                                 </div>
                                 <article>
-                                    <h2>Data Sets</h2>
-                                    <p class="large">Explore our forest assessment data sets.</p>
-                                    <a href="#" class="btn primary">Get Started</a>
+                                    <h2>Title</h2>
+                                    <p class="large">This is a longer description that demonstrates how the column
+                                        content spans the full width of its container.</p>
+                                    <a href="#" class="btn primary">Button</a>
                                 </article>
                             </div>
                         </div>
@@ -771,6 +781,38 @@
                                         <p class="small">Here is a subheading to further describe the heading.</p>
 
                                         <span class="btn tertiary">Take Action</span>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="patterns-text-card" class="demo-item">
+                    <h3>Text-Only Card Pattern (Section 5 Style)</h3>
+                    <div class="demo-with-code">
+                        <div class="code-snippet">
+                            <pre><code class="language-markup">&lt;a class="btn-container card" href="#"&gt;
+    &lt;article&gt;
+        &lt;h3 class="heading-4"&gt;Title&lt;/h3&gt;
+        &lt;p class="large"&gt;This is a description that explains the content or purpose of the card. The text should be informative and provide context for the card's action or topic.&lt;/p&gt;
+        &lt;span class="btn icon arrow"&gt;
+            &lt;span class="accessibility"&gt;Card title&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/article&gt;
+&lt;/a&gt;</code></pre>
+                        </div>
+                        <div class="demo-visual" style="grid-column: 1 / 3;">
+                            <div class="text-card-wrapper">
+                                <a class="btn-container card" href="#">
+                                    <article>
+                                        <h3 class="heading-4">Title</h3>
+                                        <p class="large">This is a description that explains the content or purpose of
+                                            the card. The text should be informative and provide context for the card's
+                                            action or topic.</p>
+                                        <span class="btn icon arrow">
+                                            <span class="accessibility">Card title</span>
+                                        </span>
                                     </article>
                                 </a>
                             </div>

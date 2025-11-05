@@ -6,8 +6,6 @@ draft: 0
 excluded: true
 ---
 
-# Exercise 4: Section 2 (What We Do)
-
 <img src="/fall2025/images/midterm-project/section2.png" class="screenshot-lg" />
 
 **Folder:** `04_section2/`  

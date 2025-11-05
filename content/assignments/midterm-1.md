@@ -6,7 +6,6 @@ draft: 0
 excluded: true
 ---
 
-# Exercise 1: Hero Section
 **Folder:** `01_hero/`  
 **Files:** `index.html`, `hero.css`
 

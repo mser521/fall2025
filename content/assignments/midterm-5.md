@@ -6,8 +6,6 @@ draft: 0
 excluded: true
 ---
 
-# Exercise 5: Section 3 (Join Our Efforts)
-
 <img src="/fall2025/images/midterm-project/section3.png" class="screenshot-lg" />
 
 **Folder:** `05_section3/`  

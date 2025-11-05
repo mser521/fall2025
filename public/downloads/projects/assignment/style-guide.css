@@ -461,6 +461,11 @@ code {
   font-weight: bold;
 }
 
+/* Override: Constrains text-only card demo width */
+#patterns .demo-visual .text-card-wrapper {
+  max-width: 600px;
+}
+
 /* Override: Constrains carousel card demo width */
 #patterns .demo-visual .carousel-card-wrapper {
   max-width: 360px;

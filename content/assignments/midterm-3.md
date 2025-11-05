@@ -6,8 +6,6 @@ draft: 0
 excluded: true
 ---
 
-# Exercise 3: Section 1 (Video Introduction)
-
 <img src="/fall2025/images/midterm-project/section1.png" class="screenshot-lg" />
 
 **Folder:** `03_section1/`  
