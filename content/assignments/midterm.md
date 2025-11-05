@@ -73,3 +73,8 @@ Before you begin, please read [How to Use the Style Guide](./midterm-0) carefull
 
 Good luck with your implementation!
 
+## What to Submit
+Please make sure that you have completed all 10 exercises.
+
+When you're done, please create a link from your homepage to each of your Lab 5 exercises (see <a href="https://vanwars.github.io/csci344" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
+
