@@ -1,0 +1,19 @@
+/* body {
+  margin: 0;
+  background-color: black;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+} */

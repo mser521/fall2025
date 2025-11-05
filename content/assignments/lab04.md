@@ -43,7 +43,7 @@ Download the `lab04.zip` file, unzip it and move the unzipped `lab04` folder int
 
 ```
 mser521
-    ├── intro-htmlt
+    ├── intro-html
     ├── lab02
     ├── lab03
     └── lab04

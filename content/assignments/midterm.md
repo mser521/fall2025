@@ -6,32 +6,46 @@ type: "midterm project"
 draft: 1
 ---
 
-This project consists of 8 exercises, each focused on implementing a specific section of the <a href="https://naturalareasnyc.org" target="_blank">Natural Areas Conservancy</a> website (<a href="https://naturalareasnyc.org" target="_blank">https://naturalareasnyc.org</a>). Each exercise is in its own folder with a blank `index.html` and corresponding CSS file. The shared `styles.css` file contains all the base styles, CSS variables, and utility classes you'll need.
+This project consists of 8 exercises, each focused on implementing a specific section of the <a href="https://naturalareasnyc.org" target="_blank">Natural Areas Conservancy</a> website. 
 
-**Note:** Screenshots for each exercise show what the final result should look like.
 
 ## Setup Instructions
 
-1. Navigate to the `public/downloads/project/assignment/` folder
-2. Each exercise folder (01_hero, 02_nav, etc.) contains:
-   - An `index.html` file (start with basic HTML structure)
-   - A corresponding CSS file (hero.css, nav.css, etc.)
-3. All exercises should link to `../styles.css` for base styles
-4. Use relative paths for images: `../images/filename.jpg`
+<a href="/fall2025/downloads/projects/midterm.zip" class="nu-button">Download Midterm Starter Files<i class="fas fa-download"></i></a>
+
+Download the `midterm.zip` file, unzip it and move the unzipped `midterm` folder into the `mser521` folder (see diagram below).
+
+```
+mser521
+    ├── intro-html
+    ├── lab02
+    ├── lab03
+    ├── lab04
+    ├── lab05
+    └── midterm
+        ...
+```
+
+Within the `midterm` folder, each exercise folder (01_hero, 02_nav, etc.) contains:
+1. An `index.html` file (start with basic HTML structure)
+1. A corresponding CSS file (hero.css, nav.css, etc.)
+
+All exercises should also link to `../utility-classes.css` for base styles, which you **will not edit**
 
 ## Before You Begin
 Before you begin, please read [How to Use the Style Guide](./midterm-0) carefully. Then, when you're done, complete the exercises.
 
 ## Exercises
 
-- [Exercise 1: Hero Section](./midterm-1)
-- [Exercise 2: Navigation](./midterm-2)
-- [Exercise 3: Section 1 (Video Introduction)](./midterm-3)
-- [Exercise 4: Section 2 (What We Do)](./midterm-4)
-- [Exercise 5: Section 3 (Join Our Efforts)](./midterm-5)
-- [Exercise 6: Section 4 (The NYC Nature Map)](./midterm-6)
-- [Exercise 7: Section 5 (Forests in Cities Network)](./midterm-7)
-- [Exercise 8: Section 6 (Carousel)](./midterm-8)
+- [Hero Section](./midterm-1)
+- [ Navigation](./midterm-2)
+- [Section 1 (Video Introduction)](./midterm-3)
+- [Section 2 (What We Do)](./midterm-4)
+- [Section 3 (Join Our Efforts)](./midterm-5)
+- [Section 4 (The NYC Nature Map)](./midterm-6)
+- [Section 5 (Forests in Cities Network)](./midterm-7)
+- [Section 6 (Carousel)](./midterm-8)
+- [Section 7 (Putting Everything Together)](./midterm-9)
 
 ## General Tips
 

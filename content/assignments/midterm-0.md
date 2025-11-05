@@ -13,6 +13,11 @@ Your job is to:
 2. **Apply the right utility classes** from `utility-classes.css` to make your content look good
 3. **Write section-specific CSS** (e.g., `hero.css`, `nav.css`) for positioning, backgrounds, and unique styling
 
+**The best way to see all available classes is to open the interactive style guide:**
+
+**[Style Guide Demo](/fall2025/downloads/project/assignment/style-guide-demo.html)**
+
+
 ## What's in `utility-classes.css`?
 
 The `utility-classes.css` file contains everything you need to style your sections. It includes:

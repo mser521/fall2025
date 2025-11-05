@@ -13,48 +13,51 @@ excluded: true
 **Folder:** `03_section1/`  
 **Files:** `index.html`, `section1.css`
 
-## HTML Structure (`index.html`)
+## Overview
 
-Create a two-column section with video thumbnail on left and content on right:
+Much of the section 1 code structure is already provided. Your job is to:
+1. Implement the video label with play button and text
+2. Add responsive CSS for mobile devices
+
+## HTML (`index.html`)
+
+Start with this HTML structure, which you will paste inside of `the <main></main>` tag:
 
 ```html
+<!-- Section 1 (Video Introduction) -->
 <section id="section-1" class="panel">
     <div>
         <div class="media">
             <a href="https://www.youtube.com/watch?v=dn75qhZWbh4">
                 <div class="cover-image">
-                    <img src="../images/video-thumbnail.png" alt="">
+                    <img width="1024" height="573" src="../images/video-thumbnail.png" alt="">
                 </div>
-                <video muted autoplay loop playsinline>
-                    <source src="https://www.youtube.com/watch?v=dn75qhZWbh4" type="video/mp4">
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-                <span class="play-button">
-                    <span class="btn icon large">
-                        <svg role="presentation" class="svg-inline--fa fa-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path d="M384 256L0 32V480L384 256z"></path>
-                        </svg>
-                    </span>
-                    Watch Video
-                </span>
+                <!-- TODO: Add video label here with play button and "Watch Video" text -->
             </a>
         </div>
     </div>
     <article class="content-styles">
         <h2 class="eyebrow">Who are we?</h2>
-        <h3 class="heading-4">The Natural Areas Conservancy strives to deepen the connection between people and nature in NYC by increasing access, providing education, and building the parks workforce. Through research, partnerships, and advocacy, we ensure that urban natural areas are healthy and thriving and that their benefits reach all New Yorkers.</h3>
+        <h3 class="heading-4">The Natural Areas Conservancy
+            strives to deepen the connection between people and
+            nature in NYC by increasing access, providing education, and building the parks workforce. Through
+            research, partnerships, and advocacy, we ensure that urban natural areas are healthy and thriving
+            and that their benefits reach all New Yorkers.
+        </h3>
     </article>
 </section>
 ```
 
-## CSS Solution (`section1.css`)
+**Your task:** Add the video label inside the `<a>` tag (where the TODO comment is). The video label should include:
+- A `<span>` with class `video-label`
+- Inside it, a `<span>` with classes `btn icon play large` for the play button
+- A `<span>` with class `heading-4` containing the text "Watch Video"
 
-### Part 1: Base Layout
+## CSS (`section1.css`)
 
-Start with the grid layout for two columns:
+Start with this CSS:
 
 ```css
-/* Two-column grid layout */
 #section-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -62,150 +65,50 @@ Start with the grid layout for two columns:
   align-items: self-start;
 }
 
-/* Media container positioning */
 #section-1 .media {
-  max-width: 50vw;
+  max-width: 40vw;
   aspect-ratio: 5 / 4;
   margin-top: 80px;
   margin-left: 80px;
 }
 
-.media {
-  position: relative;
-}
-```
-
-### Part 2: Image Overlay
-
-Style the cover image that sits on top of the video:
-
-```css
-/* Cover image positioned absolutely over video */
-.cover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.cover-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-```
-
-### Part 3: Play Button
-
-Position the play button absolutely at bottom-left:
-
-```css
-.media .play-button {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  gap: 14px;
-  font-size: calc(20rem / 16);
-  font-weight: 700;
-  line-height: calc(28 / 20);
+#section-1 a,
+#section-1 a:visited {
+  text-decoration: none;
   color: white;
-  z-index: 2; /* Above cover image */
 }
 
-/* SVG icon styling */
-.svg-inline--fa {
-  display: inline-block;
-  height: 1em;
-  font-size: inherit;
-  vertical-align: -0.125em;
-  overflow: visible;
-}
-
-/* Large icon button */
-.btn.icon.large {
-  width: 64px;
-  height: 64px;
-  font-size: calc(22rem / 16);
-}
-```
-
-### Part 4: Content Panel
-
-Style the dark content panel on the right:
-
-```css
-/* Dark content panel */
-.content-styles {
-  background-color: #26281e;
-  color: white;
-  padding: 80px 140px;
-  margin-left: -100px; /* Overlaps with left column */
-}
-
-/* Eyebrow text color */
 #section-1 h2 {
   color: var(--matcha-green);
   margin-bottom: 10px;
 }
 
-/* Heading 4 styling */
-.content-styles .heading-4 {
-  font-size: 1.3rem;
-  letter-spacing: 0.2px;
-  line-height: calc(34 / 28);
+.content-styles {
+  padding: 80px 80px;
 }
+
+/* TODO: Add video-label styles here */
 ```
 
-### Part 5: Responsive Styles
+**Your tasks:**
+1. **Style the video label**: Add CSS for `.video-label` to position it absolutely at the bottom-left of the media container. It should:
+   - Use flexbox with `display: flex` and `align-items: center`
+   - Have a gap of 20px between elements
+   - Be positioned absolutely at `bottom: 24px` and `left: 24px`
+   - Have `z-index: 5` to appear above the image
+   - Set text color to white
 
-Make it stack on mobile:
-
-```css
-@media screen and (max-width: 768px) {
-  /* Single column on mobile */
-  #section-1 {
-    grid-template-columns: 1fr;
-  }
-
-  /* Adjust media positioning */
-  #section-1 .media {
-    max-width: 100%;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  /* Adjust content panel */
-  .content-styles {
-    padding: 30px 20px;
-    margin-left: 0;
-  }
-
-  /* Smaller play button on mobile */
-  .media .play-button {
-    font-size: calc(18rem / 16);
-    bottom: 16px;
-    left: 16px;
-    gap: 10px;
-  }
-
-  .btn.icon.large {
-    width: 48px;
-    height: 48px;
-    font-size: calc(18rem / 16);
-  }
-}
-```
+2. **Add responsive CSS**: Add a media query for screens with `max-width: 1024px` that:
+   - Changes the grid to single column (`grid-template-columns: 1fr`)
+   - Makes the media container full width (remove max-width, set to 100%)
+   - Removes the top and left margins from the media container
+   - Adjusts the content-styles padding to `40px 30px`
 
 ## Key Takeaways
 
-1. **CSS Grid**: Use `grid-template-columns: 1fr 1fr` for equal two-column layout
-2. **Aspect Ratios**: Use `aspect-ratio: 5 / 4` to maintain image proportions
-3. **Absolute Positioning**: Position play button and cover image absolutely within relative parent
-4. **Negative Margin**: Use `margin-left: -100px` to create overlap effect
-5. **Z-index**: Use `z-index` to layer elements (play button above image)
+1. **Absolute Positioning**: Use `position: absolute` to overlay the video label on the image
+2. **Flexbox**: Use flexbox to align the play button and text horizontally
+3. **Responsive Design**: Use media queries to stack the layout vertically on smaller screens
+4. **Z-index**: Use `z-index` to ensure the video label appears above the image
 
 [← Back to Midterm Project Index](./midterm)

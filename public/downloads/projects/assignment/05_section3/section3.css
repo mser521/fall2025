@@ -1,0 +1,48 @@
+/* ============================================
+   SECTION 3 - JOIN OUR EFFORTS
+   ============================================ */
+
+#section-3 {
+  background-image: url(../images/section-3-bkg.png);
+  background: no-repeat center top / 100% auto;
+  padding: 120px 0;
+}
+
+#section-3 .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+#section-3 .grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  row-gap: 6rem;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+@media screen and (max-width: 1024px) {
+  #section-3 {
+    padding: 60px 0;
+  }
+
+  #section-3 .container {
+    grid-template-columns: 1fr;
+  }
+
+  #section-3 .grid {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  #section-3 .grid * {
+    margin: 5px !important;
+  }
+
+  #section-3 img {
+    height: 48px;
+  }
+}
