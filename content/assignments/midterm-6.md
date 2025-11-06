@@ -68,11 +68,5 @@ Start with this CSS:
    - Changes grid to single column (`grid-template-columns: 1fr`)
    - Adjusts gap to `3rem`
 
-## Key Takeaways
-
-1. **Style Guide Reference**: The column structure is documented in the style guide and utility classes - use them as your reference!
-2. **CSS Grid**: Use `grid-template-columns: repeat(2, 1fr)` for a two-column layout
-3. **Responsive Design**: Stack the layout vertically on smaller screens using media queries with `grid-template-columns: 1fr`
-4. **Utility Classes**: The `.column` class and its flexbox styles are already in `utility-classes.css` - you only need to add section-specific layout CSS
 
 [← Back to Midterm Project Index](./midterm)

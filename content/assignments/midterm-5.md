@@ -20,20 +20,7 @@ The icon card HTML structure is already provided in the [style guide](/fall2025/
 
 ## HTML (`index.html`)
 
-Start with this HTML structure, which you will paste inside the `<main></main>` tag:
-
-```html
-<!-- Section 3 (Join Our Efforts) -->
-<section id="section-3">
-    <div class="container">
-        <h2 class="heading-1">Join our efforts</h2>
-
-        <div class="grid">
-            <!-- TODO: Add 4 icon cards here using the pattern from style guide -->
-        </div>
-    </div>
-</section>
-```
+The starter file already contains the HTML structure inside the `<main></main>` tag. Open `index.html` to see the section with heading and a TODO comment for adding 4 icon cards.
 
 **Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Icon Card Pattern (Section 3 Style)** in the "Hero Section and Cards" area. Copy that HTML structure and create 4 cards with the following content:
 
@@ -47,35 +34,7 @@ Start with this HTML structure, which you will paste inside the `<main></main>` 
 
 ## CSS (`section3.css`)
 
-Attach the stylesheet in your HTML `<head>`:
-
-```html
-<link rel="stylesheet" href="section3.css">
-```
-
-Start with this CSS:
-
-```css
-#section-3 {
-  background-image: url(../images/section-3-bkg.png);
-  background: no-repeat center top / 100% auto;
-  padding: 120px 0;
-}
-
-#section-3 .container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
-}
-
-#section-3 .grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  row-gap: 6rem;
-}
-
-/* TODO: Add responsive CSS here */
-```
+The starter file already contains the CSS structure. Open `section3.css` to see the existing styles with a TODO comment for responsive CSS.
 
 **Your tasks:**
 1. **Add responsive CSS**: Add a media query for `max-width: 1024px` that:
@@ -85,12 +44,6 @@ Start with this CSS:
    - Adjusts row-gap to `3rem`
    - Sets icon height to `48px`
 
-## Key Takeaways
 
-1. **Style Guide Reference**: The icon card structure is documented in the style guide - use it as your reference!
-2. **CSS Grid Nesting**: Use grid inside grid - container has 2 columns (heading + cards), inner grid has 2x2 cards
-3. **Row Gap**: Use `row-gap` to add extra space between rows in the grid
-4. **Icon Sizing**: Control icon size with `height` and `width: auto` to maintain aspect ratio
-5. **Responsive Design**: Stack the layout vertically on smaller screens using media queries
 
 [← Back to Midterm Project Index](./midterm)

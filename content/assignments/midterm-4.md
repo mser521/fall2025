@@ -20,20 +20,7 @@ The card HTML structure is already provided in the [style guide](/fall2025/downl
 
 ## HTML (`index.html`)
 
-Start with this HTML structure, which you will paste inside the `<main></main>` tag:
-
-```html
-<!-- Section 2 (What We Do) -->
-<section id="section-2" class="panel">
-    <img id="geese" width="630" height="97" src="../images/goose.png" alt="Geese flying">
-
-    <h2 class="heading-1">What we do</h2>
-
-    <div class="grid">
-        <!-- TODO: Add 4 cards here using the pattern from style guide -->
-    </div>
-</section>
-```
+The starter file already contains the HTML structure inside the `<main></main>` tag. Open `index.html` to see the section with heading, geese image, and a TODO comment for adding 4 cards.
 
 **Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Card** pattern in the "Hero Section and Cards" area. Copy that HTML structure and create 4 cards with the following content:
 
@@ -47,41 +34,7 @@ Start with this HTML structure, which you will paste inside the `<main></main>` 
 
 ## CSS (`section2.css`)
 
-Attach the stylesheet in your HTML `<head>`:
-
-```html
-<link rel="stylesheet" href="section2.css">
-```
-
-Start with this CSS:
-
-```css
-#section-2 {
-  background-image: url(../images/section-2-bkg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  padding-bottom: 400px;
-}
-
-#section-2 .heading-1 {
-  text-align: center;
-  padding-top: 50px;
-}
-
-#section-2 .grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-#geese {
-  position: absolute;
-  right: 30px;
-  top: 20px;
-}
-
-/* TODO: Add responsive CSS here */
-```
+The starter file already contains the CSS structure. Open `section2.css` to see the existing styles with a TODO comment for responsive CSS.
 
 **Your tasks:**
 1. **Add responsive CSS**: Add a media query for `max-width: 1024px` that:
@@ -92,12 +45,5 @@ Start with this CSS:
    - Adjusts heading font-size to `2.5rem` and padding-top to `30px`
    - Adjusts geese image positioning (`right: 10px`, `top: 10px`) and size (`width: 300px`, `height: auto`)
 
-## Key Takeaways
-
-1. **Style Guide Reference**: The card structure with fancy-boxes is documented in the style guide - use it as your reference!
-2. **Background Images**: Use `background-image` with `background-size: contain` to display decorative backgrounds
-3. **Absolute Positioning**: Position decorative elements like the geese image absolutely within a relative parent
-4. **CSS Grid**: Use `grid-template-columns: repeat(2, 1fr)` for a 2-column grid layout
-5. **Responsive Design**: Stack the grid vertically on smaller screens using media queries
 
 [← Back to Midterm Project Index](./midterm)

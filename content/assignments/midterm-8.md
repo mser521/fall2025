@@ -94,24 +94,7 @@ Start with this CSS:
 }
 ```
 
-**Note:** The carousel-specific styles (track, arrows, navigation) are in `carousel.css`, which you'll also need to link.
-
-## CSS (`carousel.css`)
-
-Attach this stylesheet in your HTML `<head>` after `section6.css`:
-
-```html
-<link rel="stylesheet" href="carousel.css">
-```
-
-This file contains the carousel functionality styles:
-- `.carousel` - Container with overflow hidden
-- `.slick-track` - Flexbox track with wide width for horizontal scrolling
-- `.slick-arrow` - Navigation button styles
-- `.slick-prev` and `.slick-next` - Button positioning
-- Responsive styles for mobile
-
-You can copy the contents from the solution or create your own based on the carousel structure.
+**Note:** The carousel-specific styles (track, arrows, navigation) are already included in `utility-classes.css`, so you don't need a separate `carousel.css` file. Make sure you've linked `utility-classes.css` in your HTML.
 
 ## JavaScript (`carousel.js`)
 

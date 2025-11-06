@@ -1,7 +1,3 @@
-/* ============================================
-   SECTION 4 - THE NYC NATURE MAP
-   ============================================ */
-
 #section-4 {
   max-width: 1150px;
   margin: 0 auto;
@@ -12,9 +8,4 @@
   gap: 2rem;
 }
 
-@media screen and (max-width: 1024px) {
-  #section-4 .grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-}
+/* TODO: Add responsive CSS here */
