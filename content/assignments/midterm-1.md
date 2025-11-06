@@ -15,11 +15,11 @@ excluded: true
 
 ## Overview
 
-Much of the hero section code is already given to you in the [style guide](/fall2025/downloads/projects/assignment/style-guide-demo.html) and in `utility-classes.css`. Your job is to integrate and link this code together.
+Much of the hero section code is already given to you in the [style guide](/fall2025/downloads/projects/midterm/style-guide/index.html) and in `utility-classes.css`. Your job is to integrate and link this code together.
 
 ## HTML (`index.html`)
 
-**Refer to the Style Guide:** Navigate to the [Style Guide Demo](/fall2025/downloads/projects/assignment/style-guide-demo.html) and look for the **Hero Section Pattern** in the "Hero Section and Cards" area. Copy the HTML structure and paste it inside your `<main></main>` tag.
+**Refer to the Style Guide:** Navigate to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Hero Section Pattern** in the "Hero Section and Cards" area. Copy the HTML structure and paste it inside your `<main></main>` tag.
 
 Then, modify the text as follows:
 - `h1` tag: "Healthy, resilient natural areas for all"

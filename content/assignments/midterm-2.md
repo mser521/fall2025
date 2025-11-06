@@ -17,11 +17,11 @@ excluded: true
 
 ## Overview
 
-Much of the navigation code is already given to you in the [style guide](/fall2025/downloads/projects/assignment/style-guide-demo.html) and in `utility-classes.css`. Your job is to integrate and link this code together.
+Much of the navigation code is already given to you in the [style guide](/fall2025/downloads/projects/midterm/style-guide/index.html) and in `utility-classes.css`. Your job is to integrate and link this code together.
 
 ## HTML (`index.html`)
 
-**Refer to the Style Guide:** Navigate to the [Style Guide Demo](/fall2025/downloads/projects/assignment/style-guide-demo.html) and look for the **Navigation Pattern** section in the "Hero Section and Cards" area. Copy the HTML structure and paste it inside your `<header></header>` tag.
+**Refer to the Style Guide:** Navigate to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Navigation Pattern** section in the "Hero Section and Cards" area. Copy the HTML structure and paste it inside your `<header></header>` tag.
 
 Then, adjust the link text and hyperlinks to match the screenshot above:
 - Left nav links: "What We Do", "About Us", "Events"

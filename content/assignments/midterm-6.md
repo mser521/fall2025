@@ -13,7 +13,7 @@ excluded: true
 
 ## Overview
 
-The column HTML structure is already provided in the [style guide](/fall2025/downloads/projects/assignment/style-guide-demo.html) and in `utility-classes.css`. Your job is to:
+The column HTML structure is already provided in the [style guide](/fall2025/downloads/projects/midterm/style-guide/index.html) and in `utility-classes.css`. Your job is to:
 1. Reference the style guide for the column HTML structure
 2. Create the section with 2 columns
 3. Add CSS for the section layout and responsive design
@@ -31,7 +31,7 @@ Start with this HTML structure, which you will paste inside the `<main></main>` 
 </section>
 ```
 
-**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/assignment/style-guide-demo.html) and look for the **Column Layout** pattern in the "Layout Classes" section. Copy that HTML structure and create 2 columns with the following content:
+**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Column Layout** pattern in the "Layout Classes" section. Copy that HTML structure and create 2 columns with the following content:
 
 1. **The NYC Nature Map** - Image: `../images/callout1.jpg`, Heading: "The NYC Nature Map", Text: "Experience a bird's-eye-view of our natural areas and learn what's in your neighborhood.", Link: `https://naturalareasnyc.org/nyc-nature-map/`, Button: "Explore Now"
 

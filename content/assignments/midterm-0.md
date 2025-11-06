@@ -15,7 +15,7 @@ Your job is to:
 
 **The best way to see all available classes is to open the interactive style guide:**
 
-**[Style Guide Demo](/fall2025/downloads/project/assignment/style-guide-demo.html)**
+**[Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html)**
 
 
 ## What's in `utility-classes.css`?
@@ -64,7 +64,7 @@ Small but useful classes:
 
 **The best way to see all available classes is to open the interactive style guide:**
 
-**[Style Guide Demo](/fall2025/downloads/project/assignment/style-guide-demo.html)**
+**[Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html)**
 
 This visual demo shows:
 - What each class looks like when rendered
@@ -160,5 +160,5 @@ This uses:
 ## Next Steps
 
 1. Start with **[Exercise 1: Hero Section](./midterm-1)** - It's provided as a complete solution so you can see the pattern
-2. Use the **[Style Guide Demo](/fall2025/downloads/project/assignment/style-guide-demo.html)** as your visual reference
+2. Use the **[Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html)** as your visual reference
 3. Follow the pattern from Exercise 1 for Exercises 2-8

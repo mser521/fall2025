@@ -282,7 +282,7 @@ code {
 
 /* Override: Adds background image to card media demo */
 #layout .demo-visual .card .media {
-  background-image: url(images/card-intern.jpg);
+  background-image: url(../images/card-intern.jpg);
   background-size: cover;
   background-position: center;
   aspect-ratio: 1;
@@ -324,7 +324,7 @@ code {
 #layout .demo-visual .media.media-demo {
   min-width: 300px;
   max-width: 300px;
-  background-image: url(images/card-program.jpg);
+  background-image: url(../images/card-program.jpg);
   background-size: cover;
   background-position: center;
   aspect-ratio: 5 / 4;
@@ -376,11 +376,11 @@ code {
 #patterns .demo-visual .hero.hero-demo {
   min-height: 400px;
   max-height: 600px;
-  background-image: url(images/hero-bg.jpg);
+  background-image: url(../images/hero-bg.jpg);
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 40px 0;
+  padding: 40px 50px;
   position: relative;
 }
 
@@ -407,7 +407,7 @@ code {
   display: inline-block;
   width: 26px;
   height: 30px;
-  background: url(images/arrow-down.svg) no-repeat;
+  background: url(../images/arrow-down.svg) no-repeat;
 }
 
 /* Override: Makes card demo full width */
@@ -417,7 +417,7 @@ code {
 
 /* Override: Adds background image to card demo */
 #patterns .demo-visual .card .media.fancy-boxes {
-  background-image: url(images/card-advocacy.jpg);
+  background-image: url(../images/card-advocacy.jpg);
   background-size: cover;
   background-position: center;
   aspect-ratio: 1;
@@ -425,7 +425,7 @@ code {
 
 /* Override: Adds different background image to second card demo */
 #patterns .demo-visual .card.card-second .media.fancy-boxes {
-  background-image: url(images/card-staff.jpg);
+  background-image: url(../images/card-staff.jpg);
 }
 
 /* Override: Constrains icon card demo width */
@@ -473,7 +473,7 @@ code {
 
 /* Override: Adds background image to carousel card media */
 #patterns .demo-visual .carousel-card .media.fancy-boxes {
-  background-image: url(images/carousel-1.jpg);
+  background-image: url(../images/carousel-1.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;

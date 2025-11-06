@@ -13,7 +13,7 @@ excluded: true
 
 ## Overview
 
-The card HTML structure is already provided in the [style guide](/fall2025/downloads/projects/assignment/style-guide-demo.html). Your job is to:
+The card HTML structure is already provided in the [style guide](/fall2025/downloads/projects/midterm/style-guide/index.html). Your job is to:
 1. Reference the style guide for the card HTML structure
 2. Create a section with heading and 4 cards
 3. Add CSS for the section layout and styling
@@ -35,7 +35,7 @@ Start with this HTML structure, which you will paste inside the `<main></main>` 
 </section>
 ```
 
-**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/assignment/style-guide-demo.html) and look for the **Card** pattern in the "Hero Section and Cards" area. Copy that HTML structure and create 4 cards with the following content:
+**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Card** pattern in the "Hero Section and Cards" area. Copy that HTML structure and create 4 cards with the following content:
 
 1. **Train** - Link: `https://naturalareasnyc.org/internships/`, Image: `../images/card-intern.jpg`, Alt: "Intern waters planters with a hose inside greenhouse", Heading: `<span>Train</span> the next generation`, Text: "Our CUNY and high school internship programs provide STEM students with the training to succeed in the environmental workforce.", Accessibility: "Internships"
 

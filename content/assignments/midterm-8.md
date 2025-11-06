@@ -13,7 +13,7 @@ excluded: true
 
 ## Overview
 
-The carousel card HTML structure is already provided in the [style guide](/fall2025/downloads/projects/assignment/style-guide-demo.html). Your job is to:
+The carousel card HTML structure is already provided in the [style guide](/fall2025/downloads/projects/midterm/style-guide/index.html). Your job is to:
 1. Reference the style guide for the carousel card HTML structure
 2. Create the carousel section with navigation buttons and track
 3. Add multiple carousel cards (at least 3-4 for practice)
@@ -47,7 +47,7 @@ Start with this HTML structure, which you will paste inside the `<main></main>` 
 </section>
 ```
 
-**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/assignment/style-guide-demo.html) and look for the **Carousel Card Pattern (Section 6 Style)** in the "Hero Section and Cards" area. Copy that HTML structure and wrap each card in a `<div class="slide slick-slide">` element. Create at least 3-4 carousel cards with your own content (images, titles, dates, pills, etc.).
+**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Carousel Card Pattern (Section 6 Style)** in the "Hero Section and Cards" area. Copy that HTML structure and wrap each card in a `<div class="slide slick-slide">` element. Create at least 3-4 carousel cards with your own content (images, titles, dates, pills, etc.).
 
 **Note:** Each slide should be wrapped like this:
 ```html

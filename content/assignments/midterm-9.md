@@ -12,8 +12,6 @@ excluded: true
     }
 </style>
 
-<img src="/fall2025/images/midterm-project/section6.png" class="screenshot-lg" />
-
 **Folder:** `09-combined/`  
 **Files:** `index.html`, `styles.css`, `nav.js`, `carousel.js`
 

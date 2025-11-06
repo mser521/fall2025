@@ -13,7 +13,7 @@ excluded: true
 
 ## Overview
 
-The icon card HTML structure is already provided in the [style guide](/fall2025/downloads/projects/assignment/style-guide-demo.html). Your job is to:
+The icon card HTML structure is already provided in the [style guide](/fall2025/downloads/projects/midterm/style-guide/index.html). Your job is to:
 1. Reference the style guide for the icon card HTML structure
 2. Create 4 icon cards using that pattern
 3. Add CSS for the section layout, background image, and responsive design
@@ -35,7 +35,7 @@ Start with this HTML structure, which you will paste inside the `<main></main>` 
 </section>
 ```
 
-**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/assignment/style-guide-demo.html) and look for the **Icon Card Pattern (Section 3 Style)** in the "Hero Section and Cards" area. Copy that HTML structure and create 4 cards with the following content:
+**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Icon Card Pattern (Section 3 Style)** in the "Hero Section and Cards" area. Copy that HTML structure and create 4 cards with the following content:
 
 1. **Donate** - Link: `https://naturalareasnyc.org/donate/`, Icon: `../images/icon-donate.svg`, Text: "Give back to natural areas. Your gift will go toward preserving our vital forests and wetlands.", Button: "Donate now"
 

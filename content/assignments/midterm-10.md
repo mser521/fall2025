@@ -13,8 +13,6 @@ excluded: true
     }
 </style>
 
-<img src="/fall2025/images/midterm-project/section6.png" class="screenshot-lg" />
-
 **Folder:** `final/`  
 **Files:**  `scroll-effects.css`, `scroll-effects.js` + all files from `09-combined`
 

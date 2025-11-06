@@ -14,7 +14,7 @@ excluded: true
 
 ## Overview
 
-The text-only card HTML structure is already provided in the [style guide](/fall2025/downloads/projects/assignment/style-guide-demo.html). Your job is to:
+The text-only card HTML structure is already provided in the [style guide](/fall2025/downloads/projects/midterm/style-guide/index.html). Your job is to:
 1. Reference the style guide for the text-only card HTML structure
 2. Create 2 text-only cards using that pattern
 3. Add CSS for the section layout, background image, and responsive design
@@ -35,7 +35,7 @@ Start with this HTML structure, which you will paste inside the `<main></main>` 
 </section>
 ```
 
-**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/assignment/style-guide-demo.html) and look for the **Text-Only Card Pattern (Section 5 Style)** in the "Hero Section and Cards" area. Copy that HTML structure and create 2 cards with the following content:
+**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Text-Only Card Pattern (Section 5 Style)** in the "Hero Section and Cards" area. Copy that HTML structure and create 2 cards with the following content:
 
 1. **What is Forests in Cities?** - Link: `https://naturalareasnyc.org/forests-in-cities-network/`, Heading: "What is Forests in Cities?", Text: "We created the FiC network in 2019 to advance healthy forested natural areas across America. By nurturing a network of interdisciplinary experts from 26 cities, together we advance urban forest science and practice while advocating for increased resources and support for our cities' forests.", Accessibility text: "FiC"
 
