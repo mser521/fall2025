@@ -79,8 +79,7 @@ Include a short write-up (2-3 pages or equivalent) that:
 
 ### 1. Timeline of Deliverables
 * **Week 10 (Oct. 21)** - Project proposal due (topic, audience, preliminary data sources)
-* **Week 13 (Nov. 18)** - Draft campaign materials due (for peer feedback)
-* **Week 16 (Dec. 2)** - Final round of user testing (for peer feedback)
+* **Week 16 (Dec. 2)** - Preliminary share-outs and user testing (for peer feedback)
 * **Week 17** - Final project submission and presentations
 
 ### 2. Evaluation Criteria

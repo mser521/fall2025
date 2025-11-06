@@ -28,7 +28,7 @@ Please see the [JavaScript Cheatsheet](/fall2025/resources/js-dom-cheatsheet) to
 
 <a href="/fall2025/downloads/labs/lab05.zip" class="nu-button">Download Lab 5 <i class="fas fa-download"></i></a> 
 
-Please download the lab05.zip file, unzip it, and move the tutorials folder inside of your `csci344/tutorials` folder. Then complete the tasks:
+Please download the lab05.zip file, unzip it, and move it into yoru `mser521` folder:
 
 1. [Theme Switcher](#1-theme-switcher)
 1. [Hamburger Menu](#2-hamburger-menu)
@@ -124,5 +124,5 @@ Given this, please open the `05-carousel` folder and make the following changes:
 ## What to Submit
 Please make sure that you have completed all 5 exercises.
 
-When you're done, please create a link from your homepage to each of your Lab 5 exercises (see <a href="https://vanwars.github.io/csci344" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
+When you're done, please create a link from your homepage to each of your Lab 5 exercises (see <a href="https://vanwars.github.io/mser521" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
 

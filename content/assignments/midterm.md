@@ -1,7 +1,7 @@
 ---
 title: "Midterm Project: Building a Multi-Section Website"
 date: "2025-11-04"
-due_date: "2025-11-20"
+due_date: "2025-11-25"
 type: "midterm project"
 draft: 0
 ---

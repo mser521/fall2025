@@ -563,24 +563,51 @@ const topics = [
           ]
         },
         {
-          date: "Th, Oct 30",
+          date: "Th, Nov 6",
           topic: "Working with Data + JavaScript Libraries",
+          activities: [
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/1iy2jKlFnM-Z8YGqD9Iu9MHdx8wtIO9HsaWMN510ziZo/edit?usp=sharing",
+              draft: 0
+            },
+            {
+              title: "Lab 6: JavaScript DOM Manipulation",
+              url: "/assignments/lab05",
+              draft: 0
+            }
+          ],
+          assigned: {
+            titleShort: "Midterm Project",
+            title: "Build a Scroll-Based Website",
+            url: "/assignments/midterm/",
+            draft: 0
+          }
         },
         {
-          date: "Tu, Nov 4",
+          date: "Tu, Nov 11",
           topic: "Lab 6: Build an Interactive Chart + Map with Javascript",
-          description: "Sarah will be at a conference for this lab, but will create a video tutorial to help you.",
+        },
+        {
+          date: "Tu, Nov 13",
+          topic: "'Data wrangling' + Spreadsheet Integration",
+        },
+        {
+            date: "Tu, Nov 18",
+            holiday: true,
+            topic: "Symposium - No class"
         },
       ]
     },
     {
       id: 7,
-      title: "Design",
+      title: "Special Topics",
       description: "An overview of design principles and techniques for creating effective visualizations.",
       meetings: [
+        
         {
-          date: "Th, Nov 6",
-          topic: "Fundamentals of design",
+          date: "Th, Nov 20",
+          topic: "Fundamentals of design + scrollytelling",
           readings: [
             {
               citation: (<>Norman, D. A. (1994). <em>Things that make us smart</em>. Basic Books. <em>Chapter 3: The Power of Representation</em></>),
@@ -589,33 +616,8 @@ const topics = [
           ]
         },
         {
-          date: "Tu, Nov 11",
-          topic: "Lab 7: Wireframing and storyboarding with Figma",
-          description: "Sarah will be at a conference for this lab, but will create a video tutorial to help you.",
-        },
-        {
-          date: "Th, Nov 13",
-          topic: "'Scrollytelling' Techniques",
-        },
-      ]
-    },
-    {
-      id: 8,
-      title: "Special Topics",
-      description: "Case studies and special topics. TBD.",
-      meetings: [
-        {
-          date: "Tu, Nov 18",
-          holiday: true,
-          topic: "Symposium - No class"
-        },
-        {
-          date: "Th, Nov 20",
-          topic: "Incorporating qualitative and crowd-sourced data",
-        },
-        {
           date: "Tu, Nov 25",
-          topic: "Lab 7: PhotoVoice",
+          topic: "TBD",
         },
         {
           date: "Th, Nov 27",
@@ -624,7 +626,7 @@ const topics = [
         },
         {
           date: "Tu, Dec 2",
-          topic: "TBD",
+          topic: "Final Project Presentations",
         },
 
       ]
