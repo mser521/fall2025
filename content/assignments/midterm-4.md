@@ -45,5 +45,16 @@ The starter file already contains the CSS structure. Open `section2.css` to see 
    - Adjusts heading font-size to `2.5rem` and padding-top to `30px`
    - Adjusts geese image positioning (`right: 10px`, `top: 10px`) and size (`width: 300px`, `height: auto`)
 
+    Start with this media query stub (one example is already implemented):
+
+    ```css
+    @media screen and (max-width: 1024px) {
+        #section-2 .grid {
+            grid-template-columns: 1fr;
+        }
+        /* TODO: Add the remaining responsive styles here */
+    }
+    ```
+
 
 [← Back to Midterm Project Index](./midterm)

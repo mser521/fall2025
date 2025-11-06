@@ -624,3 +624,20 @@ ol li > ul > li {
 /* li:has(> ol) {
   @apply mt-4;
 } */
+
+/* Tag class for time estimates and badges */
+.tag {
+  @apply inline-block px-2 py-1 text-xs font-medium rounded;
+  background-color: var(--surface);
+  color: var(--text-primary);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--surface);
+}
+
+.dark .tag {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border-color: var(--border);
+}

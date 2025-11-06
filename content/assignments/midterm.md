@@ -3,7 +3,7 @@ title: "Midterm Project: Building a Multi-Section Website"
 date: "2025-11-04"
 due_date: "2025-11-20"
 type: "midterm project"
-draft: 1
+draft: 0
 ---
 
 <style>
@@ -13,7 +13,9 @@ draft: 1
     }
 </style>
 
-This project consists of 8 exercises, each focused on implementing a specific section of the <a href="https://naturalareasnyc.org" target="_blank">Natural Areas Conservancy</a> website. 
+For the midterm project, in lieu of an exam, you will go through the process of creating a professional-looking website. Rather than building everything from scratch, you'll work with starter files and a comprehensive style guide that provides HTML patterns and utility classes. This project consists of 10 exercises, each focused on implementing a specific section of the <a href="https://naturalareasnyc.org" target="_blank">Natural Areas Conservancy</a> website. You'll build each section incrementally, learning to apply CSS Grid, Flexbox, responsive design, and JavaScript interactions, while following established design patterns and best practices.
+
+I am expecting that this assignment will take you around 8-10 hours to complete (+ or -). Given this, my recommendation is that you complete this project in several sittings versus saving it all for one day.
 
 
 ## Setup Instructions
@@ -44,16 +46,16 @@ Before you begin, please read [How to Use the Style Guide](./midterm-0) carefull
 
 ## Exercises
 
-1. [Hero Section](./midterm-1)
-1. [ Navigation](./midterm-2)
-1. [Video Introduction](./midterm-3)
-1. [What We Do](./midterm-4)
-1. [Join Our Efforts](./midterm-5)
-1. [The NYC Nature Map](./midterm-6)
-1. [Forests in Cities Network](./midterm-7)
-1. [Carousel](./midterm-8)
-1. [Putting Everything Together](./midterm-9)
-1. [Scrolling Effects](./midterm-10)
+1. [Hero Section](./midterm-1) <span class="tag">1/2 hour</span>
+1. [Navigation](./midterm-2) <span class="tag">1/2 hour</span>
+1. [Video Introduction](./midterm-3) <span class="tag">1/2 hour</span>
+1. [What We Do](./midterm-4) <span class="tag">1 hour</span>
+1. [Join Our Efforts](./midterm-5) <span class="tag">1/2 hour</span>
+1. [The NYC Nature Map](./midterm-6) <span class="tag">1/2 hour</span>
+1. [Forests in Cities Network](./midterm-7) <span class="tag">1 hour</span>
+1. [Carousel](./midterm-8) <span class="tag">1.5 hours</span>
+1. [Putting Everything Together](./midterm-9) <span class="tag">1.5 hours</span>
+1. [Scrolling Effects](./midterm-10) <span class="tag">1.5 hours</span>
 
 ## General Tips
 
@@ -76,5 +78,5 @@ Good luck with your implementation!
 ## What to Submit
 Please make sure that you have completed all 10 exercises.
 
-When you're done, please create a link from your homepage to each of your Lab 5 exercises (see <a href="https://vanwars.github.io/csci344" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
+When you're done, please create a link from your homepage to the `index.html` page at the root of your `midterm` folder (see <a href="https://vanwars.github.io/mser521" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and, paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
 

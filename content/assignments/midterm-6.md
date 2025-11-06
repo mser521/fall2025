@@ -59,14 +59,18 @@ Start with this CSS:
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-
-/* TODO: Add responsive CSS here */
 ```
 
 **Your tasks:**
 1. **Add responsive CSS**: Add a media query for `max-width: 1024px` that:
    - Changes grid to single column (`grid-template-columns: 1fr`)
    - Adjusts gap to `3rem`
+
+   ```css
+    @media screen and (max-width: 1024px) {
+        /* TODO: Add the remaining responsive styles here */
+    }
+    ```
 
 
 [← Back to Midterm Project Index](./midterm)

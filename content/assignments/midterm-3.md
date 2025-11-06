@@ -44,5 +44,16 @@ The starter file already contains the CSS structure. Open `section1.css` to see 
    - Removes the top and left margins from the media container
    - Adjusts the content-styles padding to `40px 30px`
 
+    Start with this media query stub (one example is already implemented):
+
+    ```css
+    @media screen and (max-width: 1024px) {
+        #section-1 .grid {
+            grid-template-columns: 1fr;
+        }
+        /* TODO: Add the remaining responsive styles here */
+    }
+    ```
+
 
 [← Back to Midterm Project Index](./midterm)

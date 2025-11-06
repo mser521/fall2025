@@ -82,8 +82,6 @@ Start with this CSS:
   gap: 50px;
   padding-bottom: 50px;
 }
-
-/* TODO: Add responsive CSS here */
 ```
 
 **Your tasks:**
@@ -94,5 +92,13 @@ Start with this CSS:
    - Adjust container gap and padding for smaller screens
    - Adjust card spacing (`gap` for `.cards`)
    - Adjust card article padding and typography sizes for smaller screens
+
+    ```css
+    /* TODO: Add responsive CSS here */
+    @media screen and (max-width: 1024px) {
+    
+    /* TODO: Add the remaining responsive styles for 1024px and 768px here */
+    }
+    ```
 
 [← Back to Midterm Project Index](./midterm)
