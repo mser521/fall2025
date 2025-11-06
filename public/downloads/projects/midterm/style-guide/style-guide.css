@@ -91,8 +91,31 @@ body {
 /* Main Content Wrapper */
 .style-guide-wrapper {
   margin-left: 250px;
-  padding: 40px;
+  padding: 20px;
   width: calc(100% - 250px);
+}
+
+/* Override container padding for style guide */
+.style-guide-wrapper .container {
+  max-width: 1400px;
+  padding: 0 20px;
+}
+
+/* Responsive: Adjust for tablets */
+@media (max-width: 1024px) {
+  .style-guide-nav {
+    width: 200px;
+  }
+
+  .style-guide-wrapper {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    padding: 15px;
+  }
+
+  .style-guide-wrapper .container {
+    padding: 0 15px;
+  }
 }
 
 /* Responsive: Hide sidebar on mobile */
@@ -104,17 +127,28 @@ body {
   .style-guide-wrapper {
     margin-left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 12px;
+  }
+
+  .style-guide-wrapper .container {
+    padding: 0 12px;
   }
 }
 
 .demo-section {
-  margin-bottom: 60px;
-  padding: 30px;
+  margin-bottom: 40px;
+  padding: 20px;
   background: white;
   border: 2px solid var(--button-gray);
   border-radius: 8px;
   scroll-margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .demo-section {
+    padding: 12px;
+    margin-bottom: 20px;
+  }
 }
 
 /* .demo-section h2 {
@@ -130,6 +164,14 @@ body {
   padding: 28px;
   background: var(--ivory);
   border-left: 12px solid var(--persian-coral);
+}
+
+@media (max-width: 768px) {
+  .demo-item {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-left: none;
+  }
 }
 
 .demo-item header {
