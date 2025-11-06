@@ -47,7 +47,14 @@ Start with this HTML structure, which you will paste inside the `<main></main>` 
 </section>
 ```
 
-**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Carousel Card Pattern (Section 6 Style)** in the "Hero Section and Cards" area. Copy that HTML structure and wrap each card in a `<div class="slide slick-slide">` element. Create at least 3-4 carousel cards with your own content (images, titles, dates, pills, etc.).
+**Your task:** Refer to the [Style Guide Demo](/fall2025/downloads/projects/midterm/style-guide/index.html) and look for the **Carousel Card Pattern (Section 6 Style)** in the "Hero Section and Cards" area. Copy that HTML structure and wrap each card in a `<div class="slide slick-slide">` element. Create at least 3-4 carousel cards with your own content.
+
+**Content for each carousel card should include:**
+- **Image**: Use images from `../images/carousel-1.jpg` through `carousel-10.jpg` (or use any images you have)
+- **Pill**: A category tag using `<span class="pill small green">` (e.g., "Announcements", "Nature Tips", "Education", "Activism", "Event", "Science")
+- **Caption**: A date using `<span class="caption">` (e.g., "October 27, 2025")
+- **Heading**: A title using `<h3 class="heading-5">` (e.g., "Gratitude Giveaway 2025", "Tips for Birding in NYC Natural Areas")
+- **Link**: Each card should link to a relevant URL (you can use placeholder URLs like `#` or actual links)
 
 **Note:** Each slide should be wrapped like this:
 ```html
