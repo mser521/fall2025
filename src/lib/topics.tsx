@@ -598,6 +598,11 @@ const topics = [
               url: "/downloads/activities/css-flourishes-activity.zip",
               draft: 0
             },
+            {
+                title: "Spreadsheet Fun",
+                url: "https://docs.google.com/spreadsheets/d/1rteYnB3u5jGWbiSqLCv02f1mwbGv119GJKOsq6tATN0/edit?usp=sharing",
+                draft: 0
+            }
           ]
         },
         {
