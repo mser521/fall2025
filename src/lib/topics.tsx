@@ -573,7 +573,7 @@ const topics = [
             },
             {
               title: "Lab 6: JavaScript DOM Manipulation",
-              url: "/assignments/lab05",
+              url: "/assignments/lab06",
               draft: 0
             }
           ],
@@ -587,6 +587,18 @@ const topics = [
         {
           date: "Tu, Nov 11",
           topic: "Lab 6: Build an Interactive Chart + Map with Javascript",
+          activities: [
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/11EsdXYMXe1rW_2yc5YGSYEza1HrAO0nHdMPEmNRXZFY/edit?usp=sharing",
+              draft: 0
+            },
+            {
+              title: "Activity: Intro to Charts Warmup",
+              url: "/downloads/activities/css-flourishes-activity.zip",
+              draft: 0
+            },
+          ]
         },
         {
           date: "Tu, Nov 13",
