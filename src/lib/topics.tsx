@@ -601,7 +601,7 @@ const topics = [
           ]
         },
         {
-          date: "Tu, Nov 13",
+          date: "Th, Nov 13",
           topic: "'Data wrangling' + Spreadsheet Integration",
         },
         {
