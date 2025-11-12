@@ -595,7 +595,7 @@ const topics = [
             },
             {
               title: "Activity: Intro to Charts Warmup",
-              url: "/downloads/activities/css-flourishes-activity.zip",
+              url: "/downloads/activities/intro-to-charts-warmup.zip",
               draft: 0
             },
             {
