@@ -598,22 +598,33 @@ const topics = [
               url: "/downloads/activities/intro-to-charts-warmup.zip",
               draft: 0
             },
-            {
-                title: "Spreadsheet Fun",
-                url: "https://docs.google.com/spreadsheets/d/1rteYnB3u5jGWbiSqLCv02f1mwbGv119GJKOsq6tATN0/edit?usp=sharing",
-                draft: 0
-            }
           ]
         },
         {
           date: "Th, Nov 13",
           topic: "'Data wrangling' + Spreadsheet Integration",
+          activities: [
+            {
+                title: "Spreadsheet Link",
+                url: "https://docs.google.com/spreadsheets/d/1rteYnB3u5jGWbiSqLCv02f1mwbGv119GJKOsq6tATN0/edit?usp=sharing",
+                draft: 0
+            },
+            {
+                title: "Lab 7: Build an Interactive Chart + Map with Javascript",
+                url: "/assignments/lab07",
+                draft: 0
+            }
+          ]
         },
         {
             date: "Tu, Nov 18",
             holiday: true,
             topic: "Symposium - No class"
         },
+        {
+            date: "Th, Nov 20",
+            topic: "More Lab 7 + 'Midterm Project' Questions"
+          },
       ]
     },
     {
@@ -623,7 +634,7 @@ const topics = [
       meetings: [
         
         {
-          date: "Th, Nov 20",
+          date: "Tu, Nov 25",
           topic: "Fundamentals of design + scrollytelling",
           readings: [
             {
@@ -633,17 +644,13 @@ const topics = [
           ]
         },
         {
-          date: "Tu, Nov 25",
-          topic: "TBD",
-        },
-        {
           date: "Th, Nov 27",
           holiday: true,
           topic: "Thanksgiving Break - No class",
         },
         {
           date: "Tu, Dec 2",
-          topic: "Final Project Presentations",
+          topic: "Final Project Workday + Peer Feedback",
         },
 
       ]
