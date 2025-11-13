@@ -13,7 +13,7 @@ L.marker(rhoadesRobinsonHall, {
   icon: getIcon('blue', '🏢'),
 }).addTo(map).bindPopup('Rhoades Robinson Hall');
 
-L.marker(library, {
+L.marker([35.616988, -82.565401], {
   icon: getIcon('teal', '📚'),
 }).addTo(map).bindPopup('Library');
 
