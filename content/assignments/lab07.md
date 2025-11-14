@@ -14,17 +14,13 @@ draft: 0
     }
 </style>
 
-Practice using the array `map()` function, creating interactive data-driven charts, and building maps with markers from Google Sheets. Complete each exercise locally in your browser (open the `index.html` files) and use the console (`Cmd+Opt+J` in Chrome) to verify your work.
-
-## Setup
-
 <a href="/fall2025/downloads/labs/lab07.zip" class="nu-button">Download Lab 7 <i class="fas fa-download"></i></a> 
 
 Please download the lab07.zip file, unzip it, and move it into your `mser521` folder. Then, complete the exercises below.
 
 ## Part 1: Array Map Function Exercises
 
-The `map()` function is one of the most useful array methods in JavaScript. It creates a new array by calling a function on every element in the original array. This is especially useful for transforming data, which you'll need to do when working with charts and maps.
+The `map()` function can creates a new array by calling a function on every element in the original array. This is especially useful for transforming data, which you'll need to do when working with charts and maps.
 
 ### Exercise 1: Basic Map Function
 
@@ -263,7 +259,7 @@ Edit `lab07/05-chart-task/main.js` as follows:
 Then, preview your chart. There should be a brief delay while the data loads, but then your chart should appear.
 
 ### Customize your chart
-* Change the chart type (try `'line'`, `'bar'`, or `'pie'` instead of `'bar'`)
+* Change the chart type (try `'line'` instead of `'bar'`)
 * Modify the chart colors to match your data theme
 * Add a chart title using the `title` option in ApexCharts
 * Customize the details panel template (add styles, additional data, etc.)
@@ -299,5 +295,3 @@ Please make sure that you have completed:
 3. Your custom data-driven chart (Part 3)
 
 When you're done, please create a link from your homepage to the Lab 7 `index.html` page at the root of your `lab07` folder (see <a href="https://vanwars.github.io/mser521" target="_blank">Sarah's homepage</a> for an example). Then, commit and push all of your edits to GitHub and paste a link to your GitHub Repository and to your GitHub pages in the Moodle submission.
-
-**Important:** Make sure your Google Sheets are set to "Anyone with the link can view" so that your maps and charts work when deployed to GitHub Pages.
