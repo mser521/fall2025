@@ -636,6 +636,16 @@ ol li > ul > li {
   background-color: var(--surface);
 }
 
+.tag.video {
+  @apply inline-block px-2 py-1 text-xs font-medium rounded;
+  background-color: var(--surface);
+  color: var(--text-primary);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--surface);
+}
+
 .dark .tag {
   background-color: var(--surface);
   color: var(--text-primary);

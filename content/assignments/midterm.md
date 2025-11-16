@@ -11,6 +11,13 @@ draft: 0
         margin: 0;
         margin-bottom: 5px;
     }
+
+    table {
+        width: auto;
+    }
+    th, td {
+        min-width: auto;
+    }
 </style>
 
 For the midterm project, in lieu of an exam, you will go through the process of creating a professional-looking website. Rather than building everything from scratch, you'll work with starter files and a comprehensive style guide that provides HTML patterns and utility classes. This project consists of 10 exercises, each focused on implementing a specific section of the <a href="https://naturalareasnyc.org" target="_blank">Natural Areas Conservancy</a> website. You'll build each section incrementally, learning to apply CSS Grid, Flexbox, responsive design, and JavaScript interactions, while following established design patterns and best practices.
@@ -46,16 +53,80 @@ Before you begin, please read [How to Use the Style Guide](./midterm-0) carefull
 
 ## Exercises
 
-1. [Hero Section](./midterm-1) <span class="tag">1/2 hour</span>
-1. [Navigation](./midterm-2) <span class="tag">1/2 hour</span>
-1. [Video Introduction](./midterm-3) <span class="tag">1/2 hour</span>
-1. [What We Do](./midterm-4) <span class="tag">1 hour</span>
-1. [Join Our Efforts](./midterm-5) <span class="tag">1/2 hour</span>
-1. [The NYC Nature Map](./midterm-6) <span class="tag">1/2 hour</span>
-1. [Forests in Cities Network](./midterm-7) <span class="tag">1 hour</span>
-1. [Carousel](./midterm-8) <span class="tag">1.5 hours</span>
-1. [Putting Everything Together](./midterm-9) <span class="tag">1.5 hours</span>
-1. [Scrolling Effects](./midterm-10) <span class="tag">1.5 hours</span>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Exercise</th>
+      <th>Time Estimate</th>
+      <th>Walkthrough</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="./midterm-1">Hero Section</a></td>
+      <td>1/2 hour</td>
+      <td><a href="https://drive.google.com/file/d/1kVdFAd_F19gia_FIwZ84wzccNYA91uHU/view?usp=drive_link" target="_blank">🎥 Video</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="./midterm-2">Navigation</a></td>
+      <td>1/2 hour</td>
+      <td>
+      <a href="https://drive.google.com/file/d/1YEHOd2z0EENhKHAQMb5gTXAXoFhsag4k/view?usp=drive_link" target="_blank">🎥 Video</a>
+      </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="./midterm-3">Video Introduction</a></td>
+      <td>1/2 hour</td>
+      <td><a href="https://drive.google.com/file/d/12EtXXW679wWjAWS0pNopgo5oCkw0n_dD/view?usp=drive_link" target="_blank">🎥 Video</a></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="./midterm-4">What We Do</a></td>
+      <td>1 hour</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="./midterm-5">Join Our Efforts</a></td>
+      <td>1/2 hour</td>
+      <td><a href="https://drive.google.com/file/d/1HhJPo01MXYShf4XHqB6P86j0um9_a1VA/view?usp=drive_link" target="_blank">🎥 Video</a></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="./midterm-6">The NYC Nature Map</a></td>
+      <td>1/2 hour</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="./midterm-7">Forests in Cities Network</a></td>
+      <td>1 hour</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="./midterm-8">Carousel</a></td>
+      <td>1.5 hours</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="./midterm-9">Putting Everything Together</a></td>
+      <td>1.5 hours</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="./midterm-10">Scrolling Effects</a></td>
+      <td>1.5 hours</td>
+      <td><a href="https://drive.google.com/file/d/1VIgc-kfew6vuizJxbaWfZ2dck2DuIOnT/view?usp=drive_link" target="_blank">🎥 Video</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ## General Tips
 
