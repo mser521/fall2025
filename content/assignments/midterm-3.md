@@ -43,11 +43,21 @@ The starter file already contains the CSS structure. Open `section1.css` to see 
 
 **Your tasks:**
 1. **Style the video label**: Create a CSS class called `.video-label`. This class will position your label so that it is overlaid on top of the video to the bottom and left:
-   - Use flexbox with `display: flex` and `align-items: center`
-   - Have a gap of 20px between elements
-   - Be positioned absolutely at `bottom: 24px` and `left: 24px`
-   - Have `z-index: 5` to appear above the image
-   - Set text color to white
+   - Use flexbox:
+
+        ```css
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        ```
+   - To position the label above the video and on the bottom right:
+
+        ```css
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+        z-index: 5;   /* so the container appears above the video */
+        ```
 
 > **Missing Play Button Image**: Phoebe S. pointed out that I forgot to include the play button in the `images` folder, so if you're not seeing a black triangle, please download <a href="/fall2025/downloads/projects/midterm/images/btn-play.svg" target="_blank">btn-play.svg</a> and save it in your `midterm/images` folder.
 
@@ -61,7 +71,7 @@ The starter file already contains the CSS structure. Open `section1.css` to see 
 
     ```css
     @media screen and (max-width: 1024px) {
-        #section-1 .grid {
+        #section-1 {
             grid-template-columns: 1fr;
         }
         /* TODO: Add the remaining responsive styles here */
