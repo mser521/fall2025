@@ -623,7 +623,25 @@ const topics = [
         },
         {
             date: "Th, Nov 20",
-            topic: "More Lab 7 + 'Midterm Project' Questions"
+            topic: "Lab 7 + Narrative Visualization",
+            description: "How do you transform a data visualization into a story?",
+            readings: [
+                {
+                citation: (<>Segel, E., & Heer, J. (2010). Narrative visualization: Telling stories with data. IEEE transactions on visualization and computer graphics, 16(6), 1139-1148.</>),
+                url: "https://cpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/3/3481/files/2015/02/Narrative_Visualization.pdf"
+                },
+                {
+                  citation: (<>Narrative Visualization & Storytelling (Course Website)</>),
+                  url: "/fall2025/resources/narrative-visualization"
+                }
+            ],
+            activities: [
+              {
+                title: "Slides",
+                url: "https://docs.google.com/presentation/d/1HZXX0Lo2D1Y8fMmF3zZ4ZXGVs7M29apMT-W_KNjgG0w/edit?usp=sharing",
+                draft: 0
+              }
+            ]
           },
       ]
     },
@@ -635,7 +653,7 @@ const topics = [
         
         {
           date: "Tu, Nov 25",
-          topic: "Fundamentals of design + scrollytelling",
+          topic: "Fundamentals of design + narrative visualization techniques",
           readings: [
             {
               citation: (<>Norman, D. A. (1994). <em>Things that make us smart</em>. Basic Books. <em>Chapter 3: The Power of Representation</em></>),

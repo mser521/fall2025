@@ -27,20 +27,27 @@ Narrative visualization combines data visualization with storytelling techniques
 - **Body**: Interactive exploration (the glass)
 - **Conclusion**: Return to the main message
 
+<img src="/fall2025/images/activities/narrative-visualization/martini.png" class="screenshot-xs border">
+
 ### 2. Interactive Slideshow
 - Linear progression through key points
 - Each "slide" reveals one insight
 - User controls pace (next/previous buttons)
+
+<img src="/fall2025/images/activities/narrative-visualization/interactive-slides.png" class="screenshot-xs border">
 
 ### 3. Drill-Down Story
 - Start with overview
 - Allow users to explore details
 - Return to main narrative
 
+<img src="/fall2025/images/activities/narrative-visualization/drill-down-story.png" class="screenshot-xs border">
+
 ### 4. Annotated Chart
 - Single visualization with rich annotations
 - Text guides interpretation
 - Highlights key data points
+
 
 ### 5. Scrollytelling
 - Story unfolds as user scrolls
@@ -77,11 +84,14 @@ Narrative visualization combines data visualization with storytelling techniques
 
 | Example | Structure | Key Technique |
 |---------|-----------|--------------|
-| <a href="https://www.youtube.com/watch?v=DwKPFT-RioU" target="_blank">The Fallen of World War II</a> | Animated Timeline | Progressive disclosure, annotation |
+| <a href="https://www.youtube.com/watch?v=DwKPFT-RioU" target="_blank">The Fallen of World War II</a> | Martini Glass | Progressive disclosure, annotation |
 | <a href="https://pudding.cool/2025/06/hello-stranger/" target="_blank">The Pudding - Hello Stranger</a> | Scrollytelling | Scroll-triggered animations, text integration |
 | <a href="https://eattherichtextformat.github.io/1-pixel-wealth/" target="_blank">1 Pixel Wealth</a> | Scrollytelling | Scroll-based scale revelation, visual metaphor |
-| <a href="https://www.gapminder.org/" target="_blank">Gapminder</a> | Martini Glass | Overview → exploration → conclusion |
+| <a href="https://www.gapminder.org/" target="_blank">Gapminder</a> | Exploratory / Undirected | Overview → exploration → conclusion |
 | <a href="https://www.reuters.com/graphics/HEALTH-CORONAVIRUS/EVOLUTION/yxmpjqkdzvr/" target="_blank">Reuters - How the novel coronavirus has evolved</a> | Annotated Timeline | Rich annotations, visual hierarchy |
+| <a href="https://www.nytimes.com/interactive/2021/12/13/opinion/climate-change-effects-countries.html" target="_blank">Postcards from a World on Fire</a>  | Drill-down Story | Opening message + browse |
+| <a href="https://www.nytimes.com/interactive/2025/climate/50-states-fixes.html" target="_blank">Stories of Climate Hope & Possibility</a> | Drill-down Story | Opening message + browse |
+
 
 ## Common Pitfalls to Avoid
 
@@ -91,6 +101,7 @@ Narrative visualization combines data visualization with storytelling techniques
 4. **Missing Context**: Assuming viewers understand background
 5. **Weak Opening**: Failing to hook viewers immediately
 6. **No Call to Action**: Ending without clear next steps
+7. **For Climate-Related Stuff**: Feelings of hopelessness, powerlessness
 
 ## Questions to Ask When Designing
 
@@ -104,7 +115,6 @@ Narrative visualization combines data visualization with storytelling techniques
 ## Further Reading
 
 - Segel, E., & Heer, J. (2010). <a href="https://idl.cs.washington.edu/files/2010-Narrative-InfoVis.pdf" target="_blank">Narrative visualization: Telling stories with data</a>. IEEE Transactions on Visualization and Computer Graphics.
-- Kosara, R., & Mackinlay, J. (2013). <a href="https://www.computer.org/csdl/magazine/co/2013/05/mco2013050012/13rRUxY8v1H" target="_blank">Storytelling: The next step for visualization</a>. Computer, 46(5), 44-50.
 - Cairo, A. (2016). *The Truthful Art: Data, Charts, and Maps for Communication*. New Riders.
 - Knaflic, C. N. (2015). *Storytelling with Data: A Data Visualization Guide for Business Professionals*. Wiley.
 

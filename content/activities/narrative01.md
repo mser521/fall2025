@@ -1,8 +1,7 @@
 ---
 title: "Analyzing Narrative Visualizations"
-date: "2025-10-21"
+date: "2025-11-20"
 type: "activity"
-due_date: "2025-10-21"
 draft: 0
 excluded: 1
 ---
