@@ -123,8 +123,7 @@ The data is an array of objects, where each object represents a month with snow 
 
 1. Use `map()` to create an array containing only the months. Store the result in a variable called `months` and print it to the console.
 2. Use `map()` to create an array containing only the "Snow Days 2023-2024" values. Store the result in a variable called `snowDays2023` and print it to the console.
-3. Use `map()` to create an array of objects with only `Month` and `Snow Days 2024-2025` properties. Store the result in a variable called `snowDays2024` and print it to the console.
-4. Use `map()` to create an array of strings in the format "[Month]: [count] snow day(s) in 2023-2024" for each month. Store the result in a variable called `formattedSnowDays` and print it to the console.
+3. Use `map()` to create an array of strings in the format "[Month]: [count] snow day(s) in 2023-2024" for each month. Store the result in a variable called `formattedSnowDays` and print it to the console.
 
 **Note:** The starter code includes an `async function getSnowDays()` that fetches the data. Complete the TODOs inside this function using `map()`. This exercise demonstrates the exact pattern you'll use when extracting data from Google Sheets for your charts and maps.
 
@@ -197,6 +196,11 @@ Edit `lab07/04-map-task/main.js` as follows:
         justify-content: center;
         font-size: 25px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .leaflet-div-icon {
+        background: transparent;
+        border: 0px solid #666;
     }
     ```
 

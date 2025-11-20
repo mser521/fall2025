@@ -670,6 +670,10 @@ const topics = [
           date: "Tu, Dec 2",
           topic: "Final Project Workday + Peer Feedback",
         },
+        {
+          date: "Th, Dec 4",
+          topic: "3PM: Final Project Presentations",
+        },
 
       ]
     }

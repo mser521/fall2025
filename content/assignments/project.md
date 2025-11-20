@@ -80,7 +80,8 @@ Include a short write-up (2-3 pages or equivalent) that:
 ### 1. Timeline of Deliverables
 * **Week 10 (Oct. 21)** - Project proposal due (topic, audience, preliminary data sources)
 * **Week 16 (Dec. 2)** - Preliminary share-outs and user testing (for peer feedback)
-* **Week 17** - Final project submission and presentations
+* **Week 16 (Dec. 4)** - Final Project Presentations at 3PM
+* **Week 17 (Dec. 9)** - Final project submission + paper due
 
 ### 2. Evaluation Criteria
 Your project will be assessed on:
