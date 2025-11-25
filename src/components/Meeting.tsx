@@ -51,7 +51,18 @@ export default function Meeting({
   const hasDiscussionQuestions = 'discussionQuestions' in meeting && meeting.discussionQuestions;
   const isHoliday = 'holiday' in meeting && meeting.holiday;
 
-  function toggleDetails() {
+  function toggleDetails(e?: React.MouseEvent<HTMLElement>) {
+    // Don't toggle if clicking on a link, button, or other interactive element
+    if (e) {
+      const target = e.target as HTMLElement;
+      const isInteractiveElement = target.closest('a');
+      if (isInteractiveElement) {
+        return; // Let the link/button handle its own click
+      }
+    }
+    
+    e?.stopPropagation();
+    e?.preventDefault();
     const newState = !showDetails;
     setShowDetails(newState);
     localStorage.setItem(meetingKey, JSON.stringify(newState));
@@ -157,7 +168,7 @@ export default function Meeting({
   return (
     <div className={clsx("flex justify-between gap-4 border-b border-black dark:border-gray-700 pt-4 pb-2", {
       'bg-gray-100 dark:bg-gray-800': isHoliday
-    })}>
+    })}  onClick={toggleDetails}>
         <div className={clsx("flex gap-4", {
             'flex-col': showDetails,
             'md:flex-row': showDetails
