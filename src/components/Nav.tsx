@@ -19,6 +19,7 @@ export default function Navigation() {
     { href: "/activities", label: "In-Class Activities" },
     { href: "/assignments", label: "Assignments" },
     { href: "/resources/html", label: "Resources" },
+    { href: "https://drive.google.com/drive/folders/1rC-o9i4vE527ia2VNHlTb7Ek0eWAabXL?usp=sharing", label: "Videos", target: "_blank" },
   ];
 
   // Only run on client side to prevent hydration mismatch
@@ -56,6 +57,7 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
+                target={item.target}
                 className={`transition-colors dark:hover:!text-sky-300 hover:!text-sky-700 hover:!border-sky-700 ${
                   isActive
                     ? "!font-semibold !border-sky-700 dark:!border-sky-300 text-black dark:!text-white"

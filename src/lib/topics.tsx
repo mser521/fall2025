@@ -623,8 +623,8 @@ const topics = [
         },
         {
             date: "Th, Nov 20",
-            topic: "Lab 7 + Narrative Visualization",
-            description: "How do you transform a data visualization into a story?",
+            topic: "Lab 7",
+            description: "JavaScript Wrap-up",
             readings: [
                 {
                 citation: (<>Segel, E., & Heer, J. (2010). Narrative visualization: Telling stories with data. IEEE transactions on visualization and computer graphics, 16(6), 1139-1148.</>),
@@ -650,10 +650,17 @@ const topics = [
       title: "Special Topics",
       description: "An overview of design principles and techniques for creating effective visualizations.",
       meetings: [
-        
         {
           date: "Tu, Nov 25",
           topic: "Fundamentals of design + narrative visualization techniques",
+          description: "How do you transform a data visualization into a story?",
+          activities: [
+            {
+              title: "Slides",
+              url: "https://docs.google.com/presentation/d/11N3VHlN2tnTf18O2otd6zWWEdqllKIq6HOQRbBBd_U0/edit?usp=sharing",
+              draft: 0
+            }
+          ],
           readings: [
             {
               citation: (<>Norman, D. A. (1994). <em>Things that make us smart</em>. Basic Books. <em>Chapter 3: The Power of Representation</em></>),

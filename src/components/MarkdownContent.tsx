@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import ImageGrid from './ImageGrid';
+import ExpandableSection from './ExpandableSection';
 import { IMAGE_SETS, IMAGE_PATHS } from '@/lib/remark-imagegrid';
 
 interface MarkdownContentProps {
@@ -65,6 +66,51 @@ export default function MarkdownContent({ content }: MarkdownContentProps) {
       // Replace the placeholder with our container
       placeholder.parentNode?.replaceChild(container, placeholder);
       
+    });
+
+    // Find all expandable blockquotes and replace them with the ExpandableSection component
+    const expandableBlockquotes = contentRef.current.querySelectorAll('blockquote[data-expandable="true"]');
+    
+    expandableBlockquotes.forEach((blockquote, index) => {
+      // Get the inner HTML content of the blockquote
+      const blockquoteContent = blockquote.innerHTML;
+      
+      // Extract title from the first h2 if it exists, otherwise use default
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = blockquoteContent;
+      const firstH2 = tempDiv.querySelector('h2');
+      const title = firstH2 ? firstH2.textContent || 'Show Details' : 'Show Details';
+      
+      // Remove the h2 from content if it exists (since it's now the button title)
+      if (firstH2) {
+        firstH2.remove();
+      }
+      const contentWithoutTitle = tempDiv.innerHTML;
+      
+      // Create a storage key for this blockquote
+      const storageKey = `expandable-blockquote-${index}`;
+      
+      // Create a container for the ExpandableSection component
+      const container = document.createElement('div');
+      
+      // Create a div where we'll mount the React component
+      const reactContainer = document.createElement('div');
+      container.appendChild(reactContainer);
+      
+      // Replace the blockquote with our container
+      blockquote.parentNode?.replaceChild(container, blockquote);
+      
+      // Mount the ExpandableSection component
+      const root = createRoot(reactContainer);
+      root.render(
+        <ExpandableSection 
+          title={title}
+          defaultExpanded={false}
+          storageKey={storageKey}
+        >
+          <div dangerouslySetInnerHTML={{ __html: contentWithoutTitle }} />
+        </ExpandableSection>
+      );
     });
   }, [content]);
 

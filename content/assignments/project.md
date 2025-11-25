@@ -42,16 +42,16 @@ Perform Exploratory Data Analysis (EDA) to understand trends, patterns, and surp
 Use appropriate labels, scales, and colors - accuracy + clarity come first.
 
 ### 5. Campaign Materials
-Create at least two deliverables that are appropriate for your audience: 
+Create at least one deliverable (and optionally a second) that are appropriate for your audience: 
 1. Your first deliverable **must be a website** with photos, embedded charts, and a clear narrative that helps your audience navigate the visualization.
-1. Your second deliverable can be anything you want:
+1. **(Optional)** Your second deliverable can be anything you want (earn up to 3 points extra credit applied to your final grade):
     * A social media infographic
     * A public service announcement (poster, video, or podcast script)
     * A fact sheet or one-pager for policymakers
     * A video
     * A zine
 
-Ensure that both deliverables communicate your idea effectively using data.
+Ensure that your deliverable(s) communicate your idea effectively using data.
 
 ### 6. Design & Aesthetics
 * The project should be visually polished (consistent fonts, colors, layout).
@@ -93,7 +93,7 @@ Your project will be assessed on:
 1. **Presentation** - Was your talk clear, confident, and visually effective?
 
 
-<blockquote>
+<blockquote data-expandable="true">
 
 ## Potential Project Ideas / Datasets
 I encourage you to pursue your own questions, but here are some ideas to get you started:
