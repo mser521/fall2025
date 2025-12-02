@@ -676,12 +676,24 @@ const topics = [
         {
           date: "Tu, Dec 2",
           topic: "Final Project Workday + Peer Feedback",
+          description: "We will spend the day workshopping drafts of the final project with your peers.",
+          activities: [
+            { 
+              title: "Agenda for Today",
+              url: "https://docs.google.com/document/d/1y_U-RGBL-K8xgiJB_3cVsPc5w6NHSsX2EKhk-j64tek/edit?usp=sharing",
+              draft: 0
+            },
+            { 
+              title: "Feedback Form",
+              url: "https://docs.google.com/document/d/17dTSTRJi18n_aP5zBOydsBiZxKQHhlsWtm4qRDAe6r4/edit?usp=sharing",
+              draft: 0
+            },
+          ],
         },
         {
           date: "Th, Dec 4",
           topic: "3PM: Final Project Presentations",
         },
-
       ]
     }
   ];

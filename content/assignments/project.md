@@ -59,7 +59,7 @@ Ensure that your deliverable(s) communicate your idea effectively using data.
 * Strive for professional design quality: this should look like something you’d proudly show in a symposium.
 
 ### 7. Iteration & Feedback
-* Share an early draft with peers (Week 12).
+* Share an early draft with peers.
 * Gather feedback on clarity, design, and storytelling.
 * Submit a revised final version that responds thoughtfully to feedback.
 
